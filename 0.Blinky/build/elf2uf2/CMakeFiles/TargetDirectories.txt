@@ -1,5 +1,5 @@
-D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/elf2uf2/CMakeFiles/elf2uf2.dir
-D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/elf2uf2/CMakeFiles/edit_cache.dir
-D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/elf2uf2/CMakeFiles/rebuild_cache.dir
-D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
-D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
+D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/elf2uf2/CMakeFiles/elf2uf2.dir
+D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/elf2uf2/CMakeFiles/edit_cache.dir
+D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
+D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir

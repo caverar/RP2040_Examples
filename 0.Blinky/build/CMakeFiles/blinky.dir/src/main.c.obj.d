@@ -1,5 +1,5 @@
 CMakeFiles/blinky.dir/src/main.c.obj: \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\src\main.c \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\src\main.c \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\stdio.h \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\_ansi.h \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\newlib.h \
@@ -38,9 +38,9 @@ CMakeFiles/blinky.dir/src/main.c.obj: \
  c:\vsarm\armcc\102021~1.07\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\stdint.h \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\_intsup.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\generated\pico_base/pico/version.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\generated\pico_base/pico/version.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/config.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\generated\pico_base/pico/config_autogen.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\generated\pico_base/pico/config_autogen.h \
  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_platform\include/pico/platform.h \
@@ -64,12 +64,12 @@ CMakeFiles/blinky.dir/src/main.c.obj: \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/uart.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/uart.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\include/FreeRTOS.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\include/FreeRTOSConfig.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\include/projdefs.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\include/portable.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\include/deprecated_definitions.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\portable\GCC\ARM_CM0/portmacro.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\include/mpu_wrappers.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\include/task.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\include/list.h
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\include/FreeRTOS.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\include/FreeRTOSConfig.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\include/projdefs.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\include/portable.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\include/deprecated_definitions.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\portable\GCC\ARM_CM0/portmacro.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\include/mpu_wrappers.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\include/task.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\include/list.h

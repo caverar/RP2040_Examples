@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky
+CMAKE_SOURCE_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build
+CMAKE_BINARY_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/blinky.dir/depend.make
@@ -71,21 +71,21 @@ include CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/src/main.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/src/main.c.obj: ../src/main.c
 CMakeFiles/blinky.dir/src/main.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/blinky.dir/src/main.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/src/main.c.obj -MF CMakeFiles\blinky.dir\src\main.c.obj.d -o CMakeFiles\blinky.dir\src\main.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/blinky.dir/src/main.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/src/main.c.obj -MF CMakeFiles\blinky.dir\src\main.c.obj.d -o CMakeFiles\blinky.dir\src\main.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\src\main.c
 
 CMakeFiles/blinky.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/blinky.dir/src/main.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\src\main.c > CMakeFiles\blinky.dir\src\main.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\src\main.c > CMakeFiles\blinky.dir\src\main.c.i
 
 CMakeFiles/blinky.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/blinky.dir/src/main.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\src\main.c -o CMakeFiles\blinky.dir\src\main.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\src\main.c -o CMakeFiles\blinky.dir\src\main.c.s
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdlib\stdlib.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -99,7 +99,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdl
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_gpio\gpio.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -113,7 +113,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gp
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_claim\claim.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_claim\claim.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -127,7 +127,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_platform\platform.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_platform\platform.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -141,7 +141,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/pl
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_sync\sync.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_sync\sync.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -155,7 +155,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sy
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_uart\uart.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_uart\uart.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -168,7 +168,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/ua
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_divider\divider.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_divider\divider.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -182,7 +182,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_time\time.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_time\time.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\common\pico_time\time.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -196,7 +196,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.s: 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_time\timeout_helper.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\common\pico_time\timeout_helper.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -210,7 +210,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_he
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_timer\timer.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_timer\timer.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -224,7 +224,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/t
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\sem.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\sem.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\sem.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -238,7 +238,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.s: c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\lock_core.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\lock_core.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\lock_core.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -252,7 +252,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\mutex.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\mutex.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\mutex.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -266,7 +266,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\critical_section.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\critical_section.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\common\pico_sync\critical_section.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -280,7 +280,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_s
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_util\datetime.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_util\datetime.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\common\pico_util\datetime.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -294,7 +294,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_util\pheap.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_util\pheap.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\common\pico_util\pheap.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -308,7 +308,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.s:
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_util\queue.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\common\pico_util\queue.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\common\pico_util\queue.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -322,7 +322,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.s:
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_runtime\runtime.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -336,7 +336,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/run
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_clocks\clocks.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -350,7 +350,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_irq\irq.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_irq\irq.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -363,7 +363,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_irq\irq_handler_chain.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -377,7 +377,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pll\pll.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_pll\pll.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -391,7 +391,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_vreg\vreg.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -405,7 +405,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vr
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_watchdog\watchdog.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -419,7 +419,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdo
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_xosc\xosc.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -433,7 +433,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xo
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_printf\printf.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_printf\printf.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -446,7 +446,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/prin
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_bit_ops\bit_ops_aeabi.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -460,7 +460,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_bootrom\bootrom.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -473,7 +473,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/boo
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_divider\divider.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_divider\divider.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.i: cmake_force
@@ -486,7 +486,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/div
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_aeabi.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.i: cmake_force
@@ -500,7 +500,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/doub
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_init_rom.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -514,7 +514,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/doub
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_math.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_math.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -527,7 +527,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/doub
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_double\double_v1_rom_shim.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.i: cmake_force
@@ -540,7 +540,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/doub
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_int64_ops\pico_int64_ops_aeabi.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -553,7 +553,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/p
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_aeabi.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.i: cmake_force
@@ -567,7 +567,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_init_rom.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -581,7 +581,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_math.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_math.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -594,7 +594,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_float\float_v1_rom_shim.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.i: cmake_force
@@ -608,7 +608,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_malloc\pico_malloc.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -621,7 +621,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_mem_ops\mem_ops_aeabi.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -634,7 +634,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building ASM object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S.obj   -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_standard_link\crt0.S
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.i: cmake_force
@@ -648,7 +648,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_li
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_standard_link\new_delete.cpp
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -662,7 +662,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_li
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_standard_link\binary_info.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -676,7 +676,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_li
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio\stdio.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -690,7 +690,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\reset_interface.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -704,7 +704,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/r
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -718,7 +718,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/s
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_usb\stdio_usb_descriptors.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -732,7 +732,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/s
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\dcd_rp2040.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -746,7 +746,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspbe
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\portable\raspberrypi\rp2040\rp2040_usb.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -760,7 +760,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspbe
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\device\usbd.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\device\usbd.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -774,7 +774,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\device\usbd_control.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -788,7 +788,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_con
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\audio\audio_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -802,7 +802,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/aud
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\cdc\cdc_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -816,7 +816,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_d
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -830,7 +830,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_d
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\dfu\dfu_rt_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -844,7 +844,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_r
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\hid\hid_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -858,7 +858,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_d
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\midi\midi_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -872,7 +872,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\msc\msc_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -886,7 +886,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_d
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\net\net_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\net\net_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\net\net_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.i: cmake_force
@@ -900,7 +900,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_d
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\usbtmc\usbtmc_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -914,7 +914,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/us
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\class\vendor\vendor_device.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -928,7 +928,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/ve
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\tusb.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\tusb.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\tusb.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -942,7 +942,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.s: cmake
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c.obj -c C:\VSARM\sdk\pico\pico-sdk\lib\tinyusb\src\common\tusb_fifo.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -956,7 +956,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fif
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_fix\rp2040_usb_device_enumeration\rp2040_usb_device_enumeration.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -970,7 +970,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_unique_id\unique_id.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -984,7 +984,7 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/u
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/blinky.dir/flags.make
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/blinky.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
 	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj.d -o CMakeFiles\blinky.dir\C_\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_flash\flash.c.obj -c C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_flash\flash.c
 
 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -1140,13 +1140,14 @@ blinky.elf: libFreeRTOS.a
 blinky.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 blinky.elf: CMakeFiles/blinky.dir/objects1.rsp
 blinky.elf: CMakeFiles/blinky.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking CXX executable blinky.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Linking CXX executable blinky.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\blinky.dir\link.txt --verbose=$(VERBOSE)
 	"C:\VSARM\armcc\10 2021.07\bin\arm-none-eabi-objcopy.exe" -Oihex blinky.elf blinky.hex
 	"C:\VSARM\armcc\10 2021.07\bin\arm-none-eabi-objcopy.exe" -Obinary blinky.elf blinky.bin
 	"C:\VSARM\armcc\10 2021.07\bin\arm-none-eabi-objdump.exe" -h blinky.elf >blinky.dis
 	"C:\VSARM\armcc\10 2021.07\bin\arm-none-eabi-objdump.exe" -d blinky.elf >>blinky.dis
 	elf2uf2\elf2uf2 blinky.elf blinky.uf2
+	arm-none-eabi-size blinky.elf
 
 # Rule to build all files generated by this target.
 CMakeFiles/blinky.dir/build: blinky.elf
@@ -1157,6 +1158,6 @@ CMakeFiles/blinky.dir/clean:
 .PHONY : CMakeFiles/blinky.dir/clean
 
 CMakeFiles/blinky.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles\blinky.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles\blinky.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/blinky.dir/depend
 

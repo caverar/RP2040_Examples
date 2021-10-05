@@ -984,28 +984,28 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ELF2UF2Build-Debug-a34e57c9e98b49b4091d.json",
+					"jsonFile" : "target-ELF2UF2Build-Debug-735d65f7a92e0cc3e010.json",
 					"name" : "ELF2UF2Build",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "FreeRTOS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FreeRTOS-Debug-8afc3ee65ea52027b54b.json",
+					"jsonFile" : "target-FreeRTOS-Debug-9f55971e1b931cbcac5a.json",
 					"name" : "FreeRTOS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "blinky::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-blinky-Debug-42028a531c284c3e5656.json",
+					"jsonFile" : "target-blinky-Debug-60c6011d4a3defabaed6.json",
 					"name" : "blinky",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 42,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default-Debug-cc7fa591f3439f747ef2.json",
+					"jsonFile" : "target-bs2_default-Debug-eb23495d7fe8d3c34e7d.json",
 					"name" : "bs2_default",
 					"projectIndex" : 1
 				},
@@ -1029,8 +1029,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build",
-		"source" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky"
+		"build" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build",
+		"source" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky"
 	},
 	"version" : 
 	{

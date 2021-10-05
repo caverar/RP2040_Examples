@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/pico-sdk/src/common/cmake_install.cmake")
-  include("D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/pico-sdk/src/rp2_common/cmake_install.cmake")
-  include("D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/pico-sdk/src/rp2040/cmake_install.cmake")
+  include("D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/pico-sdk/src/common/cmake_install.cmake")
+  include("D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/pico-sdk/src/rp2_common/cmake_install.cmake")
+  include("D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/pico-sdk/src/rp2040/cmake_install.cmake")
 
 endif()
 

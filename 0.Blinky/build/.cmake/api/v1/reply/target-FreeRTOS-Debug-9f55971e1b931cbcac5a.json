@@ -26,13 +26,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 27,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 35,
+				"line" : 17,
 				"parent" : 0
 			}
 		]
@@ -44,35 +44,24 @@
 			[
 				{
 					"fragment" : "-mcpu=cortex-m0plus -mthumb -Og -g"
-				},
-				{
-					"fragment" : "-std=gnu11"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/FreeRTOS-Kernel/include"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/FreeRTOS-Kernel/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/include"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
 				}
 			],
 			"language" : "C",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					1
-				],
-				"standard" : "11"
-			},
 			"sourceIndexes" : 
 			[
 				0,

@@ -1,4 +1,4 @@
-# Install script for directory: D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky
+# Install script for directory: D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/pico-sdk/cmake_install.cmake")
+  include("D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/pico-sdk/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

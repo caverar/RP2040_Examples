@@ -18,9 +18,9 @@ CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/u
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\_intsup.h \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\_stdint.h \
  c:\vsarm\armcc\102021~1.07\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\generated\pico_base/pico/version.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\generated\pico_base/pico/version.h \
  C:\VSARM\sdk\pico\pico-sdk\src\common\pico_base\include/pico/config.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\generated\pico_base/pico/config_autogen.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\generated\pico_base/pico/config_autogen.h \
  C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h \
  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_platform\include/pico/platform.h \

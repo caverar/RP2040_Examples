@@ -71,7 +71,7 @@ Discarded input sections
                 0x00000000       0x38 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .debug_ranges  0x00000000       0x98 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .debug_line    0x00000000      0x59b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
- .debug_str     0x00000000      0x53e CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+ .debug_str     0x00000000      0x540 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .debug_frame   0x00000000       0x90 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .ARM.attributes
@@ -186,7 +186,7 @@ Discarded input sections
                 0x00000000       0x40 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .debug_ranges  0x00000000       0xf8 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .debug_line    0x00000000      0x714 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_str     0x00000000      0x55a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_str     0x00000000      0x55c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .debug_frame   0x00000000       0x78 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .ARM.attributes
@@ -207,7 +207,7 @@ Discarded input sections
  .debug_abbrev  0x00000000       0x12 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
  .debug_aranges
                 0x00000000       0x38 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
- .debug_str     0x00000000       0x91 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+ .debug_str     0x00000000       0x93 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
  .debug_ranges  0x00000000       0x30 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
  .ARM.attributes
                 0x00000000       0x22 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -262,7 +262,7 @@ Discarded input sections
                 0x00000000       0x38 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
  .debug_ranges  0x00000000      0x148 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
  .debug_line    0x00000000      0x51b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
- .debug_str     0x00000000      0x401 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+ .debug_str     0x00000000      0x403 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
  .debug_frame   0x00000000       0x6c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
  .ARM.attributes
@@ -316,7 +316,7 @@ Discarded input sections
                 0x00000000       0x58 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj
  .debug_ranges  0x00000000      0x5b0 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj
  .debug_line    0x00000000      0x93c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj
- .debug_str     0x00000000      0x4f8 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+ .debug_str     0x00000000      0x4fa CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj
  .debug_frame   0x00000000       0xe4 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/sem.c.obj
  .ARM.attributes
@@ -354,7 +354,7 @@ Discarded input sections
                 0x00000000       0x20 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj
  .debug_ranges  0x00000000       0x10 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj
  .debug_line    0x00000000      0x1a5 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj
- .debug_str     0x00000000      0x22a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+ .debug_str     0x00000000      0x22c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj
  .debug_frame   0x00000000       0x38 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/datetime.c.obj
  .ARM.attributes
@@ -409,7 +409,7 @@ Discarded input sections
                 0x00000000       0x70 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj
  .debug_ranges  0x00000000      0x630 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj
  .debug_line    0x00000000      0x986 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj
- .debug_str     0x00000000      0x481 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj
+ .debug_str     0x00000000      0x483 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj
  .debug_frame   0x00000000      0x12c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/queue.c.obj
  .ARM.attributes
@@ -489,7 +489,7 @@ Discarded input sections
                 0x00000000       0x20 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
  .debug_ranges  0x00000000       0x10 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
  .debug_line    0x00000000      0x293 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
- .debug_str     0x00000000      0x34c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+ .debug_str     0x00000000      0x34e CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
  .debug_frame   0x00000000       0x20 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
  .ARM.attributes
@@ -682,7 +682,7 @@ Discarded input sections
                 0x00000000      0x130 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
  .debug_ranges  0x00000000      0x518 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
  .debug_line    0x00000000     0x21d0 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_str     0x00000000      0x50a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_str     0x00000000      0x50c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
  .debug_frame   0x00000000      0x440 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
  .ARM.attributes
@@ -870,7 +870,7 @@ Discarded input sections
                 0x00000000      0x128 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
  .debug_ranges  0x00000000      0x4b8 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
  .debug_line    0x00000000     0x1dcd CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_str     0x00000000      0x520 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_str     0x00000000      0x522 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
  .debug_frame   0x00000000      0x3a0 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
  .ARM.attributes
@@ -908,7 +908,7 @@ Discarded input sections
                 0x00000000       0x30 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .debug_ranges  0x00000000       0x50 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .debug_line    0x00000000      0x1df CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_str     0x00000000      0x232 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_str     0x00000000      0x234 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .debug_frame   0x00000000       0x58 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
  .ARM.attributes
@@ -936,7 +936,7 @@ Discarded input sections
                 0x00000000       0x48 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
  .debug_ranges  0x00000000       0x38 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
  .debug_line    0x00000000      0x26c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
- .debug_str     0x00000000      0x3ae CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+ .debug_str     0x00000000      0x3b0 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
  .debug_frame   0x00000000       0xa0 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
  .ARM.attributes
@@ -1040,7 +1040,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
  .debug_line    0x00000000       0x1d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
- .debug_str     0x00000000      0x1a9 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+ .debug_str     0x00000000      0x1ab CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
  .ARM.attributes
                 0x00000000       0x32 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
@@ -1067,7 +1067,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
  .debug_line    0x00000000       0x1d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
- .debug_str     0x00000000      0x1a5 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+ .debug_str     0x00000000      0x1a7 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
  .ARM.attributes
                 0x00000000       0x32 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -1079,7 +1079,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
  .debug_line    0x00000000       0x1d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
- .debug_str     0x00000000      0x1a8 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+ .debug_str     0x00000000      0x1aa CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
  .ARM.attributes
                 0x00000000       0x32 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -1091,7 +1091,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
  .debug_line    0x00000000       0x1d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
- .debug_str     0x00000000      0x1a5 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+ .debug_str     0x00000000      0x1a7 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
  .ARM.attributes
                 0x00000000       0x32 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -1103,7 +1103,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
  .debug_line    0x00000000       0x1d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
- .debug_str     0x00000000      0x1a7 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+ .debug_str     0x00000000      0x1a9 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
  .ARM.attributes
                 0x00000000       0x32 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -1115,7 +1115,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
  .debug_line    0x00000000       0x1d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
- .debug_str     0x00000000      0x1a5 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+ .debug_str     0x00000000      0x1a7 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
  .ARM.attributes
                 0x00000000       0x32 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -1127,7 +1127,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
  .debug_line    0x00000000       0x1d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
- .debug_str     0x00000000      0x1a5 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
+ .debug_str     0x00000000      0x1a7 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
  .ARM.attributes
                 0x00000000       0x32 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/net/net_device.c.obj
@@ -1139,7 +1139,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
  .debug_line    0x00000000       0x1d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
- .debug_str     0x00000000      0x1ab CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+ .debug_str     0x00000000      0x1ad CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
  .ARM.attributes
                 0x00000000       0x32 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -1151,7 +1151,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
  .debug_line    0x00000000       0x1d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
- .debug_str     0x00000000      0x1ab CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+ .debug_str     0x00000000      0x1ad CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
  .ARM.attributes
                 0x00000000       0x32 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -1227,7 +1227,7 @@ Discarded input sections
                 0x00000000       0x48 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .debug_ranges  0x00000000      0x158 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .debug_line    0x00000000      0x68e CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
- .debug_str     0x00000000      0x75a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+ .debug_str     0x00000000      0x75c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .comment       0x00000000       0x4a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .debug_frame   0x00000000       0xa8 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .ARM.attributes
@@ -1248,9 +1248,9 @@ Discarded input sections
                 0x00000000       0x14 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .rodata.__func__.2
                 0x00000000       0x12 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .text          0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccin0rFt.o
- .data          0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccin0rFt.o
- .bss           0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccin0rFt.o
+ .text          0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccAfSJt0.o
+ .data          0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccAfSJt0.o
+ .bss           0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccAfSJt0.o
  .data          0x00000000        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1451,7 +1451,7 @@ LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\camil\AppData\Local\Temp\ccin0rFt.o
+ .boot2         0x10000000      0x100 C:\Users\camil\AppData\Local\Temp\ccAfSJt0.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2945,7 +2945,7 @@ LOAD CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_fix/rp
 LOAD CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 LOAD CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 LOAD libFreeRTOS.a
-LOAD C:\Users\camil\AppData\Local\Temp\ccin0rFt.o
+LOAD C:\Users\camil\AppData\Local\Temp\ccAfSJt0.o
 LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -3060,7 +3060,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000077c       0x2c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .ARM.attributes
-                0x000007a8       0x22 C:\Users\camil\AppData\Local\Temp\ccin0rFt.o
+                0x000007a8       0x22 C:\Users\camil\AppData\Local\Temp\ccAfSJt0.o
  .ARM.attributes
                 0x000007ca       0x1e c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -3366,141 +3366,141 @@ LOAD linker stubs
  .debug_ranges  0x00003600       0x38 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .debug_ranges  0x00003638       0x58 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
-.debug_line     0x00000000    0x13981
- .debug_line    0x00000000      0x39e CMakeFiles/blinky.dir/src/main.c.obj
- .debug_line    0x0000039e      0x9b0 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00000d4e      0x449 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x00001197      0x258 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x000013ef      0x445 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00001834     0x18db CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x0000310f      0xab7 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x00003bc6      0x202 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x00003dc8      0xa85 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x0000484d      0x28d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x00004ada      0x86c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x00005346      0x7dc CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x00005b22      0x975 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00006497      0xdff CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00007296      0x51b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x000077b1      0x390 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x00007b41      0x28d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x00007dce     0x1200 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x00008fce      0x147 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x00009115      0x1b5 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x000092ca      0x2ce CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x00009598      0x425 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x000099bd      0x317 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x00009cd4      0x69b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000a36f       0x97 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x0000a406      0x3db CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000a7e1      0x31b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000aafc      0x1c7 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000acc3       0xc1 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000ad84       0xd2 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000ae56      0x1a1 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000aff7      0xc57 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x0000bc4e      0x43a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_line    0x0000c088      0x89a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_line    0x0000c922      0x2ce CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_line    0x0000cbf0      0xc80 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_line    0x0000d870      0x786 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x0000dff6     0x2245 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_line    0x0001023b      0x57c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_line    0x000107b7      0xf04 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_line    0x000116bb      0x406 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x00011ac1     0x146d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_line    0x00012f2e      0x368 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x00013296      0x6eb CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+.debug_line     0x00000000    0x13985
+ .debug_line    0x00000000      0x3a2 CMakeFiles/blinky.dir/src/main.c.obj
+ .debug_line    0x000003a2      0x9b0 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00000d52      0x449 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x0000119b      0x258 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x000013f3      0x445 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00001838     0x18db CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x00003113      0xab7 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x00003bca      0x202 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00003dcc      0xa85 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x00004851      0x28d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x00004ade      0x86c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x0000534a      0x7dc CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x00005b26      0x975 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x0000649b      0xdff CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x0000729a      0x51b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x000077b5      0x390 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x00007b45      0x28d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x00007dd2     0x1200 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x00008fd2      0x147 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x00009119      0x1b5 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x000092ce      0x2ce CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000959c      0x425 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x000099c1      0x317 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x00009cd8      0x69b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000a373       0x97 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x0000a40a      0x3db CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000a7e5      0x31b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000ab00      0x1c7 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000acc7       0xc1 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000ad88       0xd2 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000ae5a      0x1a1 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000affb      0xc57 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0000bc52      0x43a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_line    0x0000c08c      0x89a CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_line    0x0000c926      0x2ce CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_line    0x0000cbf4      0xc80 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_line    0x0000d874      0x786 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x0000dffa     0x2245 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_line    0x0001023f      0x57c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_line    0x000107bb      0xf04 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_line    0x000116bf      0x406 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x00011ac5     0x146d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_line    0x00012f32      0x368 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x0001329a      0x6eb CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
-.debug_str      0x00000000     0x641d
- .debug_str     0x00000000      0x3c1 CMakeFiles/blinky.dir/src/main.c.obj
-                                0x436 (size before relaxing)
- .debug_str     0x000003c1      0x4e1 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                                0x88b (size before relaxing)
- .debug_str     0x000008a2      0x1d4 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                                0x386 (size before relaxing)
- .debug_str     0x00000a76       0x81 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                                0x242 (size before relaxing)
- .debug_str     0x00000af7       0xec CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                                0x36d (size before relaxing)
- .debug_str     0x00000be3      0x791 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
-                                0xbb8 (size before relaxing)
- .debug_str     0x00001374      0x182 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                                0x6bb (size before relaxing)
- .debug_str     0x000014f6       0x3c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                                0x223 (size before relaxing)
- .debug_str     0x00001532      0x132 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                                0x535 (size before relaxing)
- .debug_str     0x00001664       0xd4 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                                0x2e3 (size before relaxing)
- .debug_str     0x00001738       0xec CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                                0x40c (size before relaxing)
- .debug_str     0x00001824      0x2ba CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                                0x60e (size before relaxing)
- .debug_str     0x00001ade      0x26c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                                0x688 (size before relaxing)
- .debug_str     0x00001d4a      0x2ea CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                                0x6eb (size before relaxing)
- .debug_str     0x00002034       0x8f CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                                0x2f4 (size before relaxing)
- .debug_str     0x000020c3      0x108 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                                0x326 (size before relaxing)
- .debug_str     0x000021cb       0x75 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                                0x245 (size before relaxing)
- .debug_str     0x00002240      0x26d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                                0x4a2 (size before relaxing)
- .debug_str     0x000024ad       0x55 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-                                 0x93 (size before relaxing)
- .debug_str     0x00002502       0xad CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                                0x265 (size before relaxing)
- .debug_str     0x000025af       0x41 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                                 0x8d (size before relaxing)
- .debug_str     0x000025f0       0x45 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                                 0x91 (size before relaxing)
- .debug_str     0x00002635       0x91 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                                0x29f (size before relaxing)
- .debug_str     0x000026c6       0x4b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                                 0x97 (size before relaxing)
- .debug_str     0x00002711       0x50 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                                 0x9c (size before relaxing)
- .debug_str     0x00002761       0x43 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                                 0x8f (size before relaxing)
- .debug_str     0x000027a4       0x8d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                                0x2d7 (size before relaxing)
- .debug_str     0x00002831       0x49 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+.debug_str      0x00000000     0x6421
+ .debug_str     0x00000000      0x3c5 CMakeFiles/blinky.dir/src/main.c.obj
+                                0x43a (size before relaxing)
+ .debug_str     0x000003c5      0x4e1 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                                0x88d (size before relaxing)
+ .debug_str     0x000008a6      0x1d4 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                                0x388 (size before relaxing)
+ .debug_str     0x00000a7a       0x81 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                                0x244 (size before relaxing)
+ .debug_str     0x00000afb       0xec CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                                0x36f (size before relaxing)
+ .debug_str     0x00000be7      0x791 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+                                0xbba (size before relaxing)
+ .debug_str     0x00001378      0x182 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                                0x6bd (size before relaxing)
+ .debug_str     0x000014fa       0x3c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                                0x225 (size before relaxing)
+ .debug_str     0x00001536      0x132 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                                0x537 (size before relaxing)
+ .debug_str     0x00001668       0xd4 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                                0x2e5 (size before relaxing)
+ .debug_str     0x0000173c       0xec CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                                0x40e (size before relaxing)
+ .debug_str     0x00001828      0x2ba CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                                0x610 (size before relaxing)
+ .debug_str     0x00001ae2      0x26c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                                0x68a (size before relaxing)
+ .debug_str     0x00001d4e      0x2ea CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                                0x6ed (size before relaxing)
+ .debug_str     0x00002038       0x8f CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                                0x2f6 (size before relaxing)
+ .debug_str     0x000020c7      0x108 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                                0x328 (size before relaxing)
+ .debug_str     0x000021cf       0x75 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                                0x247 (size before relaxing)
+ .debug_str     0x00002244      0x26d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                                0x4a4 (size before relaxing)
+ .debug_str     0x000024b1       0x55 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
                                  0x95 (size before relaxing)
- .debug_str     0x0000287a       0x47 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x00002506       0xad CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                                0x267 (size before relaxing)
+ .debug_str     0x000025b3       0x41 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                                 0x8f (size before relaxing)
+ .debug_str     0x000025f4       0x45 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
                                  0x93 (size before relaxing)
- .debug_str     0x000028c1       0x44 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                                 0x90 (size before relaxing)
- .debug_str     0x00002905      0x244 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
-                                0x404 (size before relaxing)
- .debug_str     0x00002b49      0x2ce CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                                0x75e (size before relaxing)
- .debug_str     0x00002e17      0x65c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                                0x890 (size before relaxing)
- .debug_str     0x00003473      0x211 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                                0x87a (size before relaxing)
- .debug_str     0x00003684      0xaa8 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                                0xf71 (size before relaxing)
- .debug_str     0x0000412c      0x923 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                                0xe6b (size before relaxing)
- .debug_str     0x00004a4f      0x155 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                                0x859 (size before relaxing)
- .debug_str     0x00004ba4      0x960 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                               0x1842 (size before relaxing)
- .debug_str     0x00005504       0xeb CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                                0x64a (size before relaxing)
- .debug_str     0x000055ef      0x72d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                               0x179c (size before relaxing)
- .debug_str     0x00005d1c       0x81 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                                0x3e8 (size before relaxing)
- .debug_str     0x00005d9d      0x394 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                                0x7b7 (size before relaxing)
- .debug_str     0x00006131       0xc0 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                                0x295 (size before relaxing)
- .debug_str     0x000061f1      0x22c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                                0x4c8 (size before relaxing)
+ .debug_str     0x00002639       0x91 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                                0x2a1 (size before relaxing)
+ .debug_str     0x000026ca       0x4b CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                                 0x99 (size before relaxing)
+ .debug_str     0x00002715       0x50 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                                 0x9e (size before relaxing)
+ .debug_str     0x00002765       0x43 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                                 0x91 (size before relaxing)
+ .debug_str     0x000027a8       0x8d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                                0x2d9 (size before relaxing)
+ .debug_str     0x00002835       0x49 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                                 0x97 (size before relaxing)
+ .debug_str     0x0000287e       0x47 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                                 0x95 (size before relaxing)
+ .debug_str     0x000028c5       0x44 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                                 0x92 (size before relaxing)
+ .debug_str     0x00002909      0x244 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                                0x406 (size before relaxing)
+ .debug_str     0x00002b4d      0x2ce CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                                0x760 (size before relaxing)
+ .debug_str     0x00002e1b      0x65c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                                0x892 (size before relaxing)
+ .debug_str     0x00003477      0x211 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                                0x87c (size before relaxing)
+ .debug_str     0x00003688      0xaa8 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                                0xf73 (size before relaxing)
+ .debug_str     0x00004130      0x923 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                                0xe6d (size before relaxing)
+ .debug_str     0x00004a53      0x155 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                                0x85b (size before relaxing)
+ .debug_str     0x00004ba8      0x960 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                               0x1844 (size before relaxing)
+ .debug_str     0x00005508       0xeb CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                                0x64c (size before relaxing)
+ .debug_str     0x000055f3      0x72d CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                               0x179e (size before relaxing)
+ .debug_str     0x00005d20       0x81 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                                0x3ea (size before relaxing)
+ .debug_str     0x00005da1      0x394 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                                0x7b9 (size before relaxing)
+ .debug_str     0x00006135       0xc0 CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                                0x297 (size before relaxing)
+ .debug_str     0x000061f5      0x22c CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                                0x4ca (size before relaxing)
 
 .debug_frame    0x00000000     0x24d8
  .debug_frame   0x00000000       0x2c CMakeFiles/blinky.dir/src/main.c.obj

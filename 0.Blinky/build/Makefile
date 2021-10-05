@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky
+CMAKE_SOURCE_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build
+CMAKE_BINARY_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named FreeRTOS
+
+# Build rule for target.
+FreeRTOS: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS
+.PHONY : FreeRTOS
+
+# fast build rule for target.
+FreeRTOS/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\FreeRTOS.dir\build.make CMakeFiles/FreeRTOS.dir/build
+.PHONY : FreeRTOS/fast
+
+#=============================================================================
 # Target rules for targets named blinky
 
 # Build rule for target.
@@ -140,19 +153,6 @@ ELF2UF2Build: cmake_check_build_system
 ELF2UF2Build/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ELF2UF2Build.dir\build.make CMakeFiles/ELF2UF2Build.dir/build
 .PHONY : ELF2UF2Build/fast
-
-#=============================================================================
-# Target rules for targets named FreeRTOS
-
-# Build rule for target.
-FreeRTOS: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 FreeRTOS
-.PHONY : FreeRTOS
-
-# fast build rule for target.
-FreeRTOS/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\FreeRTOS.dir\build.make CMakeFiles/FreeRTOS.dir/build
-.PHONY : FreeRTOS/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default

@@ -195,7 +195,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build"
+			"value" : "d:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -743,7 +743,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky"
+			"value" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1467,7 +1467,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
@@ -1695,7 +1695,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build"
+			"value" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build"
 		},
 		{
 			"name" : "blinky_IS_TOP_LEVEL",
@@ -1719,7 +1719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky"
+			"value" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky"
 		},
 		{
 			"name" : "pico_sdk_BINARY_DIR",
@@ -1731,7 +1731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/pico-sdk"
+			"value" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/pico-sdk"
 		},
 		{
 			"name" : "pico_sdk_IS_TOP_LEVEL",

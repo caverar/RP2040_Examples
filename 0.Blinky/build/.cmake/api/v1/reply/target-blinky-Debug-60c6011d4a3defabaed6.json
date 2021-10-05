@@ -17,7 +17,8 @@
 			"pico_add_uf2_output",
 			"pico_add_extra_outputs",
 			"pico_define_boot_stage2",
-			"target_compile_definitions"
+			"target_compile_definitions",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -35,19 +36,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 17,
+				"line" : 39,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 43,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 22,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -92,6 +93,12 @@
 				"file" : 3,
 				"line" : 28,
 				"parent" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
 			}
 		]
 	},
@@ -293,6 +300,10 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 12,
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/include"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_stdlib/include"
 				},
@@ -306,7 +317,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/generated/pico_base"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -466,15 +477,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/FreeRTOS-Kernel/include"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/FreeRTOS-Kernel/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
 				}
 			],
 			"language" : "C",
@@ -738,6 +745,10 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 12,
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/include"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_stdlib/include"
 				},
@@ -751,7 +762,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/generated/pico_base"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -911,15 +922,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/FreeRTOS-Kernel/include"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/FreeRTOS-Kernel/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
 				}
 			],
 			"language" : "ASM",
@@ -1150,6 +1157,10 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 12,
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/include"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_stdlib/include"
 				},
@@ -1163,7 +1174,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/generated/pico_base"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -1323,15 +1334,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/FreeRTOS-Kernel/include"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/FreeRTOS-Kernel/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
 				}
 			],
 			"language" : "CXX",
@@ -1352,12 +1359,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 7,
-			"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "FreeRTOS::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 10,

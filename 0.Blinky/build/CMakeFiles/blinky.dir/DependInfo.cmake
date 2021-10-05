@@ -8,17 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
-  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+  "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S" "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -71,6 +71,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "../include"
   "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_stdlib/include"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include"
@@ -115,7 +116,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/include"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/include"
   "../FreeRTOS-Kernel/include"
-  "../include"
   "../FreeRTOS-Kernel/portable/GCC/ARM_CM0"
   )
 
@@ -175,13 +175,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj" "gcc" "CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj" "gcc" "CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
-  "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/src/main.c" "CMakeFiles/blinky.dir/src/main.c.obj" "gcc" "CMakeFiles/blinky.dir/src/main.c.obj.d"
+  "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/src/main.c" "CMakeFiles/blinky.dir/src/main.c.obj" "gcc" "CMakeFiles/blinky.dir/src/main.c.obj.d"
   "C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp" "CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj" "gcc" "CMakeFiles/blinky.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/blinky/build/CMakeFiles/FreeRTOS.dir/DependInfo.cmake"
+  "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/0.Blinky/build/CMakeFiles/FreeRTOS.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

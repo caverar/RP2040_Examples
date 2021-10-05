@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky
+CMAKE_SOURCE_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build
+CMAKE_BINARY_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/FreeRTOS.dir/depend.make
@@ -71,128 +71,128 @@ include CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.obj: CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.obj: ../FreeRTOS-Kernel/croutine.c
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.obj: CMakeFiles/FreeRTOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\croutine.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\croutine.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\croutine.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\croutine.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\croutine.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\croutine.c
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\croutine.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\croutine.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\croutine.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\croutine.c.i
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/croutine.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\croutine.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\croutine.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\croutine.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\croutine.c.s
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.obj: CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.obj: ../FreeRTOS-Kernel/event_groups.c
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.obj: CMakeFiles/FreeRTOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\event_groups.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\event_groups.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\event_groups.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\event_groups.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\event_groups.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\event_groups.c
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\event_groups.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\event_groups.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\event_groups.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\event_groups.c.i
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/event_groups.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\event_groups.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\event_groups.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\event_groups.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\event_groups.c.s
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.obj: CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.obj: ../FreeRTOS-Kernel/list.c
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.obj: CMakeFiles/FreeRTOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\list.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\list.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\list.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\list.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\list.c
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\list.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\list.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\list.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\list.c.i
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/list.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\list.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\list.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\list.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\list.c.s
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.obj: CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.obj: ../FreeRTOS-Kernel/queue.c
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.obj: CMakeFiles/FreeRTOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\queue.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\queue.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\queue.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\queue.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\queue.c
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\queue.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\queue.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\queue.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\queue.c.i
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/queue.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\queue.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\queue.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\queue.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\queue.c.s
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.obj: CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.obj: ../FreeRTOS-Kernel/stream_buffer.c
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.obj: CMakeFiles/FreeRTOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\stream_buffer.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\stream_buffer.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\stream_buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\stream_buffer.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\stream_buffer.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\stream_buffer.c
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\stream_buffer.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\stream_buffer.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\stream_buffer.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\stream_buffer.c.i
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/stream_buffer.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\stream_buffer.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\stream_buffer.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\stream_buffer.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\stream_buffer.c.s
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.obj: CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.obj: ../FreeRTOS-Kernel/tasks.c
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.obj: CMakeFiles/FreeRTOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\tasks.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\tasks.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\tasks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\tasks.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\tasks.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\tasks.c
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\tasks.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\tasks.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\tasks.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\tasks.c.i
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/tasks.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\tasks.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\tasks.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\tasks.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\tasks.c.s
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.obj: CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.obj: ../FreeRTOS-Kernel/timers.c
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.obj: CMakeFiles/FreeRTOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\timers.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\timers.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\timers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\timers.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\timers.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\timers.c
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\timers.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\timers.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\timers.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\timers.c.i
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/timers.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\timers.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\timers.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\timers.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\timers.c.s
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.obj: CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.obj: ../FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.obj: CMakeFiles/FreeRTOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c.i
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\GCC\ARM_CM0\port.c.s
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj: CMakeFiles/FreeRTOS.dir/flags.make
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj: ../FreeRTOS-Kernel/portable/MemMang/heap_4.c
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj: CMakeFiles/FreeRTOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\MemMang\heap_4.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\MemMang\heap_4.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\portable\MemMang\heap_4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj"
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj -MF CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\MemMang\heap_4.c.obj.d -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\MemMang\heap_4.c.obj -c D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\portable\MemMang\heap_4.c
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.i"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\portable\MemMang\heap_4.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\MemMang\heap_4.c.i
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\portable\MemMang\heap_4.c > CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\MemMang\heap_4.c.i
 
 CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.s"
-	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\FreeRTOS-Kernel\portable\MemMang\heap_4.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\MemMang\heap_4.c.s
+	C:\VSARM\armcc\102021~1.07\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\FreeRTOS-Kernel\portable\MemMang\heap_4.c -o CMakeFiles\FreeRTOS.dir\FreeRTOS-Kernel\portable\MemMang\heap_4.c.s
 
 # Object files for target FreeRTOS
 FreeRTOS_OBJECTS = \
@@ -220,7 +220,7 @@ libFreeRTOS.a: CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/GCC/ARM_CM0/port
 libFreeRTOS.a: CMakeFiles/FreeRTOS.dir/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj
 libFreeRTOS.a: CMakeFiles/FreeRTOS.dir/build.make
 libFreeRTOS.a: CMakeFiles/FreeRTOS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libFreeRTOS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libFreeRTOS.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\FreeRTOS.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\FreeRTOS.dir\link.txt --verbose=$(VERBOSE)
 
@@ -233,6 +233,6 @@ CMakeFiles/FreeRTOS.dir/clean:
 .PHONY : CMakeFiles/FreeRTOS.dir/clean
 
 CMakeFiles/FreeRTOS.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles\FreeRTOS.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles\FreeRTOS.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/FreeRTOS.dir/depend
 

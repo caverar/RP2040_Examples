@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky
+CMAKE_SOURCE_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build
+CMAKE_BINARY_DIR = D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,14 +86,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\pico-sdk\src\common\pico_util\\CMakeFiles\progress.marks
-	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/common/pico_util/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build\CMakeFiles 0
+	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\pico-sdk\src\common\pico_util\\CMakeFiles\progress.marks
+	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/common/pico_util/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/common/pico_util/clean
+	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/common/pico_util/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,17 +102,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/common/pico_util/preinstall
+	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/common/pico_util/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/common/pico_util/preinstall
+	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pico-sdk/src/common/pico_util/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -134,6 +134,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\blinky\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\0.Blinky\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
