@@ -37,6 +37,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/VSARM/sdk/pico/pico-sdk/cmake/preload/toolchains/find_compiler.cmake"
   "C:/VSARM/sdk/pico/pico-sdk/cmake/preload/toolchains/pico_arm_gcc.cmake"
   "C:/VSARM/sdk/pico/pico-sdk/docs/CMakeLists.txt"
+  "C:/VSARM/sdk/pico/pico-sdk/external/pico_sdk_import.cmake"
   "C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/hw/bsp/family_common.cmake"
   "C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/boards/pico_sdk/board.cmake"
   "C:/VSARM/sdk/pico/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.cmake"
@@ -123,7 +124,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.21.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.21.3/CMakeSystem.cmake"
   "elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt.in"
-  "../pico_sdk_import.cmake"
   )
 
 # The corresponding makefile is:

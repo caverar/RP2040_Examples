@@ -2,8 +2,8 @@
 cmake_minimum_required(VERSION 3.19)
 
 # Include build functions from Pico SDK
-#include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
-include(pico_sdk_import.cmake)
+include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
+#include(pico_sdk_import.cmake)
 
 # Include FreeRTOS
 

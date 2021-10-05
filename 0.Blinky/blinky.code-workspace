@@ -9,7 +9,10 @@
 			"stdlib.h": "c",
 			"stdio.h": "c",
 			"task.h": "c",
-			"freertos.h": "c"
+			"freertos.h": "c",
+			"freertosconfig.h": "c",
+			"portable.h": "c",
+			"portmacro.h": "c"
 		}
 	}
 }
