@@ -1,0 +1,23 @@
+CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj: \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\src\uart_safe.c \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\include/uart_safe.h \
+ c:\vsarm\armcc\102021~1.07\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\stdint.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\machine\_default_types.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\features.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\_newlib_version.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\_intsup.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\_stdint.h \
+ c:\vsarm\armcc\102021~1.07\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\math.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\reent.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\_ansi.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\newlib.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\config.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\machine\ieeefp.h \
+ c:\vsarm\armcc\102021~1.07\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\_types.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\machine\_types.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\lock.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\cdefs.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\_ansi.h
