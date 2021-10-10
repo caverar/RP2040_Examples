@@ -1,3 +1,4 @@
+/* Includes ------------------------------------------------------------------*/
 #include "bsp.h"
 
 // Standard C libraries
@@ -31,8 +32,8 @@ void bsp_uart_configure(){
     uart_set_fifo_enabled(UART_ID, true);
 
     // Actually, we want a different speed
-    // The call will return the actual baud rate selected, which will be as close as
-    // possible to that requested
+    // The call will return the actual baud rate selected, which will be as 
+    // close as possible to that requested
     uint32_t __unused actual = uart_set_baudrate(UART_ID, BAUD_RATE);
 
     // Set UART flow control CTS/RTS, we don't want these, so turn them off
@@ -100,7 +101,8 @@ void bsp_dma_configure(uint8_t channel, enum bsp_dma_transfer_size data_size,
 }
 
 void bsp_dma_update(uint8_t channel, uint16_t number_of_transfers, 
-                    volatile void *write_addr, const volatile void *read_addr){
+                    volatile void *write_addr, 
+                    const volatile void *read_addr){
 
     dma_channel_config config = dma_get_channel_config(channel);
     

@@ -35,7 +35,7 @@
 
 //#include "hardware/uart.h"
 //#include "hardware/gpio.h"
-#include <hardware/dma.h>
+#include "hardware/dma.h"
 
 // High level API
 #include "pico/stdlib.h"
@@ -47,13 +47,12 @@
 
 // Project libraries
 #include "bsp.h"
+#include "uart_safe.h"
 
 
 /* Private macros ------------------------------------------------------------*/
 
 /* Private variables ---------------------------------------------------------*/
-
-uint32_t testvar = 0;
 
 /* Private function prototypes -----------------------------------------------*/
 
@@ -70,29 +69,21 @@ uint32_t testvar = 0;
         /* SubSubcode Separator: Description ---------------------------------*/
         /*--------------------------------------------------------------------*/
 
-
-
     
 
-/* Protocol defines ----------------------------------------------------------*/
-/*----------------------------------------------------------------------------*/
 
-// arreglo para recepcion de datos, debe estar alineado si o si
-__attribute__((aligned(32))) char buffer[32];
 
+UartSafe objectTest;
 
 int main(){
 
+    
+    /* Initialize System -----------------------------------------------------*/ 
 
-
-    // Initialize System  
     // set_sys_clock_khz()
 
-    // Initialize chosen serial port
-    // stdio_init_all();
     
-    
-    // Initialize LED pin
+    /* Initialize LED --------------------------------------------------------*/ 
 
     const uint32_t led_pin = 25;
     gpio_init(led_pin);
@@ -100,63 +91,72 @@ int main(){
     gpio_set_outover(led_pin, GPIO_OVERRIDE_INVERT);
 
 
-    // Rellenar el arreglo con "T"
-    memset(buffer, ' ', sizeof(buffer));
-    // for(uint8_t i = 0; i<32;i++){
-    //     buffer2[i] = 30 + i;
-    // }
+    /* Application code ------------------------------------------------------*/ 
 
-    const uint32_t read_channel = 1;
-    const uint32_t write_channel = 0;
+    // UartSafe Object for robust comunication
+    UartSafe_constructor(&objectTest);
+    UartSafe_init_uart(&objectTest);
 
-    // UART
-    bsp_uart_configure();
-    bsp_dma_configure(read_channel, BSP_DMA_SIZE_8, 32, buffer, &uart0_hw->dr, 
-                      DREQ_UART0_RX, BSP_DMA_PERIPHERAL_TO_MEM);
-    bsp_dma_configure(write_channel, BSP_DMA_SIZE_8, 32, &uart0_hw->dr, buffer, 
-                      DREQ_UART0_TX, BSP_DMA_MEM_TO_PERIPHERAL);
+    // This signals tell how many transfers had to be done by the DMA 
+    uint8_t UartSafe_tx_semaphore = 0;
+    uint8_t UartSafe_rx_semaphore = 0;
 
-
-
-
+    UartSafe_rx_semaphore = 1;
 
     bool state = true; // lectura
-    bsp_dma_enable(read_channel);
+    UartSafe_enable_RX(&objectTest);
+
+    
+
+    for(;;){
+        if(UartSafe_tx_semaphore > 0 && !dma_channel_is_busy(WRITE_CHANNEL)){
 
 
-    for (;;) {
+            UartSafe_reconfigure_TX(&objectTest); 
+        }
+        if(UartSafe_rx_semaphore > 0 && !dma_channel_is_busy(READ_CHANNEL)){
 
-        //sleep_ms(1000);
-
-
-
-        
-        if(state){      // lectura
-            if(!dma_channel_is_busy(read_channel)){
-                bsp_dma_update(write_channel, 32, &uart0_hw->dr, buffer);
-                state = false;                 
-            }
-        }else{          // escritura
-            if(!dma_channel_is_busy(write_channel)){
-                bsp_dma_update(read_channel, 32, buffer, &uart0_hw->dr);
-                state = true; 
-            }
-        }        
+            
+            UartSafe_reConfigure_RX(&objectTest);
+        }
     }
 
 
-    // Loop forever
-    while(true){
+    // for (;;){
+
+
+        
+    //     if(state){      // lectura
+    //         if(!dma_channel_is_busy(READ_CHANNEL)){
+                                
+
+    //             for(int i = 0; i<8; i++){
+    //                 ((uint32_t*)(&(objectTest.data->current_tx_package->sample)))[i] = ((uint32_t*)(&(objectTest.data->rx_package.sample)))[i]; 
+    //             }
+
+    //             state = false; 
+    //             objectTest.UartSafe_reconfigure_TX(&objectTest);                
+    //         }
+    //     }else{          // escritura
+    //         if(!dma_channel_is_busy(WRITE_CHANNEL)){
+
+    //             objectTest.UartSafe_reConfigure_RX(&objectTest);
+    //             state = true; 
+    //         }
+    //     }        
+    // }
+
+
+    for (;;){
 
         // Blink LED
-        //printf("Blinking!\r\n");
         gpio_put(led_pin, true);
         sleep_ms(1000);
         gpio_put(led_pin, false);
         sleep_ms(1000);
     }
 
-    while(true){
+    for (;;){
         tight_loop_contents();
     }
 }

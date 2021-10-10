@@ -22,7 +22,10 @@
 			"dma.h": "c",
 			"pico.h": "c",
 			"padsbank0.h": "c",
-			"sio.h": "c"
+			"sio.h": "c",
+			"uart_safe.h": "c",
+			"math.h": "c",
+			"string.h": "c"
 		},
 		// These settings tweaks to the cmake plugin will ensure
 		// that you debug using cortex-debug instead of trying to launch

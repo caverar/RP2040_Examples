@@ -72,4 +72,6 @@ CMakeFiles/BareMetal_UART.dir/src/main.c.obj: \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_uart\include/hardware/uart.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/uart.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/uart.h \
- D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\include/bsp.h
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\include/bsp.h \
+ D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\include/uart_safe.h
