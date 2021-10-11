@@ -25,7 +25,9 @@
 			"sio.h": "c",
 			"uart_safe.h": "c",
 			"math.h": "c",
-			"string.h": "c"
+			"string.h": "c",
+			"setjmp.h": "c",
+			"address_mapped.h": "c"
 		},
 		// These settings tweaks to the cmake plugin will ensure
 		// that you debug using cortex-debug instead of trying to launch

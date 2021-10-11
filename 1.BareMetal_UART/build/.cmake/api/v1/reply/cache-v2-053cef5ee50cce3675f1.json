@@ -216,6 +216,10 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "No help, variable specified on the command line."
+				},
+				{
+					"name" : "STRINGS",
+					"value" : "Debug;Release;MinSizeRel;RelWithDebInfo"
 				}
 			],
 			"type" : "STRING",
@@ -1503,7 +1507,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",

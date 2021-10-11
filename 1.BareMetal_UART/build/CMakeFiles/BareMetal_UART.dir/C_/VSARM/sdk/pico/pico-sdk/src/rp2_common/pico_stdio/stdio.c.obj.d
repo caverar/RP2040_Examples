@@ -62,8 +62,4 @@ CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_std
  C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/sio.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_printf\include/pico/printf.h \
  C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio\include/pico/stdio.h \
- C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio\include/pico/stdio/driver.h \
- C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
- C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\hardware_uart\include/hardware/uart.h \
- C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/uart.h \
- C:\VSARM\sdk\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/uart.h
+ C:\VSARM\sdk\pico\pico-sdk\src\rp2_common\pico_stdio\include/pico/stdio/driver.h

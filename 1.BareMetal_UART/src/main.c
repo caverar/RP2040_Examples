@@ -85,10 +85,10 @@ int main(){
     
     /* Initialize LED --------------------------------------------------------*/ 
 
-    const uint32_t led_pin = 25;
-    gpio_init(led_pin);
-    gpio_set_dir(led_pin, GPIO_OUT);
-    gpio_set_outover(led_pin, GPIO_OVERRIDE_INVERT);
+    //const uint32_t led_pin = 25;
+    //gpio_init(led_pin);
+    //gpio_set_dir(led_pin, GPIO_OUT);
+    //gpio_set_outover(led_pin, GPIO_OVERRIDE_INVERT);
 
 
     /* Application code ------------------------------------------------------*/ 
@@ -102,64 +102,56 @@ int main(){
     uint8_t UartSafe_rx_semaphore = 0;
 
     UartSafe_rx_semaphore = 1;
+    UartSafe_tx_semaphore = 1;
 
     bool state = true; // lectura
-    UartSafe_enable_RX(&objectTest);
 
-    
-
-    for(;;){
-        if(UartSafe_tx_semaphore > 0 && !dma_channel_is_busy(WRITE_CHANNEL)){
-
-
-            UartSafe_reconfigure_TX(&objectTest); 
+    char array[32]="Esta es una prueba de funcionami";
+    for (uint8_t i = 0; i < 5; i++){
+        for (size_t j = 0; j < 32; j++){
+            ((uint8_t*)(uint32_t*)(&objectTest.tx_packages_array[i]))[j] =
+                array[j];
         }
-        if(UartSafe_rx_semaphore > 0 && !dma_channel_is_busy(READ_CHANNEL)){
-
-            
-            UartSafe_reConfigure_RX(&objectTest);
-        }
+        
     }
 
+    objectTest.tx_handler_send_data = true;
+    for(;;){
+        UartSafe_tx_handler(&objectTest);
+        if(objectTest.tx_handler_state==(tx_handler_state)IDLE){
+            //sleep_us(5000);
+            objectTest.tx_handler_send_data = true;
+        }
+    }
+    
+    // for(;;){
+    //     if(UartSafe_tx_semaphore > 0 && 
+    //         !bsp_dma_channel_is_busy(DMA_UART_TX_WRITE_CHANNEL) &&
+    //         !bsp_uart_tx_is_busy()){
 
-    // for (;;){
 
+    //         UartSafe_start_TX(&objectTest, 32); 
+    //     }
+    //     if(UartSafe_rx_semaphore > 0 && 
+    //         !bsp_dma_channel_is_busy(DMA_UART_RX_READ_CHANNEL)){
 
-        
-    //     if(state){      // lectura
-    //         if(!dma_channel_is_busy(READ_CHANNEL)){
-                                
-
-    //             for(int i = 0; i<8; i++){
-    //                 ((uint32_t*)(&(objectTest.data->current_tx_package->sample)))[i] = ((uint32_t*)(&(objectTest.data->rx_package.sample)))[i]; 
-    //             }
-
-    //             state = false; 
-    //             objectTest.UartSafe_reconfigure_TX(&objectTest);                
-    //         }
-    //     }else{          // escritura
-    //         if(!dma_channel_is_busy(WRITE_CHANNEL)){
-
-    //             objectTest.UartSafe_reConfigure_RX(&objectTest);
-    //             state = true; 
-    //         }
-    //     }        
+            
+    //         UartSafe_start_RX(&objectTest, 32);
+    //         //UartSafe_tx_handler(&objectTest);
+    //     }
     // }
 
 
-    for (;;){
 
-        // Blink LED
-        gpio_put(led_pin, true);
-        sleep_ms(1000);
-        gpio_put(led_pin, false);
-        sleep_ms(1000);
-    }
+
+    // for (;;){
+    //     gpio_put(led_pin, true);
+    //     sleep_ms(1000);
+    // }
 
     for (;;){
         tight_loop_contents();
     }
 }
-
 
 /************************ Camilo Vera **************************END OF FILE****/

@@ -1073,30 +1073,6 @@ C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BareMetal_UART.dir\build.make CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
-C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
-
-# target to build an object file
-C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BareMetal_UART.dir\build.make CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-
-C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
-
-# target to preprocess a source file
-C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BareMetal_UART.dir\build.make CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-
-C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
-
-# target to generate assembly for a file
-C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BareMetal_UART.dir\build.make CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-.PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
 C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 
@@ -1533,9 +1509,6 @@ help:
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s
-	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj
-	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i
-	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i
 	@echo ... C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s

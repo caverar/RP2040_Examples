@@ -79,8 +79,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d"
   "CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
   "CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d"
-  "CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
-  "CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d"
   "CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
   "CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d"
   "CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj"

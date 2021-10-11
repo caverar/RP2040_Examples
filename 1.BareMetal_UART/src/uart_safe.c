@@ -13,8 +13,6 @@
 // High level API
 #include "pico/stdlib.h"
 
-
-
 // Hardware API libraries
 #include "hardware/dma.h"
 
@@ -23,12 +21,6 @@
 
 
 void UartSafe_constructor(UartSafe* const self){
-
-
-
-
-    
-   
 
     for(uint8_t i = 0; i < LINKED_LIST_SIZE; i++){
         if(i < LINKED_LIST_SIZE - 1){
@@ -42,55 +34,85 @@ void UartSafe_constructor(UartSafe* const self){
             self->current_sample_tx_package = &(self->tx_packages_array[0]);
 
         }
-        // Initialize the structure with zero
+        // Initialize the tx_packages_array with zero.
         for(uint8_t j = 0; j < 8; j++){
             ((uint32_t*)(&(self->tx_packages_array[i].sample)))[j] = 0;
         } 
     }
 
-    // Initialize the structure with zero
+    // Initialize the rx_package with zero.
     for(uint8_t j = 0; j < 8; j++){
         ((uint32_t*)(&(self->rx_package.sample)))[j] = 0;
-
     } 
 
-    //stdio_uart_init(); 
+
+    self->tx_handler_state = IDLE;
+    bool tx_handler_send_data = false;
+
+
 }
 
 void UartSafe_init_uart(UartSafe* const self){
 
     bsp_uart_configure();
-
-    
-
-    bsp_dma_configure(READ_CHANNEL, BSP_DMA_SIZE_8, 
-                      32, &(self->rx_package), &uart0_hw->dr, 
-                      DREQ_UART0_RX, BSP_DMA_PERIPHERAL_TO_MEM);
-
-    bsp_dma_configure(WRITE_CHANNEL, BSP_DMA_SIZE_8, 
-                      32, &uart0_hw->dr, self->pending_tx_package, 
-                      DREQ_UART0_TX, BSP_DMA_MEM_TO_PERIPHERAL);
-}
-
-
-void UartSafe_enable_TX(UartSafe* const self){
-    bsp_dma_enable(WRITE_CHANNEL);
-}
-
-void UartSafe_enable_RX(UartSafe* const self){
-    bsp_dma_enable(READ_CHANNEL);    
-}
-
-void UartSafe_reconfigure_TX(UartSafe* const self){
-    bsp_dma_update(WRITE_CHANNEL, 32, &uart0_hw->dr, self->pending_tx_package);
-}
-
-void UartSafe_reConfigure_RX(UartSafe* const self){
-    bsp_dma_update(READ_CHANNEL, 32, &(self->rx_package), &uart0_hw->dr);
+    bsp_dma_configure_uart_tx();
+    bsp_dma_configure_uart_rx();
 
 }
 
-bool UartSafe_retreive_data_rq(UartSafe* const self, uint16_t *sempahore ,
+
+
+void UartSafe_start_TX(UartSafe* const self, uint16_t number_of_transfers){
+    bsp_dma_start_uart_tx(self->pending_tx_package, number_of_transfers);
+}
+
+void UartSafe_start_RX(UartSafe* const self, uint16_t number_of_transfers){
+    bsp_dma_start_uart_rx(&(self->rx_package), number_of_transfers);
+}
+
+
+void UartSafe_package_scheduler(UartSafe* const self){
+    int x = 5;
+}
+
+char CRCdata[2] = {'r', '\n'};
+void UartSafe_tx_handler(UartSafe* const self){
+
+    switch (self->tx_handler_state){
+        case IDLE:
+            // In this state, the handler see if there is a request to send a
+            // package.
+            if(self->tx_handler_send_data){
+
+                self->tx_handler_send_data = false;
+                bsp_dma_start_uart_tx(self->pending_tx_package, 30);
+                self->tx_handler_state = WAITING_FOR_DMA;
+            }
+            break;
+        case WAITING_FOR_DMA:
+            // In this state, the handler waits for the DMA trasfer, to finish,
+            // and then, sends the CRC16 data. 
+            if(!bsp_uart_tx_is_busy() && !bsp_dma_is_busy_uart_tx()){
+                //CRCdata = {'r', '\n'};
+                bsp_uart_send_buffer(CRCdata, 2);
+                //bsp_dma_start_uart_tx(&CRCdata, 2);
+                self->tx_handler_state = WAITING_FOR_LAST_TRANFER;
+            }
+            break;
+        case WAITING_FOR_LAST_TRANFER:
+            if(!bsp_uart_tx_is_busy()){
+                self->tx_handler_state = IDLE;
+            }
+            break;
+        
+        default:
+            self->tx_handler_send_data = 0;
+            break;
+    }
+}
+
+
+bool UartSafe_retreive_data_rq(UartSafe* const self, uint16_t *sempahore,
                                uint16_t sample){
 
     // This function request a new tranfer from the slave, due to CRC error,
@@ -113,15 +135,16 @@ bool UartSafe_retreive_data_rq(UartSafe* const self, uint16_t *sempahore ,
 
     }
 
-    //for(uint8_t i = 0; i < LINKED_LIST_SIZE; i++){
+    /*     for(uint8_t i = 0; i < LINKED_LIST_SIZE; i++){
         
         
-        //if(sample == self->data->tx_packages_array[i].sample){
-        //    *sempahore +=  
-        //    return true;
-        //}
-    //}
-    return false;
-    
+        if(sample == self->data->tx_packages_array[i].sample){
+            *sempahore +=  
+            return true;
+        }
+    } */
 
+    return false;
 }
+
+/************************ Camilo Vera **************************END OF FILE****/

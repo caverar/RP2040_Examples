@@ -1309,7 +1309,7 @@ pico-sdk/tools/clean:
 CMakeFiles/FreeRTOS.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FreeRTOS.dir\build.make CMakeFiles/FreeRTOS.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FreeRTOS.dir\build.make CMakeFiles/FreeRTOS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=59,60,61,62,63,64,65,66,67,68 "Built target FreeRTOS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=58,59,60,61,62,63,64,65,66,67 "Built target FreeRTOS"
 .PHONY : CMakeFiles/FreeRTOS.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1337,12 +1337,12 @@ CMakeFiles/BareMetal_UART.dir/all: CMakeFiles/ELF2UF2Build.dir/all
 CMakeFiles/BareMetal_UART.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BareMetal_UART.dir\build.make CMakeFiles/BareMetal_UART.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BareMetal_UART.dir\build.make CMakeFiles/BareMetal_UART.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target BareMetal_UART"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49 "Built target BareMetal_UART"
 .PHONY : CMakeFiles/BareMetal_UART.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BareMetal_UART.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles 71
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/BareMetal_UART.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles 0
 .PHONY : CMakeFiles/BareMetal_UART.dir/rule
@@ -1363,7 +1363,7 @@ CMakeFiles/BareMetal_UART.dir/clean:
 CMakeFiles/ELF2UF2Build.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ELF2UF2Build.dir\build.make CMakeFiles/ELF2UF2Build.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ELF2UF2Build.dir\build.make CMakeFiles/ELF2UF2Build.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=51,52,53,54,55,56,57,58 "Built target ELF2UF2Build"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=50,51,52,53,54,55,56,57 "Built target ELF2UF2Build"
 .PHONY : CMakeFiles/ELF2UF2Build.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1389,7 +1389,7 @@ CMakeFiles/ELF2UF2Build.dir/clean:
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default.dir\build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=69,70 "Built target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=68,69 "Built target bs2_default"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1415,7 +1415,7 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/clean:
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_bin.dir\build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=71 "Built target bs2_default_bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=70 "Built target bs2_default_bin"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1441,7 +1441,7 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk\src\rp2_common\boot_stage2\CMakeFiles\bs2_default_padded_checksummed_asm.dir\build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=72,73 "Built target bs2_default_padded_checksummed_asm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\build\CMakeFiles --progress-num=71,72 "Built target bs2_default_padded_checksummed_asm"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 
 # Build rule for subdir invocation for target.
