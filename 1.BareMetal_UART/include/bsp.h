@@ -84,6 +84,9 @@ void bsp_dma_configure_uart_rx(void);
 bool bsp_dma_is_busy_uart_rx(void);
 bool bsp_dma_is_busy_uart_tx(void);
 
+void bsp_dma_disable_uart_rx(void);
+void bsp_dma_disable_uart_tx(void);
+
 void bsp_dma_start_uart_tx(const volatile void* source_address,
                            uint16_t number_of_transfers);
 void bsp_dma_start_uart_rx(volatile void* destiny_address,

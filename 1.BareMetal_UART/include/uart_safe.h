@@ -42,7 +42,9 @@ extern "C" {
 
 /* Defines -------------------------------------------------------------------*/
 
-#define LINKED_LIST_SIZE 6 
+#define LINKED_LIST_SIZE 6
+
+#define tx_sampling_period_ms 50
 
 
 struct package_struct;
@@ -54,7 +56,13 @@ typedef enum {
     WAITING_FOR_LAST_TRANFER
 }tx_handler_state;
 
-/* Object definitions and parameters ------------------------------------------*/
+typedef enum {
+    IDLE,
+    WAITING_FOR_DMA,
+    CRC_VERIFICATION
+}rx_handler_state;
+
+/* Object definitions and parameters -----------------------------------------*/
 
 __attribute__((aligned(32))) typedef struct package_struct{
     uint32_t sample;                        // 0 - 1 bytes
@@ -80,6 +88,7 @@ typedef struct UartSafe_data_struct{
     // UartSafe_tx_handler data:
     tx_handler_state tx_handler_state;      // state of the handler.
     bool tx_handler_send_data;              // signal to init data transfer.
+    rx_handler_state rx_handler_state;
 
 
 }UartSafe;

@@ -51,8 +51,9 @@ void bsp_uart_send_buffer(const char* const buffer, uint8_t size){
 }
 
 bool bsp_uart_tx_is_busy(void){
-    uint16_t flag = UART_INSTANCE->fr | UART_UARTFR_TXFE_BITS;
-    return !(bool)(flag>>UART_UARTFR_TXFE_LSB);
+    return !(bool)((UART_INSTANCE->fr & 
+                    UART_UARTFR_TXFE_BITS)>>UART_UARTFR_TXFE_LSB);
+
 
 }
 /* DMA: UART------------------------------------------------------------------*/
@@ -89,6 +90,16 @@ bool bsp_dma_is_busy_uart_rx(void){
 bool bsp_dma_is_busy_uart_tx(void){
     return dma_channel_is_busy(DMA_UART_TX_WRITE_CHANNEL);
 }
+void bsp_dma_disable_uart_rx(void){
+    dma_channel_config config = dma_get_channel_config(
+                                DMA_UART_RX_READ_CHANNEL);
+    channel_config_set_enable(&config,false);
+}
+void bsp_dma_disable_uart_tx(void){
+    dma_channel_config config = dma_get_channel_config(
+                                DMA_UART_TX_WRITE_CHANNEL);
+    channel_config_set_enable(&config,false);    
+}
 
 void dma_configure(uint8_t channel, enum dma_channel_transfer_size data_size,
                    uint8_t number_of_transfers, uint8_t data_request_signal, 
@@ -108,8 +119,8 @@ void dma_configure(uint8_t channel, enum dma_channel_transfer_size data_size,
         case DMA_PERIPHERAL_TO_MEM:
             channel_config_set_read_increment(&config, false);
             channel_config_set_write_increment(&config, true);
-            // channel_config_set_ring(&config, true, 
-            //                         (uint32_t)log2f(number_of_transfers));
+             channel_config_set_ring(&config, true, 
+                                     (uint32_t)log2f(number_of_transfers));
             break;
         case DMA_MEM_TO_MEM:
             channel_config_set_read_increment(&config, true);

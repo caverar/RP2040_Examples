@@ -71,11 +71,18 @@ void UartSafe_start_RX(UartSafe* const self, uint16_t number_of_transfers){
 }
 
 
+
+
 void UartSafe_package_scheduler(UartSafe* const self){
+
     int x = 5;
 }
 
 char CRCdata[2] = {'r', '\n'};
+
+
+
+
 void UartSafe_tx_handler(UartSafe* const self){
 
     switch (self->tx_handler_state){
@@ -92,8 +99,9 @@ void UartSafe_tx_handler(UartSafe* const self){
         case WAITING_FOR_DMA:
             // In this state, the handler waits for the DMA trasfer, to finish,
             // and then, sends the CRC16 data. 
-            if(!bsp_uart_tx_is_busy() && !bsp_dma_is_busy_uart_tx()){
+            if((!bsp_uart_tx_is_busy()) && (!bsp_dma_is_busy_uart_tx())){
                 //CRCdata = {'r', '\n'};
+                bsp_dma_disable_uart_tx();
                 bsp_uart_send_buffer(CRCdata, 2);
                 //bsp_dma_start_uart_tx(&CRCdata, 2);
                 self->tx_handler_state = WAITING_FOR_LAST_TRANFER;
@@ -107,7 +115,35 @@ void UartSafe_tx_handler(UartSafe* const self){
         
         default:
             self->tx_handler_send_data = 0;
+            self->tx_handler_state = IDLE;
             break;
+    }
+}
+
+void UartSafe_rx_handler(UartSafe* const self){
+
+    //change bsp_uart_rx_is_busy to the trasfer data on the dma channel
+    
+    switch (self->rx_handler_state){
+        case IDLE:
+            // In this state, the handler is waiting for a new transfer
+            if(bsp_uart_rx_is_busy()){
+                // there is a new trasfer detected
+                self->tx_handler_state = WAITING_FOR_DMA;
+            }
+            break;
+        case WAITING_FOR_DMA:
+            if(bsp_uart_rx_is_busy()){
+
+            }
+
+            break;
+        case CRC_VERIFICATION:
+            break;
+        default:
+            self->tx_handler_send_data = 0;
+            break;
+
     }
 }
 

@@ -27,7 +27,9 @@
 			"math.h": "c",
 			"string.h": "c",
 			"setjmp.h": "c",
-			"address_mapped.h": "c"
+			"address_mapped.h": "c",
+			"ccomplex": "cpp",
+			"complex": "cpp"
 		},
 		// These settings tweaks to the cmake plugin will ensure
 		// that you debug using cortex-debug instead of trying to launch
