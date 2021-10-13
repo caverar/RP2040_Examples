@@ -12,7 +12,8 @@
 		"commands" : 
 		[
 			"add_library",
-			"target_include_directories"
+			"target_include_directories",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -34,6 +35,12 @@
 				"file" : 0,
 				"line" : 17,
 				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
 			}
 		]
 	},
@@ -54,11 +61,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/1.BareMetal_UART/include"
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/1.BareMetal_UART/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
 				},
 				{
-					"backtrace" : 2,
-					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/1.BareMetal_UART/FreeRTOS-Kernel/portable/GCC/ARM_CM0"
+					"backtrace" : 3,
+					"path" : "D:/Documentos/MEGA/MIcros/RP2040/RP2040_Examples/1.BareMetal_UART/include"
 				}
 			],
 			"language" : "C",

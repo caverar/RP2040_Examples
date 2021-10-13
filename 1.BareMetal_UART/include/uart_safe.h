@@ -35,6 +35,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdarg.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -49,33 +50,55 @@ extern "C" {
 
 struct package_struct;
 
-
+//volatile uint8_t test_var;
 typedef enum {
-    IDLE,
+    TX_IDLE,
     WAITING_FOR_DMA,
     WAITING_FOR_LAST_TRANFER
 }tx_handler_state;
 
 typedef enum {
-    IDLE,
-    WAITING_FOR_DMA,
-    CRC_VERIFICATION
+    RX_IDLE,
+    CRC_VERIFICATION,
+    SAMPLE_REQUEST_VERIFICATION,
+    CONTROL_SIGNALS_DECODING
 }rx_handler_state;
 
 /* Object definitions and parameters -----------------------------------------*/
 
 __attribute__((aligned(32))) typedef struct package_struct{
-    uint32_t sample;                        // 0 - 1 bytes
+    uint32_t sample;                        // 0 - 3 bytes
     uint32_t sensor2;                       // 4 - 7 bytes
     uint32_t sensor3;                       // 8 -11 bytes
     uint32_t sensor4;                       // 12-15 bytes
     uint32_t sensor5;                       // 16-19 bytes
     uint32_t sensor6;                       // 20-23 bytes
-    uint16_t rq_sample;                     // 26-27 bytes
+    uint32_t rq_sample;                     // 24-27 bytes
     uint16_t control_signals;               // 28-29 bytes
     uint16_t CRC16;                         // 30-31 bytes
+    // 0x00: \Null
+
+    // At the end of the package, the library must send 0x00 as null character.
+    // The MCU uses timing to synchronize, so the user is must set baud rate,
+    // in such a way that there is time between sample to synchronize data, and
+    // attend request of corrupted data.
+
     struct package_struct* next_structure;  // address to the next structure
 }package;
+
+// Note: the host code must keep in mind the endianess of the MCU. In little 
+// endian, the host must swap bytes for each datatype. This aplies 
+//
+// control_signals_masks:
+// library signals:
+#define retreive_data_rq        (1 << 8)    // Host->MCU 15
+#define retreive_data_ack       (1 << 14)   // MCU->HOST
+#define retreive_data_state     (1 << 13)   // MCU->HOST, 0:data lose, 1: ok
+// user signals:
+
+
+// signals callbacks
+typedef void (*UartSafe_signal_callback)(void); 
 
 
 
@@ -86,11 +109,15 @@ typedef struct UartSafe_data_struct{
     package rx_package;
     
     // UartSafe_tx_handler data:
-    tx_handler_state tx_handler_state;      // state of the handler.
-    bool tx_handler_send_data;              // signal to init data transfer.
+    tx_handler_state tx_handler_state;          // State of the handler.
+    bool tx_handler_send_data;                  // Init data transfer.
+    
+    // UartSafe_rx_handler data:
     rx_handler_state rx_handler_state;
 
-
+    // Callbacks, control signals.
+    UartSafe_signal_callback function_callbacks[13];   
+    
 }UartSafe;
 
 void UartSafe_constructor(UartSafe* const self);
@@ -99,9 +126,9 @@ void UartSafe_init_uart(UartSafe* const self);
 void UartSafe_start_TX(UartSafe* const self, uint16_t number_of_transfers);
 void UartSafe_start_RX(UartSafe* const self, uint16_t number_of_transfers);
 
+void void_call_back(void);
 
-bool UartSafe_retreive_data_rq(UartSafe* const self, 
-                               uint16_t *sempahore ,uint16_t sample);
+
 
 
 
@@ -113,6 +140,30 @@ bool UartSafe_retreive_data_rq(UartSafe* const self,
  * @param self: Reference to the UartSafe object
  */
 void UartSafe_tx_handler(UartSafe* const self);
+
+/**
+ * @brief This function has to be called continuously by a task to receive over 
+ * UART. handles error detection, and callbacks triggering by the specified 
+ * control signal.
+ * 
+ * @param self: Reference to the UartSafe object
+ */
+void UartSafe_rx_handler(UartSafe* const self);
+
+/**
+ * @brief This function handle the request from the host to send old samples
+ * due to data corruption detected by CRC error. The function calculates if is
+ * posible to resend the data, changing the current_sample_tx_package pointer, 
+ * and triggering multiples transfers, to reach the curret sample.
+ * 
+ * If there is the case that is not posible to resend the data, a package with 
+ * the bit "retreive_data_state" equal to zero, in the "control signals" , is 
+ * going to be sent to the host, and then the current_sample_tx_package pointer 
+ * will reach the current sample.
+ * 
+ * @param self: Reference to the UartSafe object
+ */
+void UartSafe_retreive_data_rq(UartSafe* const self);
 
 
 void UartSafe_package_scheduler(UartSafe* const self);

@@ -74,6 +74,10 @@
 
 
 UartSafe objectTest;
+extern volatile uint8_t test_var;
+void callback_func(void){
+    test_var++;
+}
 
 int main(){
 
@@ -95,16 +99,17 @@ int main(){
 
     // UartSafe Object for robust comunication
     UartSafe_constructor(&objectTest);
-    UartSafe_init_uart(&objectTest);
+    objectTest.function_callbacks[0] = callback_func;
+    //UartSafe_init_uart(&objectTest);
 
     // This signals tell how many transfers had to be done by the DMA 
-    uint8_t UartSafe_tx_semaphore = 0;
-    uint8_t UartSafe_rx_semaphore = 0;
+    // uint8_t UartSafe_tx_semaphore = 0;
+    // uint8_t UartSafe_rx_semaphore = 0;
 
-    UartSafe_rx_semaphore = 1;
-    UartSafe_tx_semaphore = 1;
+    // UartSafe_rx_semaphore = 1;
+    // UartSafe_tx_semaphore = 1;
 
-    bool state = true; // lectura
+    //bool state = true; // lectura
 
     char array[32]="Esta es una prueba de funcionami";
     for (uint8_t i = 0; i < 5; i++){
@@ -115,40 +120,44 @@ int main(){
         
     }
 
+    //
+    UartSafe_init_uart(&objectTest);
+
     objectTest.tx_handler_send_data = true;
     for(;;){
         UartSafe_tx_handler(&objectTest);
-        if(objectTest.tx_handler_state==(tx_handler_state)IDLE){
-            //sleep_us(5000);
+        UartSafe_rx_handler(&objectTest);
+        if(objectTest.tx_handler_state==(tx_handler_state)TX_IDLE){
             objectTest.tx_handler_send_data = true;
+
         }
     }
     
-    // for(;;){
-    //     if(UartSafe_tx_semaphore > 0 && 
-    //         !bsp_dma_channel_is_busy(DMA_UART_TX_WRITE_CHANNEL) &&
-    //         !bsp_uart_tx_is_busy()){
+/*     for(;;){
+        if(UartSafe_tx_semaphore > 0 && 
+            !bsp_dma_channel_is_busy(DMA_UART_TX_WRITE_CHANNEL) &&
+            !bsp_uart_tx_is_busy()){
 
 
-    //         UartSafe_start_TX(&objectTest, 32); 
-    //     }
-    //     if(UartSafe_rx_semaphore > 0 && 
-    //         !bsp_dma_channel_is_busy(DMA_UART_RX_READ_CHANNEL)){
+            UartSafe_start_TX(&objectTest, 32); 
+        }
+        if(UartSafe_rx_semaphore > 0 && 
+            !bsp_dma_channel_is_busy(DMA_UART_RX_READ_CHANNEL)){
 
             
-    //         UartSafe_start_RX(&objectTest, 32);
-    //         //UartSafe_tx_handler(&objectTest);
-    //     }
-    // }
+            UartSafe_start_RX(&objectTest, 32);
+            //UartSafe_tx_handler(&objectTest);
+        }
+    } */
 
 
 
-
-    // for (;;){
-    //     gpio_put(led_pin, true);
-    //     sleep_ms(1000);
-    // }
-
+/* 
+    for (;;){
+        gpio_put(led_pin, true);
+        sleep_ms(1000);
+    }
+ */
     for (;;){
         tight_loop_contents();
     }

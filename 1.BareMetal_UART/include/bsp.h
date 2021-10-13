@@ -61,7 +61,7 @@ void bsp_uart_configure();
 void bsp_uart_send_buffer(const char* const buffer, uint8_t size);
 
 bool bsp_uart_tx_is_busy(void);
-
+//bool bsp_uart_rx_is_busy(void);
 
 /* DMA: UART------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
@@ -84,6 +84,8 @@ void bsp_dma_configure_uart_rx(void);
 bool bsp_dma_is_busy_uart_rx(void);
 bool bsp_dma_is_busy_uart_tx(void);
 
+bool bsp_dma_transfer_complete_uart_rx(void);
+
 void bsp_dma_disable_uart_rx(void);
 void bsp_dma_disable_uart_tx(void);
 
@@ -94,7 +96,7 @@ void bsp_dma_start_uart_rx(volatile void* destiny_address,
 
 void dma_configure(uint8_t channel, enum dma_channel_transfer_size data_size,
                    uint8_t number_of_transfers, uint8_t data_request_signal, 
-                   enum bsp_dma_data_direction data_direction);
+                   enum bsp_dma_data_direction data_direction, bool ring_mode);
 
 void dma_start(uint8_t channel, uint16_t number_of_transfers, 
                volatile void* write_addr, const volatile void* read_addr);

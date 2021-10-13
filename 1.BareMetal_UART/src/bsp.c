@@ -56,6 +56,11 @@ bool bsp_uart_tx_is_busy(void){
 
 
 }
+
+// bool bsp_uart_rx_is_busy(void){//
+//     return false;
+// }
+
 /* DMA: UART------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 
@@ -63,12 +68,12 @@ bool bsp_uart_tx_is_busy(void){
 
 void bsp_dma_configure_uart_tx(void){
     dma_configure(DMA_UART_TX_WRITE_CHANNEL, DMA_SIZE_8, 32,
-                  DREQ_UART0_TX, DMA_MEM_TO_PERIPHERAL);
+                  DREQ_UART0_TX, DMA_MEM_TO_PERIPHERAL, false);
 }
 
 void bsp_dma_configure_uart_rx(void){
     dma_configure(DMA_UART_RX_READ_CHANNEL, DMA_SIZE_8, 32,
-                  DREQ_UART0_RX, DMA_PERIPHERAL_TO_MEM);
+                  DREQ_UART0_RX, DMA_PERIPHERAL_TO_MEM, false);
 }
 
 
@@ -90,6 +95,15 @@ bool bsp_dma_is_busy_uart_rx(void){
 bool bsp_dma_is_busy_uart_tx(void){
     return dma_channel_is_busy(DMA_UART_TX_WRITE_CHANNEL);
 }
+
+
+bool bsp_dma_transfer_complete_uart_rx(void){
+    if(dma_channel_hw_addr(DMA_UART_RX_READ_CHANNEL)->transfer_count == 0){
+        return true;
+    }
+    return false;
+
+}
 void bsp_dma_disable_uart_rx(void){
     dma_channel_config config = dma_get_channel_config(
                                 DMA_UART_RX_READ_CHANNEL);
@@ -103,7 +117,7 @@ void bsp_dma_disable_uart_tx(void){
 
 void dma_configure(uint8_t channel, enum dma_channel_transfer_size data_size,
                    uint8_t number_of_transfers, uint8_t data_request_signal, 
-                   enum bsp_dma_data_direction data_direction){
+                   enum bsp_dma_data_direction data_direction, bool ring_mode){
 
     dma_channel_config config = dma_channel_get_default_config(channel);
     channel_config_set_transfer_data_size(&config, data_size);
@@ -113,14 +127,19 @@ void dma_configure(uint8_t channel, enum dma_channel_transfer_size data_size,
         case DMA_MEM_TO_PERIPHERAL:
             channel_config_set_read_increment(&config, true);
             channel_config_set_write_increment(&config, false);
-            // channel_config_set_ring(&config, false, 
-            //                         (uint32_t)log2f(number_of_transfers));
+            if(ring_mode){
+                channel_config_set_ring(&config, false, 
+                                        (uint32_t)log2f(number_of_transfers));
+            }
+
             break;
         case DMA_PERIPHERAL_TO_MEM:
             channel_config_set_read_increment(&config, false);
             channel_config_set_write_increment(&config, true);
-             channel_config_set_ring(&config, true, 
-                                     (uint32_t)log2f(number_of_transfers));
+            if(ring_mode){
+                channel_config_set_ring(&config, false, 
+                                        (uint32_t)log2f(number_of_transfers));
+            }
             break;
         case DMA_MEM_TO_MEM:
             channel_config_set_read_increment(&config, true);

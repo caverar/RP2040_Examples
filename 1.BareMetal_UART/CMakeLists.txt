@@ -16,7 +16,7 @@ add_library( FreeRTOS STATIC
 )
 target_include_directories( FreeRTOS PUBLIC
 	FreeRTOS-Kernel/include/
-	include/
+	#include/
 	FreeRTOS-Kernel/portable/GCC/ARM_CM0/
 )
 

@@ -1619,6 +1619,7 @@ CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj: ../src/uart_safe.c \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/sys/_intsup.h \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/sys/_stdint.h \
   C:/VSARM/armcc/10\ 2021.07/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  C:/VSARM/armcc/10\ 2021.07/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/stdlib.h \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/machine/ieeefp.h \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/_ansi.h \
@@ -1634,7 +1635,9 @@ CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj: ../src/uart_safe.c \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/machine/stdlib.h \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/alloca.h \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/math.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
+  ../include/bitwise.h \
+  ../include/bsp.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico.h \
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
@@ -1648,27 +1651,14 @@ CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj: ../src/uart_safe.c \
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
   C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/error.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/common/pico_time/include/pico/time.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
-  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
   C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
-  ../include/bsp.h
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+  C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
 
 
 C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/types.h:
@@ -1746,6 +1736,8 @@ C:/VSARM/sdk/pico/pico-sdk/src/common/pico_base/include/pico/config.h:
 C:/VSARM/armcc/10\ 2021.07/lib/gcc/arm-none-eabi/10.3.1/include-fixed/syslimits.h:
 
 C:/VSARM/sdk/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
+
+../include/bitwise.h:
 
 C:/VSARM/sdk/pico/pico-sdk/src/boards/include/boards/pico.h:
 
