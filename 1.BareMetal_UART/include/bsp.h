@@ -6,14 +6,12 @@
   *          This file contains the HAL to control all board peripherals. 
   *
   @verbatim
-
   ==============================================================================
                      ##### BOARD SUPPORT PACKAGE #####
   ==============================================================================
   UART:
-
   DMA:
-
+  
   @endverbatim
   ****************************************************************************** 
 */
@@ -54,7 +52,7 @@ void bsp_uart_configure();
 
 /**
  * @brief This function sends a buffer over UART by polling
- * 
+ *
  * @param buffer A pointer to the buffer
  * @param size the size of the buffer
  */
@@ -75,34 +73,55 @@ enum bsp_dma_data_direction{
     DMA_MEM_TO_MEM = 2
 };
 
-#define DMA_UART_RX_READ_CHANNEL 1
+
 #define DMA_UART_TX_WRITE_CHANNEL 0
+#define DMA_UART_RX_READ_CHANNEL 1
+#define DMA_UART_TX_WRITE_ORGANIZER_CHANNEL 2
+#define DMA_UART_RX_READ_ORGANIZER_CHANNEL 3
 
 void bsp_dma_configure_uart_tx(void);
+void bsp_dma_configure_uart_tx_organizer(void);
 void bsp_dma_configure_uart_rx(void);
+void bsp_dma_configure_uart_rx_organizer(void);
 
 bool bsp_dma_is_busy_uart_rx(void);
+bool bsp_dma_is_busy_uart_rx_organizer(void);
 bool bsp_dma_is_busy_uart_tx(void);
+bool bsp_dma_is_busy_uart_tx_organizer(void);
 
 bool bsp_dma_transfer_complete_uart_rx(void);
+bool bsp_dma_transfer_complete_uart_rx_organizer(void);
 
 void bsp_dma_disable_uart_rx(void);
+void bsp_dma_disable_uart_rx_organizer(void);
 void bsp_dma_disable_uart_tx(void);
+void bsp_dma_disable_uart_tx_organizer(void);
 
 void bsp_dma_start_uart_tx(const volatile void* source_address,
                            uint16_t number_of_transfers);
 void bsp_dma_start_uart_rx(volatile void* destiny_address,
                            uint16_t number_of_transfers);
 
+void bsp_dma_start_uart_rx_organizer(const volatile void* source_address,
+                                     volatile void* destiny_address,
+                                     uint16_t number_of_transfers);
+void bsp_dma_start_uart_tx_organizer(const volatile void* source_address,
+                                     volatile void* destiny_address,
+                                     uint16_t number_of_transfers);
+
+
 void dma_configure(uint8_t channel, enum dma_channel_transfer_size data_size,
                    uint8_t number_of_transfers, uint8_t data_request_signal, 
-                   enum bsp_dma_data_direction data_direction, bool ring_mode);
+                   enum bsp_dma_data_direction data_direction, bool ring_mode,
+                   bool byte_swaping, bool sniffer_enable);
 
 void dma_start(uint8_t channel, uint16_t number_of_transfers, 
                volatile void* write_addr, const volatile void* read_addr);
 
 //#define bsp_dma_channel_is_busy(channel) dma_channel_is_busy(channel)
 
+void dma_set_initial_dma_CRC16(uint32_t value);
+uint16_t dma_get_CRC16(void);
 
 #ifdef __cplusplus
 }

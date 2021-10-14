@@ -49,18 +49,21 @@ extern "C" {
 
 
 struct package_struct;
+struct UartSafe_data_struct;
 
 //volatile uint8_t test_var;
 typedef enum {
     TX_IDLE,
-    WAITING_FOR_DMA,
+    TX_DATA_ORGANIZATION,
+    CRC16_APPEND,
     WAITING_FOR_LAST_TRANFER
 }tx_handler_state;
 
 typedef enum {
     RX_IDLE,
+    RX_DATA_ORGANIZATION,
     CRC_VERIFICATION,
-    SAMPLE_REQUEST_VERIFICATION,
+    HOST_SAMPLE_REQUEST_VERIFICATION,
     CONTROL_SIGNALS_DECODING
 }rx_handler_state;
 
@@ -98,7 +101,7 @@ __attribute__((aligned(32))) typedef struct package_struct{
 
 
 // signals callbacks
-typedef void (*UartSafe_signal_callback)(void); 
+typedef void (*UartSafe_signal_callback)(struct UartSafe_data_struct*); 
 
 
 
@@ -106,18 +109,24 @@ typedef struct UartSafe_data_struct{
     package tx_packages_array[LINKED_LIST_SIZE];
     package* pending_tx_package;
     package* current_sample_tx_package;
-    package rx_package;
-    
+    package tx_raw_buffer;
+
+    package rx_package;                         // organized package
+    package rx_raw_buffer;                      // desorganized data
+
     // UartSafe_tx_handler data:
     tx_handler_state tx_handler_state;          // State of the handler.
     bool tx_handler_send_data;                  // Init data transfer.
-    
+
     // UartSafe_rx_handler data:
     rx_handler_state rx_handler_state;
 
     // Callbacks, control signals.
-    UartSafe_signal_callback function_callbacks[13];   
-    
+    UartSafe_signal_callback function_callbacks[13]; 
+
+    // uart tx semaphore
+    uint16_t tx_semaphore;
+
 }UartSafe;
 
 void UartSafe_constructor(UartSafe* const self);
@@ -126,17 +135,14 @@ void UartSafe_init_uart(UartSafe* const self);
 void UartSafe_start_TX(UartSafe* const self, uint16_t number_of_transfers);
 void UartSafe_start_RX(UartSafe* const self, uint16_t number_of_transfers);
 
-void void_call_back(void);
-
-
-
+void void_call_back(UartSafe* self);
 
 
 /**
  * @brief This function has to be called continuously by a task to send data
  * over UART, including initial DMA transfer, plus CRC16 manual transfer, with
  * the data either from the DMA sniffer, CRC peripheral or manual calculation.
- * 
+ *
  * @param self: Reference to the UartSafe object
  */
 void UartSafe_tx_handler(UartSafe* const self);
@@ -145,7 +151,7 @@ void UartSafe_tx_handler(UartSafe* const self);
  * @brief This function has to be called continuously by a task to receive over 
  * UART. handles error detection, and callbacks triggering by the specified 
  * control signal.
- * 
+ *
  * @param self: Reference to the UartSafe object
  */
 void UartSafe_rx_handler(UartSafe* const self);
@@ -155,12 +161,12 @@ void UartSafe_rx_handler(UartSafe* const self);
  * due to data corruption detected by CRC error. The function calculates if is
  * posible to resend the data, changing the current_sample_tx_package pointer, 
  * and triggering multiples transfers, to reach the curret sample.
- * 
+ *
  * If there is the case that is not posible to resend the data, a package with 
  * the bit "retreive_data_state" equal to zero, in the "control signals" , is 
  * going to be sent to the host, and then the current_sample_tx_package pointer 
  * will reach the current sample.
- * 
+ *
  * @param self: Reference to the UartSafe object
  */
 void UartSafe_retreive_data_rq(UartSafe* const self);
@@ -168,7 +174,7 @@ void UartSafe_retreive_data_rq(UartSafe* const self);
 
 void UartSafe_package_scheduler(UartSafe* const self);
 
-
+void UartSafe_new_sample(UartSafe* const self, package* sample);
 
 #ifdef __cplusplus
 }

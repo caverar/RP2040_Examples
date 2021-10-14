@@ -75,18 +75,18 @@
 
 UartSafe objectTest;
 extern volatile uint8_t test_var;
-void callback_func(void){
+void callback_func(UartSafe* self){
     test_var++;
 }
 
 int main(){
 
-    
+
     /* Initialize System -----------------------------------------------------*/ 
 
     // set_sys_clock_khz()
 
-    
+
     /* Initialize LED --------------------------------------------------------*/ 
 
     //const uint32_t led_pin = 25;
@@ -112,13 +112,30 @@ int main(){
     //bool state = true; // lectura
 
     char array[32]="Esta es una prueba de funcionami";
+    uint32_t charTw[8];
+    charTw[0] = ('E' << 24) + ('s' << 16)+ ('t' << 8)+ ('a' << 0);
+    charTw[1] = (' ' << 24) + ('e' << 16)+ ('s' << 8)+ (' ' << 0);
+    charTw[2] = ('u' << 24) + ('n' << 16)+ ('a' << 8)+ (' ' << 0);
+    charTw[3] = ('p' << 24) + ('r' << 16)+ ('u' << 8)+ ('e' << 0);
+    charTw[4] = ('b' << 24) + ('a' << 16)+ (' ' << 8)+ ('d' << 0);
+    charTw[5] = ('e' << 24) + (' ' << 16)+ ('f' << 8)+ ('u' << 0);
+    charTw[6] = ('n' << 24) + ('c' << 16)+ ('i' << 8)+ ('o' << 0);
+
+    uint16_t charTw1 = ('n' << 8) + ('a' << 0);
+    uint16_t charTw2 = ('m' << 8) + ('i' << 0);
+    
     for (uint8_t i = 0; i < 5; i++){
-        for (size_t j = 0; j < 32; j++){
-            ((uint8_t*)(uint32_t*)(&objectTest.tx_packages_array[i]))[j] =
-                array[j];
+        for (size_t j = 0; j < 8; j++){
+
+            ((uint32_t*)(&objectTest.tx_packages_array[i]))[j] = charTw[j];
         }
+        ((uint16_t*)(uint32_t*)(&objectTest.tx_packages_array[i]))[14] = 
+            charTw1;
+        ((uint16_t*)(uint32_t*)(&objectTest.tx_packages_array[i]))[15] = 
+            charTw2;
         
     }
+
 
     //
     UartSafe_init_uart(&objectTest);
