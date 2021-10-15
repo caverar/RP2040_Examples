@@ -67,6 +67,14 @@ typedef enum {
     CONTROL_SIGNALS_DECODING
 }rx_handler_state;
 
+typedef enum {
+    SCHEDULER_IDLE,
+    RETREIVE_DATA,
+    SCHEDULE_TX
+
+
+}package_scheduler_state;
+
 /* Object definitions and parameters -----------------------------------------*/
 
 __attribute__((aligned(32))) typedef struct package_struct{
@@ -94,9 +102,9 @@ __attribute__((aligned(32))) typedef struct package_struct{
 //
 // control_signals_masks:
 // library signals:
-#define retreive_data_rq        (1 << 8)    // Host->MCU 15
-#define retreive_data_ack       (1 << 14)   // MCU->HOST
-#define retreive_data_state     (1 << 13)   // MCU->HOST, 0:data lose, 1: ok
+#define retreive_data_rq_bit        (1 << 8)    // Host->MCU 15
+#define retreive_data_ack_bit       (1 << 14)   // MCU->HOST
+#define retreive_data_state_bit     (1 << 13)   // MCU->HOST, 0:data lose, 1: ok
 // user signals:
 
 
@@ -107,9 +115,12 @@ typedef void (*UartSafe_signal_callback)(struct UartSafe_data_struct*);
 
 typedef struct UartSafe_data_struct{
     package tx_packages_array[LINKED_LIST_SIZE];
-    package* pending_tx_package;
-    package* current_sample_tx_package;
     package tx_raw_buffer;
+
+    package* pending_tx_package;
+    uint32_t pending_tx_package_position;
+    package* current_sample_tx_package;
+
 
     package rx_package;                         // organized package
     package rx_raw_buffer;                      // desorganized data
@@ -124,8 +135,10 @@ typedef struct UartSafe_data_struct{
     // Callbacks, control signals.
     UartSafe_signal_callback function_callbacks[13]; 
 
-    // uart tx semaphore
+    // Tc Scheduler
     uint16_t tx_semaphore;
+    bool retreive_data_rq;
+    package_scheduler_state package_scheduler_state;
 
 }UartSafe;
 

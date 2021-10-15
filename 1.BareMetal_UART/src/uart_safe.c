@@ -59,6 +59,8 @@ void UartSafe_constructor(UartSafe* const self){
     bool tx_handler_send_data = false;
     self->rx_handler_state = RX_IDLE;
     self->tx_semaphore = 0;
+    self->pending_tx_package_position = 0;
+    self->retreive_data_rq = 0;
 }
 
 void void_call_back(UartSafe* self){
@@ -88,59 +90,102 @@ void UartSafe_start_RX(UartSafe* const self, uint16_t number_of_transfers){
 
 
 void UartSafe_new_sample(UartSafe* const self, package* sample){
-    *self->current_sample_tx_package = *sample;
+    // TODO: Take in account scheduler, maybe a request signal
     self->current_sample_tx_package = self->current_sample_tx_package->
-                                      next_structure;
+                                  next_structure;
+    *self->current_sample_tx_package = *sample;
+
     self->tx_semaphore++;
+    if(self->pending_tx_package_position<(LINKED_LIST_SIZE-1)){
+        self->pending_tx_package_position++;
+    }else{
+        self->pending_tx_package_position = 0;
+    }
+    
+}
+
+/**
+ * @brief Calculates the number of jumps in the linked list, betwen to packges,
+ * through its sample ID.
+ * 
+ * @param lead_pointer_ID ID of the leading pointer.
+ * @param behind_pointer_ID If of the pointer behind.
+ * @return uint32_t The numbers of jumps between the elements.
+ */
+static uint32_t jumps_between_pointers(uint32_t front_pointer_ID, 
+                                       uint32_t rear_pointer_ID){
+    if(front_pointer_ID < rear_pointer_ID){
+        return (1 + front_pointer_ID + (UINT32_MAX -rear_pointer_ID));
+    }else{
+        return rear_pointer_ID - front_pointer_ID;
+    }
 }
 
 void UartSafe_package_scheduler(UartSafe* const self){
 
-    // Sen encarga de evaluar los semaforos
+    // Se encarga de evaluar los semaforos
 
     // Debe tener un mecanismo para que pending_tx_package, no revase a 
-    // current_sample_tx_package.
+    // current_sample_tx_package, siempre debe estar al menos, un salto atras
 
 
+    switch(self->package_scheduler_state){
 
-    if(self->tx_semaphore > 0){
-        self->tx_handler_send_data = true;
+        case SCHEDULER_IDLE:
+            if(self->retreive_data_rq){
+                //TODO
+                self->tx_handler_state = RETREIVE_DATA;
+            }else if(self->tx_semaphore>0){
+                //TODO
+                self->tx_handler_state = SCHEDULE_TX;
+            }
+            break;
+        case RETREIVE_DATA:
+            uint32_t requested_sample_id = self->rx_package.sample;
+            uint32_t current_tx_sample_id = 
+                                    self->current_sample_tx_package->sample;
+            uint32_t pending_tx_sample_id = self->pending_tx_package->sample;
+
+
+            // jumps between pointers by ID:
+            uint32_t jumps_between_pending_to_current = 
+                jumps_between_pointers(current_tx_sample_id, 
+                                      pending_tx_sample_id);
+
+            uint32_t jumps_between_requested_to_current = 
+                jumps_between_pointers(requested_sample_id, 
+                                       pending_tx_sample_id);
+
+            if((jumps_between_requested_to_current > 
+               jumps_between_pending_to_current) &&
+               (jumps_between_requested_to_current < LINKED_LIST_SIZE)){
+                // TODO: Put sample
+            }else{
+                // TODO: Put error package
+            }
+
+            self->tx_handler_state = SCHEDULER_IDLE;
+            break; 
+
+        case SCHEDULE_TX:
+            //TODO
+            if(self->tx_semaphore > 0){
+                self->tx_handler_send_data = true;
+            }
+
+            self->tx_handler_state = SCHEDULER_IDLE;
+            break;
+
+        default:
+            self->tx_semaphore = 0;
+            self->tx_handler_state = SCHEDULER_IDLE;
+            break;
+
     }
-
 }
-void UartSafe_retreive_data_rq(UartSafe* const self){
 
 
-    // 1. Identificar el ID de la muestra solicitada
-    // 2. Obtener el ID de la muestra actual
-    // 3. Ejecutar aritmetica que tenga en cuenta el overload, para calcular la 
-    //    diferencia de muestras, entre ambos, y el ID teorico de la muestra
-    // 4. Si esta fuera de rango, asignar un paquete de muestra corrupta no 
-    //    recuperable al paquete anterior a current_sample_tx_package, asignar
-    //    current_sample_tx_package a dicho paquete, y aumentar en 1, el 
-    //    semaforo.
-    // 5. Si esta dentro del rango, ir directamente a la muestra requerida, 
-    //    retrasar current_sample_tx_package a dicha muestra, y aumentar el 
-    //    semaforo, en la cantidad requerida 
 
-    // uint8_t counter = LINKED_LIST_SIZE;
-    // bool flag = 1; 
-    // package* pointer = self->current_sample_tx_package;
-
-    // while(counter > 0 && flag){
-    //     if(pointer->sample == 0){
-    //         flag = false;
-    //         self->pending_tx_package = pointer;
-    //         //&sempahore += counter;
-    //         return true;
-    //     }else{
-    //         pointer = pointer->next_structure;
-    //         counter -= 1; 
-    //     }
-
-    // }
-
-}
 
 static uint8_t CRCdata[3] = {'r', '\n', '\0'};
 
@@ -181,8 +226,7 @@ void UartSafe_tx_handler(UartSafe* const self){
             // In this state, the handler waits for the DMA trasfer, to finish,
             // and then, sends the CRC16 data. 
             if(!bsp_uart_tx_is_busy() && !bsp_dma_is_busy_uart_tx()){
-                //CRCdata = {'r', '\n'};
-                //bsp_dma_disable_uart_tx();
+
                 uint8_t CRC = dma_get_CRC16();
                 CRCdata[0] = SECOND_BYTE(CRC);
                 CRCdata[1] = FIRST_BYTE(CRC);
@@ -239,7 +283,7 @@ void UartSafe_rx_handler(UartSafe* const self){
             break;
         case CRC_VERIFICATION:
 
-            // TODO:
+            // TODO: Implement verification of packages, and rq messages on MCU.
             // Verification is only applied to sensors data, from MCU to Host.
             self->rx_handler_state = HOST_SAMPLE_REQUEST_VERIFICATION;
             break;
@@ -249,9 +293,9 @@ void UartSafe_rx_handler(UartSafe* const self){
             // so new data has to be sended 
             
             if(MASK_DATA(self->rx_package.control_signals, 
-                         retreive_data_rq) != 0){
+                         retreive_data_rq_bit) != 0){
                 
-                UartSafe_retreive_data_rq(self);
+                self->retreive_data_rq = true;
                 bsp_dma_start_uart_rx(&self->rx_raw_buffer, 32);
                 self->rx_handler_state = RX_IDLE;
             }else{
