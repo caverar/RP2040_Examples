@@ -120,7 +120,9 @@ static uint32_t jumps_between_pointers(uint32_t front_pointer_ID,
         return rear_pointer_ID - front_pointer_ID;
     }
 }
-
+uint32_t requested_sample_id;
+uint32_t current_tx_sample_id;
+uint32_t pending_tx_sample_id;
 void UartSafe_package_scheduler(UartSafe* const self){
 
     // Se encarga de evaluar los semaforos
@@ -140,11 +142,11 @@ void UartSafe_package_scheduler(UartSafe* const self){
                 self->tx_handler_state = SCHEDULE_TX;
             }
             break;
+
         case RETREIVE_DATA:
-            uint32_t requested_sample_id = self->rx_package.sample;
-            uint32_t current_tx_sample_id = 
-                                    self->current_sample_tx_package->sample;
-            uint32_t pending_tx_sample_id = self->pending_tx_package->sample;
+            requested_sample_id = self->rx_package.sample;
+            current_tx_sample_id =self->current_sample_tx_package->sample;
+            pending_tx_sample_id = self->pending_tx_package->sample;
 
 
             // jumps between pointers by ID:

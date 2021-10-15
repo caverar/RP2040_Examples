@@ -58,7 +58,6 @@ typedef enum {
     CRC16_APPEND,
     WAITING_FOR_LAST_TRANFER
 }tx_handler_state;
-
 typedef enum {
     RX_IDLE,
     RX_DATA_ORGANIZATION,
