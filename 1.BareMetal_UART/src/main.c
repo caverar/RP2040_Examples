@@ -139,14 +139,22 @@ int main(){
 
     //
     UartSafe_init_uart(&objectTest);
+    uint64_t  current_time = 0;
+    uint64_t  last_time = get_absolute_time()._private_us_since_boot;
+;
 
     objectTest.tx_handler_send_data = true;
     for(;;){
-        UartSafe_tx_handler(&objectTest);
-        UartSafe_rx_handler(&objectTest);
-        if(objectTest.tx_handler_state==(tx_handler_state)TX_IDLE){
-            objectTest.tx_handler_send_data = true;
 
+        UartSafe_rx_handler(&objectTest);
+        UartSafe_package_scheduler(&objectTest);
+        UartSafe_tx_handler(&objectTest);
+
+        current_time = get_absolute_time()._private_us_since_boot;
+
+        if(last_time - current_time > 500*1000){        // Mensaje cada 500ms
+            objectTest.tx_handler_send_data = true;
+            last_time = get_absolute_time()._private_us_since_boot; 
         }
     }
     

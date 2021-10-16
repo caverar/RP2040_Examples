@@ -1196,12 +1196,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 2,
-			"id" : "FreeRTOS::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 7,
 			"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "FreeRTOS::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 10,

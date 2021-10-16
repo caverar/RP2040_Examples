@@ -1332,8 +1332,8 @@ CMakeFiles/FreeRTOS.dir/clean:
 # Target rules for target CMakeFiles/BareMetal_UART.dir
 
 # All Build rule for target.
-CMakeFiles/BareMetal_UART.dir/all: CMakeFiles/FreeRTOS.dir/all
 CMakeFiles/BareMetal_UART.dir/all: CMakeFiles/ELF2UF2Build.dir/all
+CMakeFiles/BareMetal_UART.dir/all: CMakeFiles/FreeRTOS.dir/all
 CMakeFiles/BareMetal_UART.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BareMetal_UART.dir\build.make CMakeFiles/BareMetal_UART.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BareMetal_UART.dir\build.make CMakeFiles/BareMetal_UART.dir/build

@@ -43,10 +43,11 @@ void UartSafe_constructor(UartSafe* const self){
         } 
     }
 
-    // Initialize the rx_package and rx_raw_buffer with zero.
+    // Initialize the rx_package, rx_raw_buffer and tx_error_package with zero.
     for(uint8_t j = 0; j < 8; j++){
         ((uint32_t*)(&(self->rx_package)))[j] = 0;
         ((uint32_t*)(&(self->rx_raw_buffer)))[j] = 0;
+        ((uint32_t*)(&(self->tx_error_package)))[j] = 0;
     } 
 
     // Initialize callbacks array
@@ -61,6 +62,10 @@ void UartSafe_constructor(UartSafe* const self){
     self->tx_semaphore = 0;
     self->pending_tx_package_position = 0;
     self->retreive_data_rq = 0;
+
+    // Error Package
+
+    self->tx_error_package.control_signals = 0x0000 | retreive_data_ack_bit;
 }
 
 void void_call_back(UartSafe* self){
@@ -120,9 +125,14 @@ static uint32_t jumps_between_pointers(uint32_t front_pointer_ID,
         return rear_pointer_ID - front_pointer_ID;
     }
 }
-uint32_t requested_sample_id;
-uint32_t current_tx_sample_id;
-uint32_t pending_tx_sample_id;
+
+static uint32_t requested_sample_id;
+static uint32_t current_tx_sample_id;
+static uint32_t pending_tx_sample_id;
+static uint32_t jumps_between_pending_to_current;
+static uint32_t jumps_between_requested_to_current;
+static int32_t array_position;
+
 void UartSafe_package_scheduler(UartSafe* const self){
 
     // Se encarga de evaluar los semaforos
@@ -135,8 +145,12 @@ void UartSafe_package_scheduler(UartSafe* const self){
 
         case SCHEDULER_IDLE:
             if(self->retreive_data_rq){
-                //TODO
+
+                //Save data in error package
+                self->tx_error_package.rq_sample = self->rx_package.rq_sample;
+
                 self->tx_handler_state = RETREIVE_DATA;
+
             }else if(self->tx_semaphore>0){
                 //TODO
                 self->tx_handler_state = SCHEDULE_TX;
@@ -144,26 +158,58 @@ void UartSafe_package_scheduler(UartSafe* const self){
             break;
 
         case RETREIVE_DATA:
-            requested_sample_id = self->rx_package.sample;
+            requested_sample_id = self->tx_error_package.rq_sample;
             current_tx_sample_id =self->current_sample_tx_package->sample;
             pending_tx_sample_id = self->pending_tx_package->sample;
 
 
             // jumps between pointers by ID:
-            uint32_t jumps_between_pending_to_current = 
-                jumps_between_pointers(current_tx_sample_id, 
-                                      pending_tx_sample_id);
+            jumps_between_pending_to_current = jumps_between_pointers(
+                                                current_tx_sample_id, 
+                                                pending_tx_sample_id);
 
-            uint32_t jumps_between_requested_to_current = 
-                jumps_between_pointers(requested_sample_id, 
-                                       pending_tx_sample_id);
+            jumps_between_requested_to_current = jumps_between_pointers(
+                                                 requested_sample_id, 
+                                                 pending_tx_sample_id);
 
+            //TODO: Testing (Slow debugging)
             if((jumps_between_requested_to_current > 
                jumps_between_pending_to_current) &&
                (jumps_between_requested_to_current < LINKED_LIST_SIZE)){
-                // TODO: Put sample
+                
+                // array position calculation:
+                array_position = ((int32_t)self->pending_tx_package_position)-
+                                  jumps_between_requested_to_current;
+                if(array_position<0){
+                    array_position += LINKED_LIST_SIZE - 1;
+                }
+
+                // Package loading:
+
+                self->pending_tx_package = &(self->tx_packages_array[
+                                             array_position]);
+                *(self->pending_tx_package) = self->tx_error_package;
+
+                // tx_semaphore_rq: 
+                self->tx_semaphore++;
+
             }else{
-                // TODO: Put error package
+
+                // array position calculation:
+                array_position = ((int32_t)self->pending_tx_package_position)-1;
+                if(array_position<0){
+                    array_position += LINKED_LIST_SIZE - 1;
+                }
+                
+                // Package loading:
+                self->pending_tx_package = &(self->tx_packages_array[self->
+                                           pending_tx_package_position-1]);
+
+                *(self->pending_tx_package) = self->tx_error_package;
+                
+                // tx_semaphore_rq: 
+                self->tx_semaphore++;
+
             }
 
             self->tx_handler_state = SCHEDULER_IDLE;

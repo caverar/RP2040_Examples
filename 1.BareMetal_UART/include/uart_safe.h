@@ -115,14 +115,14 @@ typedef void (*UartSafe_signal_callback)(struct UartSafe_data_struct*);
 typedef struct UartSafe_data_struct{
     package tx_packages_array[LINKED_LIST_SIZE];
     package tx_raw_buffer;
-
+    package tx_error_package;
     package* pending_tx_package;
     uint32_t pending_tx_package_position;
     package* current_sample_tx_package;
 
 
     package rx_package;                         // organized package
-    package rx_raw_buffer;                      // desorganized data
+    package rx_raw_buffer;                      // desorganized package
 
     // UartSafe_tx_handler data:
     tx_handler_state tx_handler_state;          // State of the handler.
@@ -134,7 +134,7 @@ typedef struct UartSafe_data_struct{
     // Callbacks, control signals.
     UartSafe_signal_callback function_callbacks[13]; 
 
-    // Tc Scheduler
+    // Tx Scheduler
     uint16_t tx_semaphore;
     bool retreive_data_rq;
     package_scheduler_state package_scheduler_state;
