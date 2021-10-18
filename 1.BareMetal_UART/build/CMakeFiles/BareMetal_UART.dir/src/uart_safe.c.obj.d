@@ -24,6 +24,10 @@ CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj: \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\cdefs.h \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\machine\stdlib.h \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\alloca.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\string.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\_locale.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\strings.h \
+ c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\sys\string.h \
  c:\vsarm\armcc\102021~1.07\arm-none-eabi\include\math.h \
  D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\include/bitwise.h \
  D:\Documentos\MEGA\MIcros\RP2040\RP2040_Examples\1.BareMetal_UART\include/bsp.h \

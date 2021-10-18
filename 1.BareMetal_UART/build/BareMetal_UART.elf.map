@@ -65,8 +65,6 @@ Discarded input sections
                 0x00000000        0xe CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
  .text.UartSafe_start_RX
                 0x00000000        0xc CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
- .text.UartSafe_new_sample
-                0x00000000       0x3a CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
  .text          0x00000000        0x0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x00000000        0x0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x00000000        0x0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -107,8 +105,6 @@ Discarded input sections
                 0x00000000       0x24 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_inover
                 0x00000000       0x24 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .text.gpio_set_outover
-                0x00000000       0x24 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_oeover
                 0x00000000       0x24 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_input_hysteresis_enabled
@@ -137,8 +133,6 @@ Discarded input sections
                 0x00000000       0x68 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_input_enabled
                 0x00000000       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .text.gpio_init
-                0x00000000       0x16 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_init_mask
                 0x00000000       0x1e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_debug_pins_init
@@ -1062,9 +1056,9 @@ Discarded input sections
  .debug_frame   0x00000000       0xb8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .ARM.attributes
                 0x00000000       0x2c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- .text          0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccGeeXIX.o
- .data          0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccGeeXIX.o
- .bss           0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccGeeXIX.o
+ .text          0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccIXXY3b.o
+ .data          0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccIXXY3b.o
+ .bss           0x00000000        0x0 C:\Users\camil\AppData\Local\Temp\ccIXXY3b.o
  .data          0x00000000        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1258,11 +1252,11 @@ LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\camil\AppData\Local\Temp\ccGeeXIX.o
+ .boot2         0x10000000      0x100 C:\Users\camil\AppData\Local\Temp\ccIXXY3b.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x4760
+.text           0x10000100     0x47f0
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1327,459 +1321,468 @@ LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../
  .text.callback_func
                 0x1000030c       0x10 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
                 0x1000030c                callback_func
- .text.get_absolute_time
-                0x1000031c       0x2c CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- .text.main     0x10000348      0x13c CMakeFiles/BareMetal_UART.dir/src/main.c.obj
-                0x10000348                main
+ .text.main     0x1000031c      0x144 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+                0x1000031c                main
  .text.bsp_uart_configure
-                0x10000484       0x60 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000484                bsp_uart_configure
+                0x10000460       0x60 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10000460                bsp_uart_configure
  .text.bsp_uart_send_buffer
-                0x100004e4       0x1c CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x100004e4                bsp_uart_send_buffer
+                0x100004c0       0x1c CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100004c0                bsp_uart_send_buffer
  .text.bsp_uart_tx_is_busy
-                0x10000500       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000500                bsp_uart_tx_is_busy
+                0x100004dc       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100004dc                bsp_uart_tx_is_busy
  .text.bsp_dma_is_busy_uart_tx
-                0x10000514       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000514                bsp_dma_is_busy_uart_tx
+                0x100004f0       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100004f0                bsp_dma_is_busy_uart_tx
  .text.bsp_dma_is_busy_uart_tx_organizer
-                0x10000528       0x16 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000528                bsp_dma_is_busy_uart_tx_organizer
- *fill*         0x1000053e        0x2 
+                0x10000504       0x16 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10000504                bsp_dma_is_busy_uart_tx_organizer
+ *fill*         0x1000051a        0x2 
  .text.bsp_dma_transfer_complete_uart_rx
-                0x10000540       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000540                bsp_dma_transfer_complete_uart_rx
+                0x1000051c       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x1000051c                bsp_dma_transfer_complete_uart_rx
  .text.bsp_dma_transfer_complete_uart_rx_organizer
-                0x10000554       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000554                bsp_dma_transfer_complete_uart_rx_organizer
+                0x10000530       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10000530                bsp_dma_transfer_complete_uart_rx_organizer
  .text.dma_configure
-                0x10000568      0x1c0 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000568                dma_configure
+                0x10000544      0x1c0 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10000544                dma_configure
  .text.bsp_dma_configure_uart_tx
-                0x10000728       0x20 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000728                bsp_dma_configure_uart_tx
+                0x10000704       0x20 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10000704                bsp_dma_configure_uart_tx
  .text.bsp_dma_configure_uart_tx_organizer
-                0x10000748       0x22 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000748                bsp_dma_configure_uart_tx_organizer
+                0x10000724       0x22 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10000724                bsp_dma_configure_uart_tx_organizer
  .text.bsp_dma_configure_uart_rx
-                0x1000076a       0x20 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x1000076a                bsp_dma_configure_uart_rx
+                0x10000746       0x20 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10000746                bsp_dma_configure_uart_rx
  .text.bsp_dma_configure_uart_rx_organizer
-                0x1000078a       0x22 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x1000078a                bsp_dma_configure_uart_rx_organizer
+                0x10000766       0x22 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10000766                bsp_dma_configure_uart_rx_organizer
  .text.dma_start
-                0x100007ac       0x18 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x100007ac                dma_start
+                0x10000788       0x18 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10000788                dma_start
  .text.bsp_dma_start_uart_tx
-                0x100007c4       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x100007c4                bsp_dma_start_uart_tx
+                0x100007a0       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100007a0                bsp_dma_start_uart_tx
  .text.bsp_dma_start_uart_tx_organizer
-                0x100007d8       0x12 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x100007d8                bsp_dma_start_uart_tx_organizer
- *fill*         0x100007ea        0x2 
+                0x100007b4       0x12 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100007b4                bsp_dma_start_uart_tx_organizer
+ *fill*         0x100007c6        0x2 
  .text.bsp_dma_start_uart_rx
-                0x100007ec       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x100007ec                bsp_dma_start_uart_rx
+                0x100007c8       0x14 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100007c8                bsp_dma_start_uart_rx
  .text.bsp_dma_start_uart_rx_organizer
-                0x10000800       0x12 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000800                bsp_dma_start_uart_rx_organizer
+                0x100007dc       0x12 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100007dc                bsp_dma_start_uart_rx_organizer
  .text.dma_set_initial_dma_CRC16
-                0x10000812        0xc CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x10000812                dma_set_initial_dma_CRC16
+                0x100007ee        0xc CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100007ee                dma_set_initial_dma_CRC16
  .text.dma_get_CRC16
-                0x1000081e        0xe CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
-                0x1000081e                dma_get_CRC16
+                0x100007fa        0xe CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100007fa                dma_get_CRC16
  .text.void_call_back
-                0x1000082c        0x2 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
-                0x1000082c                void_call_back
+                0x10000808        0x2 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                0x10000808                void_call_back
  .text.jumps_between_pointers
-                0x1000082e        0xc CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
- *fill*         0x1000083a        0x2 
+                0x1000080a        0xc CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+ .text.pending_tx_behind_current_sample
+                0x10000816       0x16 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
  .text.UartSafe_constructor
-                0x1000083c       0xc0 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
-                0x1000083c                UartSafe_constructor
+                0x1000082c       0xc4 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                0x1000082c                UartSafe_constructor
  .text.UartSafe_init_uart
-                0x100008fc       0x26 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
-                0x100008fc                UartSafe_init_uart
- *fill*         0x10000922        0x2 
+                0x100008f0       0x26 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                0x100008f0                UartSafe_init_uart
+ .text.UartSafe_new_sample
+                0x10000916       0x3c CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                0x10000916                UartSafe_new_sample
+ *fill*         0x10000952        0x2 
  .text.UartSafe_package_scheduler
-                0x10000924      0x154 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
-                0x10000924                UartSafe_package_scheduler
+                0x10000954      0x15c CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                0x10000954                UartSafe_package_scheduler
  .text.UartSafe_tx_handler
-                0x10000a78       0xe0 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
-                0x10000a78                UartSafe_tx_handler
+                0x10000ab0       0xfc CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                0x10000ab0                UartSafe_tx_handler
  .text.UartSafe_rx_handler
-                0x10000b58       0xfc CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
-                0x10000b58                UartSafe_rx_handler
+                0x10000bac       0xfc CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                0x10000bac                UartSafe_rx_handler
  .text.gpio_set_function
-                0x10000c54       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000c54                gpio_set_function
+                0x10000ca8       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000ca8                gpio_set_function
+ .text.gpio_set_outover
+                0x10000cd8       0x24 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000cd8                gpio_set_outover
+ .text.gpio_init
+                0x10000cfc       0x16 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000cfc                gpio_init
+ *fill*         0x10000d12        0x2 
  .text.hw_claim_lock
-                0x10000c84       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000c84                hw_claim_lock
+                0x10000d14       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000d14                hw_claim_lock
  .text.hw_claim_unlock
-                0x10000c9c       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000c9c                hw_claim_unlock
+                0x10000d2c       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000d2c                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x10000cb0       0x32 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000cb0                hw_claim_or_assert
- *fill*         0x10000ce2        0x2 
+                0x10000d40       0x32 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000d40                hw_claim_or_assert
+ *fill*         0x10000d72        0x2 
  .text.running_on_fpga
-                0x10000ce4       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x10000ce4                running_on_fpga
+                0x10000d74       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x10000d74                running_on_fpga
  .text.spin_locks_reset
-                0x10000cf8       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000cf8                spin_locks_reset
+                0x10000d88       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000d88                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x10000d18       0x1c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x10000d18                next_striped_spin_lock_num
+                0x10000da8       0x1c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x10000da8                next_striped_spin_lock_num
  .text.uart_set_baudrate
-                0x10000d34       0x5c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10000d34                uart_set_baudrate
+                0x10000dc4       0x5c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10000dc4                uart_set_baudrate
  .text.uart_set_translate_crlf
-                0x10000d90       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10000d90                uart_set_translate_crlf
+                0x10000e20       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10000e20                uart_set_translate_crlf
  .text.uart_init
-                0x10000db8       0x80 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x10000db8                uart_init
+                0x10000e48       0x80 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x10000e48                uart_init
  .text.alarm_pool_post_alloc_init
-                0x10000e38       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000ec8       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.timer_pool_entry_comparator
-                0x10000e78       0x7c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000e78                timer_pool_entry_comparator
+                0x10000f08       0x7c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000f08                timer_pool_entry_comparator
  .text.ph_add_child_node
-                0x10000ef4       0xa4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000f84       0xa4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_merge_nodes
-                0x10000f98       0x3e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10000fd6        0x2 
+                0x10001028       0x3e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10001066        0x2 
  .text.add_alarm_under_lock
-                0x10000fd8      0x174 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001068      0x174 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x1000114c      0x328 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x100011dc      0x328 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10001474       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001474                alarm_pool_init_default
+                0x10001504       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001504                alarm_pool_init_default
  .text.hardware_alarm_irq_handler
-                0x100014ac       0x8c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000153c       0x8c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10001538       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001538                hardware_alarm_claim
+                0x100015c8       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100015c8                hardware_alarm_claim
  .text.time_us_64
-                0x10001550       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001550                time_us_64
+                0x100015e0       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100015e0                time_us_64
  .text.hardware_alarm_set_callback
-                0x10001568       0x90 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001568                hardware_alarm_set_callback
+                0x100015f8       0x90 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100015f8                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x100015f8       0xe8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100015f8                hardware_alarm_set_target
+                0x10001688       0xe8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001688                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x100016e0       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100016e0                hardware_alarm_cancel
+                0x10001770       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001770                hardware_alarm_cancel
  .text.lock_init
-                0x10001720       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x10001720                lock_init
+                0x100017b0       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x100017b0                lock_init
  .text.mutex_init_internal
-                0x10001730       0x1e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x100017c0       0x1e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
  .text.mutex_init
-                0x1000174e        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x1000174e                mutex_init
+                0x100017de        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x100017de                mutex_init
  .text.recursive_mutex_init
-                0x10001758        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10001758                recursive_mutex_init
- *fill*         0x10001762        0x2 
+                0x100017e8        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x100017e8                recursive_mutex_init
+ *fill*         0x100017f2        0x2 
  .text.ph_add_child_node
-                0x10001764       0xa4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100017f4       0xa4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_merge_nodes
-                0x10001808       0x3e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10001846        0x2 
+                0x10001898       0x3e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x100018d6        0x2 
  .text.ph_clear
-                0x10001848       0x70 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001848                ph_clear
+                0x100018d8       0x70 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100018d8                ph_clear
  .text.ph_post_alloc_init
-                0x100018b8        0xe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x100018b8                ph_post_alloc_init
- *fill*         0x100018c6        0x2 
+                0x10001948        0xe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001948                ph_post_alloc_init
+ *fill*         0x10001956        0x2 
  .text.ph_merge_two_pass
-                0x100018c8       0xa8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x100018c8                ph_merge_two_pass
+                0x10001958       0xa8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001958                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x10001970      0x108 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001a00      0x108 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x10001a78       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001a78                ph_remove_head
+                0x10001b08       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001b08                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001a8c       0xf8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001a8c                ph_remove_and_free_node
+                0x10001b1c       0xf8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001b1c                ph_remove_and_free_node
  .text.runtime_init
-                0x10001b84       0xd8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001b84                runtime_init
- .text._exit    0x10001c5c        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001c5c                _exit
- .text.exit     0x10001c60        0x6 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001c60                exit
- *fill*         0x10001c66        0x2 
+                0x10001c14       0xd8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001c14                runtime_init
+ .text._exit    0x10001cec        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001cec                _exit
+ .text.exit     0x10001cf0        0x6 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001cf0                exit
+ *fill*         0x10001cf6        0x2 
  .text.__assert_func
-                0x10001c68       0x3c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001c68                __assert_func
- .text.panic    0x10001ca4       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001ca4                panic
+                0x10001cf8       0x3c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001cf8                __assert_func
+ .text.panic    0x10001d34       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001d34                panic
  .text.clock_configure
-                0x10001cd4      0x104 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001cd4                clock_configure
+                0x10001d64      0x104 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001d64                clock_configure
  .text.clocks_init
-                0x10001dd8      0x100 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001dd8                clocks_init
+                0x10001e68      0x100 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001e68                clocks_init
  .text.clock_get_hz
-                0x10001ed8        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001ed8                clock_get_hz
+                0x10001f68        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001f68                clock_get_hz
  .text.set_raw_irq_handler_and_unlock
-                0x10001ee4       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001f74       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.make_branch
-                0x10001f0c       0x34 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001f9c       0x34 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.insert_branch_and_link
-                0x10001f40       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10001fd0       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.irq_is_enabled
-                0x10001f80       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001f80                irq_is_enabled
+                0x10002010       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10002010                irq_is_enabled
  .text.irq_set_mask_enabled
-                0x10001f98       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001f98                irq_set_mask_enabled
+                0x10002028       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10002028                irq_set_mask_enabled
  .text.irq_set_enabled
-                0x10001fb8        0xe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001fb8                irq_set_enabled
- *fill*         0x10001fc6        0x2 
+                0x10002048        0xe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10002048                irq_set_enabled
+ *fill*         0x10002056        0x2 
  .text.irq_get_vtable_handler
-                0x10001fc8       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001fc8                irq_get_vtable_handler
+                0x10002058       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10002058                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x10001fd8       0x54 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10001fd8                irq_set_exclusive_handler
+                0x10002068       0x54 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10002068                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x1000202c      0x1ac CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000202c                irq_remove_handler
+                0x100020bc      0x1ac CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100020bc                irq_remove_handler
  .text.irq_set_priority
-                0x100021d8       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100021d8                irq_set_priority
+                0x10002268       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10002268                irq_set_priority
  .text.irq_add_tail_to_free_list
-                0x10002200       0xf0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10002200                irq_add_tail_to_free_list
+                0x10002290       0xf0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10002290                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x100022f0       0x16 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100022f0                irq_init_priorities
- *fill*         0x10002306        0x2 
+                0x10002380       0x16 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10002380                irq_init_priorities
+ *fill*         0x10002396        0x2 
  .text.pll_init
-                0x10002308      0x118 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x10002308                pll_init
+                0x10002398      0x118 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10002398                pll_init
  .text.watchdog_start_tick
-                0x10002420       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10002420                watchdog_start_tick
+                0x100024b0       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x100024b0                watchdog_start_tick
  .text.xosc_init
-                0x10002430       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x10002430                xosc_init
+                0x100024c0       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x100024c0                xosc_init
  .text._out_null
-                0x10002458        0x2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100024e8        0x2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x1000245a        0xe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._atoi    0x10002468       0x24 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100024ea        0xe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._atoi    0x100024f8       0x24 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x1000248c       0xae CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000251c       0xae CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x1000253a      0x112 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100025ca      0x112 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long
-                0x1000264c       0xbc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100026dc       0xbc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long_long
-                0x10002708       0xe2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x100027ea        0x2 
- .text._etoa    0x100027ec      0x414 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x10002c00      0x354 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002798       0xe2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x1000287a        0x2 
+ .text._etoa    0x1000287c      0x414 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x10002c90      0x354 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x10002f54      0x624 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002fe4      0x624 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x10003578       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10003578                vfctprintf
- .text          0x10003598       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10003608       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003608                vfctprintf
+ .text          0x10003628       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x100035a8       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100035a8                rom_func_lookup
+                0x10003638       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003638                rom_func_lookup
  .text.rom_data_lookup
-                0x100035b8       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100035b8                rom_data_lookup
+                0x10003648       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003648                rom_data_lookup
  .text.rom_funcs_lookup
-                0x100035c8       0x36 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x100035c8                rom_funcs_lookup
- *fill*         0x100035fe        0x2 
+                0x10003658       0x36 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003658                rom_funcs_lookup
+ *fill*         0x1000368e        0x2 
  .text.__wrap___aeabi_idiv
-                0x10003600       0x50 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003600                __wrap___aeabi_idivmod
-                0x10003600                divmod_s32s32
-                0x10003600                div_s32s32
-                0x10003600                __wrap___aeabi_idiv
-                0x10003608                divmod_s32s32_unsafe
-                0x10003634                divmod_s32s32_savestate
+                0x10003690       0x50 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003690                __wrap___aeabi_idivmod
+                0x10003690                divmod_s32s32
+                0x10003690                div_s32s32
+                0x10003690                __wrap___aeabi_idiv
+                0x10003698                divmod_s32s32_unsafe
+                0x100036c4                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x10003650       0x4c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003650                __wrap___aeabi_uidiv
-                0x10003650                __wrap___aeabi_uidivmod
-                0x10003650                div_u32u32
-                0x10003650                divmod_u32u32
-                0x10003658                divmod_u32u32_unsafe
-                0x10003680                divmod_u32u32_savestate
+                0x100036e0       0x4c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x100036e0                __wrap___aeabi_uidiv
+                0x100036e0                __wrap___aeabi_uidivmod
+                0x100036e0                div_u32u32
+                0x100036e0                divmod_u32u32
+                0x100036e8                divmod_u32u32_unsafe
+                0x10003710                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x1000369c      0x430 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x1000369c                div_s64s64
-                0x1000369c                divmod_s64s64
-                0x1000369c                __wrap___aeabi_ldivmod
-                0x100036d4                divmod_u64u64
-                0x100036d4                div_u64u64
-                0x100036d4                __wrap___aeabi_uldivmod
-                0x100036e4                divmod_u64u64_savestate
-                0x1000370c                divmod_s64s64_unsafe
-                0x10003794                divmod_u64u64_unsafe
+                0x1000372c      0x430 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x1000372c                div_s64s64
+                0x1000372c                divmod_s64s64
+                0x1000372c                __wrap___aeabi_ldivmod
+                0x10003764                divmod_u64u64
+                0x10003764                div_u64u64
+                0x10003764                __wrap___aeabi_uldivmod
+                0x10003774                divmod_u64u64_savestate
+                0x1000379c                divmod_s64s64_unsafe
+                0x10003824                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10003acc       0x80 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003acc                __wrap___aeabi_drsub
-                0x10003ad2                __wrap___aeabi_dsub
-                0x10003ae4                __wrap___aeabi_dadd
-                0x10003af6                __wrap___aeabi_ddiv
-                0x10003b32                __wrap___aeabi_dmul
+                0x10003b5c       0x80 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003b5c                __wrap___aeabi_drsub
+                0x10003b62                __wrap___aeabi_dsub
+                0x10003b74                __wrap___aeabi_dadd
+                0x10003b86                __wrap___aeabi_ddiv
+                0x10003bc2                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x10003b4c       0x6c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003b4c                __wrap___aeabi_cdrcmple
-                0x10003b5c                __wrap___aeabi_cdcmpeq
-                0x10003b5c                __wrap___aeabi_cdcmple
+                0x10003bdc       0x6c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003bdc                __wrap___aeabi_cdrcmple
+                0x10003bec                __wrap___aeabi_cdcmpeq
+                0x10003bec                __wrap___aeabi_cdcmple
  .text.__wrap___aeabi_dcmplt
-                0x10003bb8        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003bb8                __wrap___aeabi_dcmplt
+                0x10003c48        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c48                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x10003bc4       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003bc4                __wrap___aeabi_dcmple
+                0x10003c54       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c54                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10003bd4       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003bd4                __wrap___aeabi_dcmpge
+                0x10003c64       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c64                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10003be4        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003be4                __wrap___aeabi_dcmpgt
+                0x10003c74        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c74                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x10003bee       0x1c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003bee                __wrap___aeabi_dcmpun
- *fill*         0x10003c0a        0x2 
+                0x10003c7e       0x1c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c7e                __wrap___aeabi_dcmpun
+ *fill*         0x10003c9a        0x2 
  .text.__wrap___aeabi_i2d
-                0x10003c0c       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003c0c                __wrap___aeabi_ui2d
-                0x10003c14                __wrap___aeabi_i2d
+                0x10003c9c       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003c9c                __wrap___aeabi_ui2d
+                0x10003ca4                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x10003c44       0x48 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003c44                double2int_z
-                0x10003c44                __wrap___aeabi_d2iz
+                0x10003cd4       0x48 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003cd4                double2int_z
+                0x10003cd4                __wrap___aeabi_d2iz
  .text.__wrap___aeabi_d2uiz
-                0x10003c8c       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003c8c                __wrap___aeabi_d2uiz
-                0x10003c8c                double2uint
+                0x10003d1c       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003d1c                __wrap___aeabi_d2uiz
+                0x10003d1c                double2uint
  .text.__aeabi_double_init
-                0x10003ca4       0xb8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10003ca4                __aeabi_double_init
+                0x10003d34       0xb8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10003d34                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10003d5c       0x34 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003d5c                double_table_shim_on_use_helper
+                0x10003dec       0x34 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003dec                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x10003d90       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003d90                drsub_shim
-                0x10003d96                dsub_shim
+                0x10003e20       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003e20                drsub_shim
+                0x10003e26                dsub_shim
  .text.dadd_shim
-                0x10003da0      0x15c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003da0                dadd_shim
+                0x10003e30      0x15c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003e30                dadd_shim
  .text.dmul_shim
-                0x10003efc      0x15c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003efc                dmul_shim
+                0x10003f8c      0x15c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003f8c                dmul_shim
  .text.ddiv_shim
-                0x10004058      0x1b0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004058                ddiv_shim
+                0x100040e8      0x1b0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100040e8                ddiv_shim
  .text.dcordic_rot_step
-                0x10004208       0x7c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004208                dcordic_rot_step
+                0x10004298       0x7c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004298                dcordic_rot_step
  .text.double2uint_shim
-                0x10004284        0xe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004284                double2uint_shim
-                0x10004286                double2ufix_shim
- *fill*         0x10004292        0x2 
+                0x10004314        0xe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004314                double2uint_shim
+                0x10004316                double2ufix_shim
+ *fill*         0x10004322        0x2 
  .text.double2uint64_shim
-                0x10004294       0x6c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004294                double2uint64_shim
-                0x10004296                double2ufix64_shim
-                0x100042b0                d2fix_a
+                0x10004324       0x6c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004324                double2uint64_shim
+                0x10004326                double2ufix64_shim
+                0x10004340                d2fix_a
  .text.dunpacks
-                0x10004300       0x3c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10004300                dunpacks
+                0x10004390       0x3c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10004390                dunpacks
  .text.__wrap___aeabi_farithmetic
-                0x1000433c       0x58 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x1000433c                __wrap___aeabi_frsub
-                0x10004342                __wrap___aeabi_fsub
-                0x1000434c                __wrap___aeabi_fadd
-                0x10004356                __wrap___aeabi_fdiv
-                0x10004382                __wrap___aeabi_fmul
+                0x100043cc       0x58 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x100043cc                __wrap___aeabi_frsub
+                0x100043d2                __wrap___aeabi_fsub
+                0x100043dc                __wrap___aeabi_fadd
+                0x100043e6                __wrap___aeabi_fdiv
+                0x10004412                __wrap___aeabi_fmul
  .text.__wrap___aeabi_ui2f
-                0x10004394        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x10004394                __wrap___aeabi_ui2f
- *fill*         0x1000439e        0x2 
+                0x10004424        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004424                __wrap___aeabi_ui2f
+ *fill*         0x1000442e        0x2 
  .text.__wrap___aeabi_i2f
-                0x100043a0       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x100043a0                __wrap___aeabi_i2f
+                0x10004430       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004430                __wrap___aeabi_i2f
  .text.__wrap___aeabi_f2uiz
-                0x100043e4       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x100043e4                __wrap___aeabi_f2uiz
+                0x10004474       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004474                __wrap___aeabi_f2uiz
  .text.__wrap_logf
-                0x100043f4       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x100043f4                __wrap_logf
+                0x10004484       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x10004484                __wrap_logf
  .text.__aeabi_float_init
-                0x10004404       0xfc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x10004404                __aeabi_float_init
+                0x10004494       0xfc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10004494                __aeabi_float_init
  .text.__wrap_log2f
-                0x10004500       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
-                0x10004500                __wrap_log2f
+                0x10004590       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+                0x10004590                __wrap_log2f
  .text.float_table_shim_on_use_helper
-                0x10004514       0x34 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x10004514                float_table_shim_on_use_helper
- .text          0x10004548       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004548                __aeabi_mem_init
- .text.memset   0x10004558        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004558                __wrap_memset
- .text.memcpy   0x10004564        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10004564                __wrap_memcpy
-                0x10004564                __wrap___aeabi_memcpy
+                0x100045a4       0x34 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x100045a4                float_table_shim_on_use_helper
+ .text          0x100045d8       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100045d8                __aeabi_mem_init
+ .text.memset   0x100045e8        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100045e8                __wrap_memset
+ .text.memcpy   0x100045f4        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x100045f4                __wrap_memcpy
+                0x100045f4                __wrap___aeabi_memcpy
  .text.stdio_out_chars_crlf
-                0x10004570       0x80 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004600       0x80 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_stack_buffer_flush
-                0x100045f0       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004680       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x10004634       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100046c4       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_begin
-                0x10004654       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004654                stdout_serialize_begin
+                0x100046e4       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100046e4                stdout_serialize_begin
  .text.stdout_serialize_end
-                0x10004684       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004684                stdout_serialize_end
+                0x10004714       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004714                stdout_serialize_end
  .text.stdio_put_string
-                0x10004694       0x84 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004724       0x84 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_flush
-                0x10004718       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004718                stdio_flush
+                0x100047a8       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100047a8                stdio_flush
  .text.__wrap_puts
-                0x10004738       0x1c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004738                __wrap_puts
+                0x100047c8       0x1c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100047c8                __wrap_puts
  .text.__wrap_vprintf
-                0x10004754       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004754                __wrap_vprintf
+                0x100047e4       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100047e4                __wrap_vprintf
  .text.__wrap_printf
-                0x10004798       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004798                __wrap_printf
- .text.strlen   0x100047b0       0x5c c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
-                0x100047b0                strlen
+                0x10004828       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004828                __wrap_printf
+ .text.strlen   0x10004840       0x5c c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
+                0x10004840                strlen
  *(.fini)
- .fini          0x1000480c        0x4 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x1000480c                _fini
- .fini.__stub   0x10004810       0x50 linker stubs
+ .fini          0x1000489c        0x4 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x1000489c                _fini
+ .fini.__stub   0x100048a0       0x50 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1791,244 +1794,237 @@ LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10004860        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10004860                . = ALIGN (0x4)
+ .eh_frame      0x100048f0        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100048f0                . = ALIGN (0x4)
 
-.glue_7         0x10004860        0x0
- .glue_7        0x10004860        0x0 linker stubs
+.glue_7         0x100048f0        0x0
+ .glue_7        0x100048f0        0x0 linker stubs
 
-.glue_7t        0x10004860        0x0
- .glue_7t       0x10004860        0x0 linker stubs
+.glue_7t        0x100048f0        0x0
+ .glue_7t       0x100048f0        0x0 linker stubs
 
-.vfp11_veneer   0x10004860        0x0
- .vfp11_veneer  0x10004860        0x0 linker stubs
+.vfp11_veneer   0x100048f0        0x0
+ .vfp11_veneer  0x100048f0        0x0 linker stubs
 
-.v4_bx          0x10004860        0x0
- .v4_bx         0x10004860        0x0 linker stubs
+.v4_bx          0x100048f0        0x0
+ .v4_bx         0x100048f0        0x0 linker stubs
 
-.iplt           0x10004860        0x0
- .iplt          0x10004860        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100048f0        0x0
+ .iplt          0x100048f0        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10004860      0xed8
+.rodata         0x100048f0      0xec0
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
- .rodata.get_absolute_time.str1.4
-                0x10004860       0x61 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- *fill*         0x100048c1        0x3 
  .rodata.main.str1.4
-                0x100048c4       0x21 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- *fill*         0x100048e5        0x3 
- .rodata.__func__.0
-                0x100048e8       0x15 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- *fill*         0x100048fd        0x3 
+                0x100048f0       0x21 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+ *fill*         0x10004911        0x3 
  .rodata.dma_configure.str1.4
-                0x10004900       0xd7 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
- *fill*         0x100049d7        0x1 
+                0x10004914       0xd7 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+ *fill*         0x100049eb        0x1 
  .rodata.__func__.0
-                0x100049d8       0x18 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x100049ec       0x18 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
  .rodata.__func__.1
-                0x100049f0       0x18 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10004a04       0x18 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
  .rodata.__func__.2
-                0x10004a08       0x26 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
- *fill*         0x10004a2e        0x2 
+                0x10004a1c       0x26 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+ *fill*         0x10004a42        0x2 
  .rodata.__func__.3
-                0x10004a30       0x1c CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x10004a44       0x1c CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
  .rodata.UartSafe_rx_handler
-                0x10004a4c       0x14 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                0x10004a60       0x14 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
  .rodata.repeating_timer_callback.str1.4
-                0x10004a60       0x4b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004aab        0x1 
+                0x10004a74       0x4b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004abf        0x1 
  .rodata.alarm_pool_dump_key.str1.4
-                0x10004aac       0x33 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004adf        0x1 
+                0x10004ac0       0x33 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004af3        0x1 
  .rodata.ph_add_child_node.str1.4
-                0x10004ae0       0x96 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004b76        0x2 
+                0x10004af4       0x96 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004b8a        0x2 
  .rodata.add_alarm_under_lock.str1.4
-                0x10004b78       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10004b8c       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
                                  0x2b (size before relaxing)
  .rodata.alarm_pool_alarm_callback.str1.4
-                0x10004ba0       0x82 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
-                                 0xe6 (size before relaxing)
- *fill*         0x10004c22        0x2 
- .rodata.__func__.10
-                0x10004c24       0x15 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004c39        0x3 
- .rodata.__func__.11
-                0x10004c3c       0x1a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004c56        0x2 
- .rodata.__func__.12
-                0x10004c58        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004c62        0x2 
- .rodata.__func__.4
-                0x10004c64       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004c76        0x2 
- .rodata.__func__.5
-                0x10004c78        0xd CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004c85        0x3 
- .rodata.__func__.6
-                0x10004c88       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x10004bb4       0xe6 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
  *fill*         0x10004c9a        0x2 
- .rodata.__func__.7
-                0x10004c9c        0xf CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004cab        0x1 
- .rodata.__func__.8
-                0x10004cac        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .rodata.__func__.9
-                0x10004cb8       0x15 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004ccd        0x3 
- .rodata.hardware_alarm_claim.str1.4
-                0x10004cd0       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10004cf2        0x2 
- .rodata.hardware_alarm_set_target.str1.4
-                0x10004cf4       0x65 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10004d59        0x3 
- .rodata.__func__.0
-                0x10004d5c       0x1a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10004d76        0x2 
- .rodata.str1.4
-                0x10004d78       0xb1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                                0x115 (size before relaxing)
- *fill*         0x10004e29        0x3 
- .rodata.__func__.0
-                0x10004e2c        0xb CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x10004e37        0x1 
- .rodata.__func__.3
-                0x10004e38       0x15 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .rodata.ph_add_child_node.str1.4
-                0x10004e4d       0x96 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10004e4d        0x3 
- .rodata.ph_remove_any_head.str1.4
-                0x10004e50       0x8c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .rodata.ph_remove_and_free_node.str1.4
-                0x10004edc       0x26 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10004f02        0x2 
- .rodata.__func__.0
-                0x10004f04       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .rodata.__func__.1
-                0x10004f1c       0x13 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10004f2f        0x1 
- .rodata.__func__.2
-                0x10004f30       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10004f42        0x2 
- .rodata.__func__.3
-                0x10004f44        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .rodata.__assert_func.str1.4
-                0x10004f50       0x3f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                                 0x43 (size before relaxing)
- *fill*         0x10004f8f        0x1 
- .rodata.panic.str1.4
-                0x10004f90       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x10004fa2        0x2 
- .rodata.clock_configure.str1.4
-                0x10004fa4       0x57 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- *fill*         0x10004ffb        0x1 
- .rodata.__func__.1
-                0x10004ffc       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .rodata.make_branch.str1.4
-                0x1000500c       0x4d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005059        0x3 
- .rodata.irq_set_exclusive_handler.str1.4
-                0x1000505c       0x36 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005092        0x2 
- .rodata.irq_add_shared_handler.str1.4
-                0x10005094       0xd9 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000516d        0x3 
- .rodata.irq_remove_handler.str1.4
-                0x10005170       0x2a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000519a        0x2 
- .rodata.irq_add_tail_to_free_list.str1.4
-                0x1000519c       0x32 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                                 0x3a (size before relaxing)
- *fill*         0x100051ce        0x2 
- .rodata.__func__.0
-                0x100051d0       0x1a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x100051ea        0x2 
- .rodata.__func__.1
-                0x100051ec       0x17 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005203        0x1 
- .rodata.__func__.2
-                0x10005204       0x13 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005217        0x1 
- .rodata.__func__.3
-                0x10005218        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .rodata.__func__.10
+                0x10004c9c       0x15 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004cb1        0x3 
+ .rodata.__func__.11
+                0x10004cb4       0x1a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004cce        0x2 
+ .rodata.__func__.12
+                0x10004cd0        0xa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004cda        0x2 
  .rodata.__func__.4
-                0x10005224        0xf CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10005233        0x1 
+                0x10004cdc       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004cee        0x2 
+ .rodata.__func__.5
+                0x10004cf0        0xd CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004cfd        0x3 
  .rodata.__func__.6
-                0x10005234       0x1a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000524e        0x2 
- .rodata.pll_init.str1.4
-                0x10005250       0xdb CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- *fill*         0x1000532b        0x1 
+                0x10004d00       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004d12        0x2 
+ .rodata.__func__.7
+                0x10004d14        0xf CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004d23        0x1 
+ .rodata.__func__.8
+                0x10004d24        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .rodata.__func__.9
+                0x10004d30       0x15 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004d45        0x3 
+ .rodata.hardware_alarm_claim.str1.4
+                0x10004d48       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10004d6a        0x2 
+ .rodata.hardware_alarm_set_target.str1.4
+                0x10004d6c       0x65 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10004dd1        0x3 
  .rodata.__func__.0
-                0x1000532c        0x9 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- *fill*         0x10005335        0x3 
- .rodata._ftoa.str1.4
-                0x10005338       0x15 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x1000534d        0x3 
- .rodata._vsnprintf
-                0x10005350      0x1e0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .rodata.pow10.0
-                0x10005530       0x50 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .rodata.__aeabi_double_init.str1.4
-                0x10005580       0xa8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .rodata.__func__.0
-                0x10005628       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .rodata.__aeabi_float_init.str1.4
-                0x1000563c       0x7a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                                 0x7e (size before relaxing)
- *fill*         0x100056b6        0x2 
- .rodata.__func__.0
-                0x100056b8       0x13 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- *fill*         0x100056cb        0x1 
+                0x10004dd4       0x1a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10004dee        0x2 
  .rodata.str1.4
-                0x100056cc       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10004df0       0xb1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                                0x115 (size before relaxing)
+ *fill*         0x10004ea1        0x3 
+ .rodata.__func__.0
+                0x10004ea4        0xb CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x10004eaf        0x1 
+ .rodata.__func__.3
+                0x10004eb0       0x15 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .rodata.ph_add_child_node.str1.4
+                0x10004ec5       0x96 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10004ec5        0x3 
+ .rodata.ph_remove_any_head.str1.4
+                0x10004ec8       0x8c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .rodata.ph_remove_and_free_node.str1.4
+                0x10004f54       0x26 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10004f7a        0x2 
+ .rodata.__func__.0
+                0x10004f7c       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .rodata.__func__.1
+                0x10004f94       0x13 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10004fa7        0x1 
+ .rodata.__func__.2
+                0x10004fa8       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10004fba        0x2 
+ .rodata.__func__.3
+                0x10004fbc        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .rodata.__assert_func.str1.4
+                0x10004fc8       0x3f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                                 0x43 (size before relaxing)
+ *fill*         0x10005007        0x1 
+ .rodata.panic.str1.4
+                0x10005008       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x1000501a        0x2 
+ .rodata.clock_configure.str1.4
+                0x1000501c       0x57 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ *fill*         0x10005073        0x1 
+ .rodata.__func__.1
+                0x10005074       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .rodata.make_branch.str1.4
+                0x10005084       0x4d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100050d1        0x3 
+ .rodata.irq_set_exclusive_handler.str1.4
+                0x100050d4       0x36 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000510a        0x2 
+ .rodata.irq_add_shared_handler.str1.4
+                0x1000510c       0xd9 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100051e5        0x3 
+ .rodata.irq_remove_handler.str1.4
+                0x100051e8       0x2a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005212        0x2 
+ .rodata.irq_add_tail_to_free_list.str1.4
+                0x10005214       0x32 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                                 0x3a (size before relaxing)
+ *fill*         0x10005246        0x2 
+ .rodata.__func__.0
+                0x10005248       0x1a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10005262        0x2 
+ .rodata.__func__.1
+                0x10005264       0x17 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000527b        0x1 
+ .rodata.__func__.2
+                0x1000527c       0x13 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000528f        0x1 
+ .rodata.__func__.3
+                0x10005290        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .rodata.__func__.4
+                0x1000529c        0xf CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100052ab        0x1 
+ .rodata.__func__.6
+                0x100052ac       0x1a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100052c6        0x2 
+ .rodata.pll_init.str1.4
+                0x100052c8       0xdb CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ *fill*         0x100053a3        0x1 
+ .rodata.__func__.0
+                0x100053a4        0x9 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ *fill*         0x100053ad        0x3 
+ .rodata._ftoa.str1.4
+                0x100053b0       0x15 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x100053c5        0x3 
+ .rodata._vsnprintf
+                0x100053c8      0x1e0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .rodata.pow10.0
+                0x100055a8       0x50 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .rodata.__aeabi_double_init.str1.4
+                0x100055f8       0xa8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .rodata.__func__.0
+                0x100056a0       0x14 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .rodata.__aeabi_float_init.str1.4
+                0x100056b4       0x7a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                                 0x7e (size before relaxing)
+ *fill*         0x1000572e        0x2 
+ .rodata.__func__.0
+                0x10005730       0x13 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ *fill*         0x10005743        0x1 
+ .rodata.str1.4
+                0x10005744       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x10005710        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005788        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x1000571c        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005794        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x10005728        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100057a0        0xc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.3
-                0x10005734        0x2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10005738                . = ALIGN (0x4)
- *fill*         0x10005736        0x2 
+                0x100057ac        0x2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100057b0                . = ALIGN (0x4)
+ *fill*         0x100057ae        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10005738                . = ALIGN (0x4)
+                0x100057b0                . = ALIGN (0x4)
 
-.rel.dyn        0x10005738        0x0
- .rel.iplt      0x10005738        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x100057b0        0x0
+ .rel.iplt      0x100057b0        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10005738                __exidx_start = .
+                0x100057b0                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10005738                __exidx_end = .
-                0x10005738                . = ALIGN (0x4)
-                0x10005738                __binary_info_start = .
+                0x100057b0                __exidx_end = .
+                0x100057b0                . = ALIGN (0x4)
+                0x100057b0                __binary_info_start = .
 
-.binary_info    0x10005738       0x1c
+.binary_info    0x100057b0       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x10005738        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100057b0        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x1000573c        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100057b4        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x10005740        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100057b8        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x10005744        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100057bc        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x10005748        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100057c0        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x1000574c        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100057c4        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x10005750        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100057c8        0x4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x10005754                __binary_info_end = .
-                0x10005754                . = ALIGN (0x4)
-                0x10005754                __etext = .
+                0x100057cc                __binary_info_end = .
+                0x100057cc                . = ALIGN (0x4)
+                0x100057cc                __etext = .
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2037,7 +2033,7 @@ LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../
                 0x20000000       0xc0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x24c load address 0x10005754
+.data           0x200000c0      0x24c load address 0x100057cc
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2116,27 +2112,27 @@ LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../
                 0x2000030c                . = ALIGN (0x4)
                 0x2000030c                __data_end__ = .
 
-.igot.plt       0x2000030c        0x0 load address 0x100059a0
+.igot.plt       0x2000030c        0x0 load address 0x10005a18
  .igot.plt      0x2000030c        0x0 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x2000030c        0x0 load address 0x100059a0
+                0x2000030c        0x0 load address 0x10005a18
                 0x2000030c                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x100059a0
+.scratch_x      0x20040000        0x0 load address 0x10005a18
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x100059a0                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10005a18                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x100059a0
+.scratch_y      0x20041000        0x0 load address 0x10005a18
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x100059a0                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10005a18                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000320      0x5e4
                 0x20000320                . = ALIGN (0x4)
@@ -2210,8 +2206,8 @@ LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x100059a0        0x0
-                0x100059a0                __flash_binary_end = .
+.flash_end      0x10005a18        0x0
+                0x10005a18                __flash_binary_end = .
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2269,7 +2265,7 @@ LOAD CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pic
 LOAD CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 LOAD libFreeRTOS.a
-LOAD C:\Users\camil\AppData\Local\Temp\ccGeeXIX.o
+LOAD C:\Users\camil\AppData\Local\Temp\ccIXXY3b.o
 LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -2364,7 +2360,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000005ce       0x2c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .ARM.attributes
-                0x000005fa       0x22 C:\Users\camil\AppData\Local\Temp\ccGeeXIX.o
+                0x000005fa       0x22 C:\Users\camil\AppData\Local\Temp\ccIXXY3b.o
  .ARM.attributes
                 0x0000061c       0x1e c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -2399,112 +2395,112 @@ LOAD linker stubs
  .comment       0x00000049       0x4a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .comment       0x00000049       0x4a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_info     0x00000000    0x1756d
- .debug_info    0x00000000      0x792 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- .debug_info    0x00000792     0x1e7d CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
- .debug_info    0x0000260f      0x975 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
- .debug_info    0x00002f84     0x1465 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x000043e9      0x6ba CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_info    0x00004aa3      0x1e3 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_info    0x00004c86      0x58e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x00005214      0xb64 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_info    0x00005d78     0x3b2f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_info    0x000098a7     0x1130 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x0000a9d7      0x1a4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x0000ab7b     0x13b2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_info    0x0000bf2d     0x120c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_info    0x0000d139      0x9bc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x0000daf5      0xf56 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x0000ea4b     0x191a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x00010365      0x509 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x0001086e      0x49c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x00010d0a      0x1dd CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x00010ee7     0x1a5f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x00012946       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x00012968      0x231 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x00012b99       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_info    0x00012bbb       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_info    0x00012bdd      0x2a0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_info    0x00012e7d       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_info    0x00012e9f       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_info    0x00012ec1      0x2e9 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_info    0x000131aa     0x2f16 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_info    0x000160c0       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_info    0x000160e2       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x00016104       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_info    0x00016126      0x2f6 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_info    0x0001641c     0x1151 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+.debug_info     0x00000000    0x17836
+ .debug_info    0x00000000      0xa04 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+ .debug_info    0x00000a04     0x1e7d CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+ .debug_info    0x00002881      0x9cc CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+ .debug_info    0x0000324d     0x1465 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x000046b2      0x6ba CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_info    0x00004d6c      0x1e3 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_info    0x00004f4f      0x58e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x000054dd      0xb64 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_info    0x00006041     0x3b2f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_info    0x00009b70     0x1130 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x0000aca0      0x1a4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x0000ae44     0x13b2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x0000c1f6     0x120c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_info    0x0000d402      0x9bc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x0000ddbe      0xf56 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x0000ed14     0x191a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x0001062e      0x509 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x00010b37      0x49c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x00010fd3      0x1dd CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x000111b0     0x1a5f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x00012c0f       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x00012c31      0x231 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x00012e62       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_info    0x00012e84       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_info    0x00012ea6      0x2a0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_info    0x00013146       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_info    0x00013168       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_info    0x0001318a      0x2e9 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_info    0x00013473     0x2f16 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_info    0x00016389       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_info    0x000163ab       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x000163cd       0x22 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_info    0x000163ef      0x2f6 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_info    0x000166e5     0x1151 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_abbrev   0x00000000     0x4468
- .debug_abbrev  0x00000000      0x2e0 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- .debug_abbrev  0x000002e0      0x3b9 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
- .debug_abbrev  0x00000699      0x275 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
- .debug_abbrev  0x0000090e      0x2c4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x00000bd2      0x2d6 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_abbrev  0x00000ea8       0xeb CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_abbrev  0x00000f93      0x21b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x000011ae      0x2d2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_abbrev  0x00001480      0x53c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_abbrev  0x000019bc      0x37e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x00001d3a      0x116 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x00001e50      0x37d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x000021cd      0x297 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_abbrev  0x00002464      0x35a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x000027be      0x372 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x00002b30      0x4a5 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x00002fd5      0x1ea CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x000031bf      0x1b1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_abbrev  0x00003370      0x109 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x00003479      0x384 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x000037fd       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_abbrev  0x0000380f       0xf8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x00003907       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_abbrev  0x00003919       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_abbrev  0x0000392b      0x166 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_abbrev  0x00003a91       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_abbrev  0x00003aa3       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_abbrev  0x00003ab5      0x179 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_abbrev  0x00003c2e      0x296 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_abbrev  0x00003ec4       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_abbrev  0x00003ed6       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_abbrev  0x00003ee8       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_abbrev  0x00003efa       0xad CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_abbrev  0x00003fa7      0x4c1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+.debug_abbrev   0x00000000     0x44b1
+ .debug_abbrev  0x00000000      0x30b CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+ .debug_abbrev  0x0000030b      0x3b9 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+ .debug_abbrev  0x000006c4      0x293 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+ .debug_abbrev  0x00000957      0x2c4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x00000c1b      0x2d6 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x00000ef1       0xeb CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_abbrev  0x00000fdc      0x21b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x000011f7      0x2d2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_abbrev  0x000014c9      0x53c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x00001a05      0x37e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x00001d83      0x116 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x00001e99      0x37d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x00002216      0x297 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_abbrev  0x000024ad      0x35a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x00002807      0x372 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x00002b79      0x4a5 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x0000301e      0x1ea CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x00003208      0x1b1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_abbrev  0x000033b9      0x109 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x000034c2      0x384 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x00003846       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_abbrev  0x00003858       0xf8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x00003950       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_abbrev  0x00003962       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_abbrev  0x00003974      0x166 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_abbrev  0x00003ada       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003aec       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_abbrev  0x00003afe      0x179 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_abbrev  0x00003c77      0x296 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_abbrev  0x00003f0d       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003f1f       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_abbrev  0x00003f31       0x12 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_abbrev  0x00003f43       0xad CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_abbrev  0x00003ff0      0x4c1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_loc      0x00000000    0x12103
- .debug_loc     0x00000000      0x1df CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- .debug_loc     0x000001df     0x1118 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
- .debug_loc     0x000012f7      0x404 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
- .debug_loc     0x000016fb      0xede CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_loc     0x000025d9      0x45f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_loc     0x00002a38       0xe9 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_loc     0x00002b21      0x233 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_loc     0x00002d54      0x533 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_loc     0x00003287     0x2e37 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_loc     0x000060be      0x952 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_loc     0x00006a10       0x60 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_loc     0x00006a70      0xbc3 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_loc     0x00007633     0x1439 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_loc     0x00008a6c      0x3c6 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_loc     0x00008e32      0x7eb CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_loc     0x0000961d     0x1186 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_loc     0x0000a7a3      0x300 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_loc     0x0000aaa3      0x267 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_loc     0x0000ad0a       0x71 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_loc     0x0000ad7b     0x2095 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_loc     0x0000ce10      0x16f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_loc     0x0000cf7f       0x59 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_loc     0x0000cfd8       0x73 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_loc     0x0000d04b     0x4685 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_loc     0x000116d0      0xa33 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+.debug_loc      0x00000000    0x12088
+ .debug_loc     0x00000000      0x115 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+ .debug_loc     0x00000115     0x1118 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+ .debug_loc     0x0000122d      0x453 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+ .debug_loc     0x00001680      0xede CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_loc     0x0000255e      0x45f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_loc     0x000029bd       0xe9 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_loc     0x00002aa6      0x233 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_loc     0x00002cd9      0x533 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_loc     0x0000320c     0x2e37 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_loc     0x00006043      0x952 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_loc     0x00006995       0x60 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_loc     0x000069f5      0xbc3 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_loc     0x000075b8     0x1439 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_loc     0x000089f1      0x3c6 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_loc     0x00008db7      0x7eb CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_loc     0x000095a2     0x1186 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_loc     0x0000a728      0x300 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_loc     0x0000aa28      0x267 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_loc     0x0000ac8f       0x71 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_loc     0x0000ad00     0x2095 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_loc     0x0000cd95      0x16f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_loc     0x0000cf04       0x59 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_loc     0x0000cf5d       0x73 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_loc     0x0000cfd0     0x4685 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_loc     0x00011655      0xa33 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 .debug_aranges  0x00000000      0xf18
  .debug_aranges
-                0x00000000       0x30 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+                0x00000000       0x28 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
  .debug_aranges
-                0x00000030       0xd0 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+                0x00000028       0xd0 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
  .debug_aranges
-                0x00000100       0x68 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                0x000000f8       0x70 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
  .debug_aranges
                 0x00000168       0xd8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_aranges
@@ -2568,171 +2564,171 @@ LOAD linker stubs
  .debug_aranges
                 0x00000e60       0xb8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_ranges   0x00000000     0x30d0
- .debug_ranges  0x00000000       0xb0 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- .debug_ranges  0x000000b0      0x3f0 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
- .debug_ranges  0x000004a0       0x58 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
- .debug_ranges  0x000004f8       0xe0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_ranges  0x000005d8       0xd8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_ranges  0x000006b0       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_ranges  0x000006c8       0xf0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_ranges  0x000007b8       0xf8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_ranges  0x000008b0      0xba0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_ranges  0x00001450      0x320 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_ranges  0x00001770       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_ranges  0x00001780      0x5c8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_ranges  0x00001d48      0x248 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_ranges  0x00001f90       0x68 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_ranges  0x00001ff8       0x60 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_ranges  0x00002058      0x3b0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_ranges  0x00002408       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_ranges  0x00002438       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_ranges  0x00002478       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_ranges  0x00002498      0x108 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_ranges  0x000025a0       0x60 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_ranges  0x00002600       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_ranges  0x00002638       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_ranges  0x00002670      0x138 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_ranges  0x000027a8       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_ranges  0x000027d8       0xc0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_ranges  0x00002898      0x128 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_ranges  0x000029c0       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_ranges  0x000029e8      0x4b8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_ranges  0x00002ea0       0x48 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_ranges  0x00002ee8       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_ranges  0x00002f18       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_ranges  0x00002f38      0x198 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+.debug_ranges   0x00000000     0x3058
+ .debug_ranges  0x00000000       0x30 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+ .debug_ranges  0x00000030      0x3f0 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+ .debug_ranges  0x00000420       0x60 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+ .debug_ranges  0x00000480       0xe0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_ranges  0x00000560       0xd8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_ranges  0x00000638       0x18 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_ranges  0x00000650       0xf0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_ranges  0x00000740       0xf8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_ranges  0x00000838      0xba0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_ranges  0x000013d8      0x320 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_ranges  0x000016f8       0x10 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_ranges  0x00001708      0x5c8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_ranges  0x00001cd0      0x248 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_ranges  0x00001f18       0x68 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_ranges  0x00001f80       0x60 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_ranges  0x00001fe0      0x3b0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_ranges  0x00002390       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_ranges  0x000023c0       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_ranges  0x00002400       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_ranges  0x00002420      0x108 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_ranges  0x00002528       0x60 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_ranges  0x00002588       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_ranges  0x000025c0       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_ranges  0x000025f8      0x138 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_ranges  0x00002730       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_ranges  0x00002760       0xc0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_ranges  0x00002820      0x128 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_ranges  0x00002948       0x28 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_ranges  0x00002970      0x4b8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_ranges  0x00002e28       0x48 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_ranges  0x00002e70       0x30 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_ranges  0x00002ea0       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_ranges  0x00002ec0      0x198 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_line     0x00000000     0xf378
- .debug_line    0x00000000      0x4bc CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- .debug_line    0x000004bc      0xce7 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
- .debug_line    0x000011a3      0x7c1 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
- .debug_line    0x00001964      0x9b0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x00002314      0x449 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x0000275d      0x258 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x000029b5      0x445 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00002dfa      0x714 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_line    0x0000350e     0x18db CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x00004de9      0xab7 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x000058a0      0x202 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x00005aa2      0xa85 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x00006527      0x86c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x00006d93      0x7dc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x0000756f      0x975 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00007ee4      0xdff CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00008ce3      0x51b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x000091fe      0x390 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x0000958e      0x28d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x0000981b     0x1200 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000aa1b      0x147 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000ab62      0x1b5 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000ad17      0x2ce CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000afe5      0x425 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000b40a      0x317 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000b721      0x69b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000bdbc      0x3db CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000c197      0x31b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000c4b2     0x1dcd CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_line    0x0000e27f      0x1c7 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000e446       0xc1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000e507       0xd2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000e5d9      0x1a1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000e77a      0xbfe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+.debug_line     0x00000000     0xf413
+ .debug_line    0x00000000      0x4fa CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+ .debug_line    0x000004fa      0xce7 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+ .debug_line    0x000011e1      0x81e CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+ .debug_line    0x000019ff      0x9b0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x000023af      0x449 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x000027f8      0x258 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x00002a50      0x445 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00002e95      0x714 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_line    0x000035a9     0x18db CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x00004e84      0xab7 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x0000593b      0x202 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x00005b3d      0xa85 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x000065c2      0x86c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00006e2e      0x7dc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x0000760a      0x975 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x00007f7f      0xdff CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x00008d7e      0x51b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x00009299      0x390 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x00009629      0x28d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x000098b6     0x1200 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000aab6      0x147 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000abfd      0x1b5 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000adb2      0x2ce CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000b080      0x425 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000b4a5      0x317 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000b7bc      0x69b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000be57      0x3db CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000c232      0x31b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000c54d     0x1dcd CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_line    0x0000e31a      0x1c7 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000e4e1       0xc1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000e5a2       0xd2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000e674      0x1a1 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000e815      0xbfe CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
-.debug_str      0x00000000     0x3e19
- .debug_str     0x00000000      0x571 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
-                                0x603 (size before relaxing)
- .debug_str     0x00000571      0x9bc CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+.debug_str      0x00000000     0x3f19
+ .debug_str     0x00000000      0x7c3 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+                                0x865 (size before relaxing)
+ .debug_str     0x000007c3      0x9ad CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
                                 0xc84 (size before relaxing)
- .debug_str     0x00000f2d      0x185 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
-                                0x847 (size before relaxing)
- .debug_str     0x000010b2      0x567 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_str     0x00001170      0x192 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+                                0x88b (size before relaxing)
+ .debug_str     0x00001302      0x3c9 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
                                 0x895 (size before relaxing)
- .debug_str     0x00001619      0x1bc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_str     0x000016cb      0x1bc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
                                 0x390 (size before relaxing)
- .debug_str     0x000017d5       0x81 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_str     0x00001887       0x81 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
                                 0x24c (size before relaxing)
- .debug_str     0x00001856       0xec CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x00001908       0xec CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
                                 0x377 (size before relaxing)
- .debug_str     0x00001942      0x216 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_str     0x000019f4      0x216 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
                                 0x564 (size before relaxing)
- .debug_str     0x00001b58      0x6d0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_str     0x00001c0a      0x71e CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
                                 0xbc2 (size before relaxing)
- .debug_str     0x00002228      0x182 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x00002328      0x182 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
                                 0x6c5 (size before relaxing)
- .debug_str     0x000023aa       0x3c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x000024aa       0x3c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
                                 0x22d (size before relaxing)
- .debug_str     0x000023e6      0x13a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x000024e6      0x13a CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
                                 0x53f (size before relaxing)
- .debug_str     0x00002520       0xec CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_str     0x00002620       0xec CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
                                 0x416 (size before relaxing)
- .debug_str     0x0000260c      0x1f5 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x0000270c      0x1f5 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                 0x618 (size before relaxing)
- .debug_str     0x00002801      0x251 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x00002901      0x251 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
                                 0x692 (size before relaxing)
- .debug_str     0x00002a52      0x2d2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x00002b52      0x2d2 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
                                 0x6f5 (size before relaxing)
- .debug_str     0x00002d24       0x8f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x00002e24       0x8f CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
                                 0x2fe (size before relaxing)
- .debug_str     0x00002db3      0x108 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_str     0x00002eb3      0x108 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
                                 0x330 (size before relaxing)
- .debug_str     0x00002ebb       0x75 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x00002fbb       0x75 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
                                 0x24f (size before relaxing)
- .debug_str     0x00002f30      0x266 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x00003030      0x266 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
                                 0x4ac (size before relaxing)
- .debug_str     0x00003196       0x55 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_str     0x00003296       0x55 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
                                  0x9d (size before relaxing)
- .debug_str     0x000031eb       0xad CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x000032eb       0xad CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
                                 0x26f (size before relaxing)
- .debug_str     0x00003298       0x41 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_str     0x00003398       0x41 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
                                  0x97 (size before relaxing)
- .debug_str     0x000032d9       0x45 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_str     0x000033d9       0x45 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
                                  0x9b (size before relaxing)
- .debug_str     0x0000331e       0x91 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_str     0x0000341e       0x91 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
                                 0x2a9 (size before relaxing)
- .debug_str     0x000033af       0x4b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_str     0x000034af       0x4b CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
                                  0xa1 (size before relaxing)
- .debug_str     0x000033fa       0x43 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_str     0x000034fa       0x43 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
                                  0x99 (size before relaxing)
- .debug_str     0x0000343d       0x8d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_str     0x0000353d       0x8d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                 0x2e1 (size before relaxing)
- .debug_str     0x000034ca      0x33d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_str     0x000035ca      0x33d CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
                                 0x52a (size before relaxing)
- .debug_str     0x00003807       0x49 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_str     0x00003907       0x49 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
                                  0x9f (size before relaxing)
- .debug_str     0x00003850       0x47 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x00003950       0x47 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
                                  0x9d (size before relaxing)
- .debug_str     0x00003897       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_str     0x00003997       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
                                  0x9a (size before relaxing)
- .debug_str     0x000038db      0x244 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_str     0x000039db      0x244 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
                                 0x40e (size before relaxing)
- .debug_str     0x00003b1f      0x2fa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_str     0x00003c1f      0x2fa CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
                                 0x759 (size before relaxing)
 
-.debug_frame    0x00000000     0x1ac8
- .debug_frame   0x00000000       0x58 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
- .debug_frame   0x00000058      0x1f4 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
- .debug_frame   0x0000024c      0x100 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
- .debug_frame   0x0000034c      0x1e8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_frame   0x00000534       0x9c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_frame   0x000005d0       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_frame   0x00000608       0xc4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_frame   0x000006cc       0x78 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_frame   0x00000744      0x294 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_frame   0x000009d8      0x134 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_frame   0x00000b0c       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_frame   0x00000b2c      0x108 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_frame   0x00000c34      0x164 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_frame   0x00000d98       0xdc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_frame   0x00000e74      0x12c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_frame   0x00000fa0      0x17c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_frame   0x0000111c       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_frame   0x00001160       0x98 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_frame   0x000011f8       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_frame   0x00001238      0x1f8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_frame   0x00001430       0x64 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_frame   0x00001494       0x2c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_frame   0x000014c0       0x2c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_frame   0x000014ec      0x3a0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_frame   0x0000188c      0x214 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_frame   0x00001aa0       0x28 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
+.debug_frame    0x00000000     0x1ac4
+ .debug_frame   0x00000000       0x44 CMakeFiles/BareMetal_UART.dir/src/main.c.obj
+ .debug_frame   0x00000044      0x1f4 CMakeFiles/BareMetal_UART.dir/src/bsp.c.obj
+ .debug_frame   0x00000238      0x110 CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj
+ .debug_frame   0x00000348      0x1e8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_frame   0x00000530       0x9c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_frame   0x000005cc       0x38 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_frame   0x00000604       0xc4 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_frame   0x000006c8       0x78 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_frame   0x00000740      0x294 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_frame   0x000009d4      0x134 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_frame   0x00000b08       0x20 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_frame   0x00000b28      0x108 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_frame   0x00000c30      0x164 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_frame   0x00000d94       0xdc CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_frame   0x00000e70      0x12c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_frame   0x00000f9c      0x17c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_frame   0x00001118       0x44 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_frame   0x0000115c       0x98 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_frame   0x000011f4       0x40 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_frame   0x00001234      0x1f8 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_frame   0x0000142c       0x64 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_frame   0x00001490       0x2c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_frame   0x000014bc       0x2c CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_frame   0x000014e8      0x3a0 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_frame   0x00001888      0x214 CMakeFiles/BareMetal_UART.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_frame   0x00001a9c       0x28 c:/vsarm/armcc/102021~1.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)

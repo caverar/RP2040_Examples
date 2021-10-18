@@ -7,7 +7,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 //#include <stdio.h>
-
+#include <string.h>
 #include <math.h>
 
 // Personal Standard libraries
@@ -62,6 +62,7 @@ void UartSafe_constructor(UartSafe* const self){
     self->tx_semaphore = 0;
     self->pending_tx_package_position = 0;
     self->retreive_data_rq = 0;
+    self->current_sample_tx_package_position = 0;
 
     // Error Package
 
@@ -94,19 +95,23 @@ void UartSafe_start_RX(UartSafe* const self, uint16_t number_of_transfers){
 
 
 
-void UartSafe_new_sample(UartSafe* const self, package* sample){
+bool UartSafe_new_sample(UartSafe* const self, package* sample){
+
+
     // TODO: Take in account scheduler, maybe a request signal
     self->current_sample_tx_package = self->current_sample_tx_package->
                                   next_structure;
-    *self->current_sample_tx_package = *sample;
+    memcpy((void*)self->current_sample_tx_package,(void*)sample, 32);
+    //*self->current_sample_tx_package = *sample;
 
     self->tx_semaphore++;
-    if(self->pending_tx_package_position<(LINKED_LIST_SIZE-1)){
-        self->pending_tx_package_position++;
+    if(self->current_sample_tx_package_position<(LINKED_LIST_SIZE-1)){
+        self->current_sample_tx_package_position++;
     }else{
-        self->pending_tx_package_position = 0;
+        self->current_sample_tx_package_position = 0;
     }
-    
+
+    return true;
 }
 
 /**
@@ -133,12 +138,21 @@ static uint32_t jumps_between_pending_to_current;
 static uint32_t jumps_between_requested_to_current;
 static int32_t array_position;
 
+static bool pending_tx_behind_current_sample(UartSafe* const self){
+    if(self->pending_tx_package_position == 
+      self->current_sample_tx_package_position){
+        return false;
+    }else{
+        return true;
+    }
+}
+
 void UartSafe_package_scheduler(UartSafe* const self){
 
     // Se encarga de evaluar los semaforos
 
     // Debe tener un mecanismo para que pending_tx_package, no revase a 
-    // current_sample_tx_package, siempre debe estar al menos, un salto atras
+    // current_sample_tx_package, siempre d0ebe estar al menos, un salto atras
 
 
     switch(self->package_scheduler_state){
@@ -149,11 +163,11 @@ void UartSafe_package_scheduler(UartSafe* const self){
                 //Save data in error package
                 self->tx_error_package.rq_sample = self->rx_package.rq_sample;
 
-                self->tx_handler_state = RETREIVE_DATA;
+                self->package_scheduler_state = RETREIVE_DATA;
 
             }else if(self->tx_semaphore>0){
                 //TODO
-                self->tx_handler_state = SCHEDULE_TX;
+                self->package_scheduler_state = SCHEDULE_TX;
             }
             break;
 
@@ -209,24 +223,26 @@ void UartSafe_package_scheduler(UartSafe* const self){
                 
                 // tx_semaphore_rq: 
                 self->tx_semaphore++;
-
             }
 
-            self->tx_handler_state = SCHEDULER_IDLE;
+            self->package_scheduler_state = SCHEDULER_IDLE;
             break; 
 
         case SCHEDULE_TX:
-            //TODO
-            if(self->tx_semaphore > 0){
+            //TODO:request
+            if(self->tx_semaphore > 0 && 
+               pending_tx_behind_current_sample(self)){
+
                 self->tx_handler_send_data = true;
+                self->tx_semaphore--;
             }
 
-            self->tx_handler_state = SCHEDULER_IDLE;
+            self->package_scheduler_state = SCHEDULER_IDLE;
             break;
 
         default:
             self->tx_semaphore = 0;
-            self->tx_handler_state = SCHEDULER_IDLE;
+            self->package_scheduler_state = SCHEDULER_IDLE;
             break;
 
     }
@@ -286,7 +302,14 @@ void UartSafe_tx_handler(UartSafe* const self){
         case WAITING_FOR_LAST_TRANFER:
             if(!bsp_uart_tx_is_busy()){
                 self->tx_handler_state = TX_IDLE;
-                // pasar a la siguiente muestra
+
+                // pasar a la siguiente muestra:
+
+                if(self->pending_tx_package_position<(LINKED_LIST_SIZE-1)){
+                    self->pending_tx_package_position++;
+                }else{
+                    self->pending_tx_package_position = 0;
+                }
                 self->pending_tx_package = self->pending_tx_package->
                                            next_structure;
             }

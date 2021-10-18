@@ -1634,6 +1634,10 @@ CMakeFiles/BareMetal_UART.dir/src/uart_safe.c.obj: ../src/uart_safe.c \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/sys/cdefs.h \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/machine/stdlib.h \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/alloca.h \
+  C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/string.h \
+  C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/sys/_locale.h \
+  C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/strings.h \
+  C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/sys/string.h \
   C:/VSARM/armcc/10\ 2021.07/arm-none-eabi/include/math.h \
   ../include/bitwise.h \
   ../include/bsp.h \

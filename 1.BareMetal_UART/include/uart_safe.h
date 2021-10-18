@@ -78,11 +78,11 @@ typedef enum {
 
 __attribute__((aligned(32))) typedef struct package_struct{
     uint32_t sample;                        // 0 - 3 bytes
-    uint32_t sensor2;                       // 4 - 7 bytes
-    uint32_t sensor3;                       // 8 -11 bytes
-    uint32_t sensor4;                       // 12-15 bytes
-    uint32_t sensor5;                       // 16-19 bytes
-    uint32_t sensor6;                       // 20-23 bytes
+    uint32_t sensor1;                       // 4 - 7 bytes
+    uint32_t sensor2;                       // 8 -11 bytes
+    uint32_t sensor3;                       // 12-15 bytes
+    uint32_t sensor4;                       // 16-19 bytes
+    uint32_t sensor5;                       // 20-23 bytes
     uint32_t rq_sample;                     // 24-27 bytes
     uint16_t control_signals;               // 28-29 bytes
     uint16_t CRC16;                         // 30-31 bytes
@@ -119,6 +119,7 @@ typedef struct UartSafe_data_struct{
     package* pending_tx_package;
     uint32_t pending_tx_package_position;
     package* current_sample_tx_package;
+    uint32_t current_sample_tx_package_position;
 
 
     package rx_package;                         // organized package
@@ -186,7 +187,15 @@ void UartSafe_retreive_data_rq(UartSafe* const self);
 
 void UartSafe_package_scheduler(UartSafe* const self);
 
-void UartSafe_new_sample(UartSafe* const self, package* sample);
+/**
+ * @brief This function, request to do a trasfer of a new sample
+ * 
+ * @param self Class Object
+ * @param sample a pointer the the sample
+ * @return true if the request was a success
+ * @return false if the request was a failure
+ */
+bool UartSafe_new_sample(UartSafe* const self, package* sample);
 
 #ifdef __cplusplus
 }

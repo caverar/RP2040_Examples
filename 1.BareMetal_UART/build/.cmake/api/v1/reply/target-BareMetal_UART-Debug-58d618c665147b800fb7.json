@@ -1200,12 +1200,12 @@
 			"id" : "ELF2UF2Build::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 2,
-			"id" : "FreeRTOS::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 10,
 			"id" : "bs2_default_padded_checksummed_asm::@bc554eaed616d198a22d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "FreeRTOS::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "BareMetal_UART::@6890427a1f51a3e7e1df",

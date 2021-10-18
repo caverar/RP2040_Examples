@@ -89,10 +89,10 @@ int main(){
 
     /* Initialize LED --------------------------------------------------------*/ 
 
-    //const uint32_t led_pin = 25;
-    //gpio_init(led_pin);
-    //gpio_set_dir(led_pin, GPIO_OUT);
-    //gpio_set_outover(led_pin, GPIO_OVERRIDE_INVERT);
+    const uint32_t led_pin = 25;
+    gpio_init(led_pin);
+    gpio_set_dir(led_pin, GPIO_OUT);
+    gpio_set_outover(led_pin, GPIO_OVERRIDE_INVERT);
 
 
     /* Application code ------------------------------------------------------*/ 
@@ -140,21 +140,38 @@ int main(){
     //
     UartSafe_init_uart(&objectTest);
     uint64_t  current_time = 0;
-    uint64_t  last_time = get_absolute_time()._private_us_since_boot;
-;
+    uint64_t  last_time =  time_us_64();
 
-    objectTest.tx_handler_send_data = true;
+
+    //objectTest.tx_handler_send_data = true;
+
+    package test_package;
+    test_package.sample = 0;
+    test_package.sensor1 = 0;
+    test_package.sensor2 = 0;
+    test_package.sensor3 = 0;
+    test_package.sensor4 = 0;
+    test_package.sensor5 = 0;
+    test_package.rq_sample = 0;
+    test_package.control_signals = 0; 
+    //UartSafe_new_sample(&objectTest, &test_package);
     for(;;){
 
         UartSafe_rx_handler(&objectTest);
         UartSafe_package_scheduler(&objectTest);
         UartSafe_tx_handler(&objectTest);
 
-        current_time = get_absolute_time()._private_us_since_boot;
+        current_time = time_us_64();
 
-        if(last_time - current_time > 500*1000){        // Mensaje cada 500ms
-            objectTest.tx_handler_send_data = true;
-            last_time = get_absolute_time()._private_us_since_boot; 
+        if((current_time- last_time) > (500*1000)){        // Mensaje cada 5000ms
+            //objectTest.tx_handler_send_data = true;
+            
+            last_time =  time_us_64();
+
+            UartSafe_new_sample(&objectTest, &test_package);
+            test_package.sensor1++;
+            test_package.sample++;
+            gpio_set_mask(1<<led_pin);
         }
     }
     
