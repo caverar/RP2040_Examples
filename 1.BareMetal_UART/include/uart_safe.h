@@ -11,7 +11,12 @@
   *          Linked structures, are used to have a FIFO of packages, so in case 
   *          that the slave do not behave as RTOS system (Windows, Linux, etc), 
   *          there is a windows of opportunity to request past corrupted data,
-  *          saved in the structure. 
+  *          saved in the structure. The windows size is configurable with the
+  *          "#define" LINKED_LIST_SIZE.
+  * 
+  *          function_callbacks, is an array of pointers that the user can 
+  *          assign to custom functions. This callbacks are executed with
+  *          control signals from the host are detected.
   *
   @verbatim
 
@@ -43,7 +48,7 @@ extern "C" {
 
 /* Defines -------------------------------------------------------------------*/
 
-#define LINKED_LIST_SIZE 6
+#define LINKED_LIST_SIZE 20
 
 #define tx_sampling_period_ms 50
 

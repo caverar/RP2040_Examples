@@ -163,7 +163,7 @@ int main(){
 
         current_time = time_us_64();
 
-        if((current_time- last_time) > (500*1000)){        // Mensaje cada 5000ms
+        if((current_time- last_time) > (100*1000)){        // Mensaje cada 100ms
             //objectTest.tx_handler_send_data = true;
             
             last_time =  time_us_64();

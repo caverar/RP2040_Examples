@@ -61,7 +61,7 @@ void UartSafe_constructor(UartSafe* const self){
     self->rx_handler_state = RX_IDLE;
     self->tx_semaphore = 0;
     self->pending_tx_package_position = 0;
-    self->retreive_data_rq = 0;
+    self->retreive_data_rq = false;
     self->current_sample_tx_package_position = 0;
 
     // Error Package
@@ -98,7 +98,7 @@ void UartSafe_start_RX(UartSafe* const self, uint16_t number_of_transfers){
 bool UartSafe_new_sample(UartSafe* const self, package* sample){
 
 
-    // TODO: Take in account scheduler, maybe a request signal
+
     self->current_sample_tx_package = self->current_sample_tx_package->
                                   next_structure;
     memcpy((void*)self->current_sample_tx_package,(void*)sample, 32);
@@ -122,18 +122,20 @@ bool UartSafe_new_sample(UartSafe* const self, package* sample){
  * @param behind_pointer_ID If of the pointer behind.
  * @return uint32_t The numbers of jumps between the elements.
  */
-static uint32_t jumps_between_pointers(uint32_t front_pointer_ID, 
-                                       uint32_t rear_pointer_ID){
-    if(front_pointer_ID < rear_pointer_ID){
-        return (1 + front_pointer_ID + (UINT32_MAX -rear_pointer_ID));
+static uint32_t jumps_between_pointers(int32_t front_pointer_position, 
+                                       int32_t rear_pointer_position){
+    if(front_pointer_position < rear_pointer_position){
+        return (1 + front_pointer_position + 
+                (UINT32_MAX -rear_pointer_position));
     }else{
-        return rear_pointer_ID - front_pointer_ID;
+        return rear_pointer_position - front_pointer_position;
     }
 }
 
-static uint32_t requested_sample_id;
-static uint32_t current_tx_sample_id;
-static uint32_t pending_tx_sample_id;
+static int32_t requested_sample_id;
+static int32_t current_tx_sample_id;
+static int32_t pending_tx_sample_id;
+static uint32_t requested_sample_position;
 static uint32_t jumps_between_pending_to_current;
 static uint32_t jumps_between_requested_to_current;
 static int32_t array_position;
@@ -162,7 +164,7 @@ void UartSafe_package_scheduler(UartSafe* const self){
 
                 //Save data in error package
                 self->tx_error_package.rq_sample = self->rx_package.rq_sample;
-
+                self->tx_error_package.sample = self->rx_package.rq_sample;
                 self->package_scheduler_state = RETREIVE_DATA;
 
             }else if(self->tx_semaphore>0){
@@ -176,61 +178,75 @@ void UartSafe_package_scheduler(UartSafe* const self){
             current_tx_sample_id =self->current_sample_tx_package->sample;
             pending_tx_sample_id = self->pending_tx_package->sample;
 
+            // request package position:
+            //requested_sample_position = current_tx_sample_id;
 
             // jumps between pointers by ID:
-            jumps_between_pending_to_current = jumps_between_pointers(
-                                                current_tx_sample_id, 
-                                                pending_tx_sample_id);
 
-            jumps_between_requested_to_current = jumps_between_pointers(
-                                                 requested_sample_id, 
-                                                 pending_tx_sample_id);
+            //jumps_between_pending_to_current = jumps_between_pointers(
+            //                self->current_sample_tx_package_position,
+            //                self->pending_tx_package_position);
 
-            //TODO: Testing (Slow debugging)
-            if((jumps_between_requested_to_current > 
-               jumps_between_pending_to_current) &&
-               (jumps_between_requested_to_current < LINKED_LIST_SIZE)){
-                
+            jumps_between_pending_to_current = current_tx_sample_id - 
+                                     pending_tx_sample_id;
+
+            jumps_between_requested_to_current = current_tx_sample_id - 
+                                                 requested_sample_id;
+
+            // see if the sample exist in the list:
+            bool sample_exist =(requested_sample_id > (current_tx_sample_id -
+                                                       LINKED_LIST_SIZE-3) &&
+                                requested_sample_id < current_tx_sample_id);
+
+            bool sample_is_before_pending = jumps_between_requested_to_current > 
+                                            jumps_between_pending_to_current;
+            
+            if(sample_exist && sample_is_before_pending){ 
+
+                    
                 // array position calculation:
-                array_position = ((int32_t)self->pending_tx_package_position)-
-                                  jumps_between_requested_to_current;
+                array_position = self->pending_tx_package_position-
+                                 jumps_between_requested_to_current;
                 if(array_position<0){
                     array_position += LINKED_LIST_SIZE - 1;
                 }
 
+                // tx_semaphore_rq: 
+                self->tx_semaphore+= pending_tx_sample_id - requested_sample_id;
                 // Package loading:
 
                 self->pending_tx_package = &(self->tx_packages_array[
                                              array_position]);
-                *(self->pending_tx_package) = self->tx_error_package;
-
-                // tx_semaphore_rq: 
-                self->tx_semaphore++;
+                self->pending_tx_package_position = array_position;
+                self->pending_tx_package->control_signals = 0x0000 | 
+                                             retreive_data_ack_bit |
+                                             retreive_data_state_bit;
 
             }else{
-
                 // array position calculation:
                 array_position = ((int32_t)self->pending_tx_package_position)-1;
                 if(array_position<0){
                     array_position += LINKED_LIST_SIZE - 1;
                 }
-                
+                    
                 // Package loading:
-                self->pending_tx_package = &(self->tx_packages_array[self->
-                                           pending_tx_package_position-1]);
+                self->pending_tx_package = &(self->
+                                            tx_packages_array[array_position]);
+                memcpy(self->pending_tx_package,&self->tx_error_package,30);
 
-                *(self->pending_tx_package) = self->tx_error_package;
-                
+                    
                 // tx_semaphore_rq: 
                 self->tx_semaphore++;
-            }
 
+                // Return to IDLE state
+            }
+            self->retreive_data_rq = false;
             self->package_scheduler_state = SCHEDULER_IDLE;
-            break; 
+            break;
 
         case SCHEDULE_TX:
             //TODO:request
-            if(self->tx_semaphore > 0 && 
+            if(self->tx_semaphore > 0 && self->tx_handler_state == TX_IDLE &&
                pending_tx_behind_current_sample(self)){
 
                 self->tx_handler_send_data = true;
@@ -251,7 +267,7 @@ void UartSafe_package_scheduler(UartSafe* const self){
 
 
 
-static uint8_t CRCdata[3] = {'r', '\n', '\0'};
+static uint8_t CRCdata[6] = {'r', '\n', 'E','N','D','\0'};
 
 void UartSafe_tx_handler(UartSafe* const self){
 
@@ -291,10 +307,10 @@ void UartSafe_tx_handler(UartSafe* const self){
             // and then, sends the CRC16 data. 
             if(!bsp_uart_tx_is_busy() && !bsp_dma_is_busy_uart_tx()){
 
-                uint8_t CRC = dma_get_CRC16();
+                uint16_t CRC = dma_get_CRC16();
                 CRCdata[0] = SECOND_BYTE(CRC);
                 CRCdata[1] = FIRST_BYTE(CRC);
-                bsp_uart_send_buffer(CRCdata, 3);
+                bsp_uart_send_buffer(CRCdata, 6);
                 self->tx_handler_state = WAITING_FOR_LAST_TRANFER;
             }
             break;
