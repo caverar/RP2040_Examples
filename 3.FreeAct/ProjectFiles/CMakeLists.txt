@@ -15,6 +15,8 @@ pico_sdk_init()
 # point out the CMake, where to find the executable source file
 add_executable(${PROJECT_NAME}
         src/main.c
+        src/bsp.c
+        src/blinky_AO.c
 )
 
 # Create map/bin/hex/uf2 files.

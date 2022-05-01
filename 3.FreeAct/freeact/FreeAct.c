@@ -34,34 +34,34 @@
 #include "FreeAct.h" /* Free Active Object interface */
 
 /*..........................................................................*/
-void Active_ctor(Active * const me, DispatchHandler dispatch) {
-    me->dispatch = dispatch; /* assign the dispatch handler */
+void Active_ctor(Active * const this, DispatchHandler dispatch) {
+    this->dispatch = dispatch; /* assign the dispatch handler */
 }
 
 /*..........................................................................*/
 /* Event-loop thread function for all Active Objects (FreeRTOS task signature) */
 static void Active_eventLoop(void *pvParameters) {
-    Active *me = (Active *)pvParameters;
+    Active *this = (Active *)pvParameters;
     static Event const initEvt = { INIT_SIG };
 
-    configASSERT(me); /* Active object must be provided */
+    configASSERT(this); /* Active object must be provided */
 
     /* initialize the AO */
-    (*me->dispatch)(me, &initEvt);
+    (*this->dispatch)(this, &initEvt);
 
     for (;;) {   /* for-ever "superloop" */
         Event *e; /* pointer to event object ("message") */
 
         /* wait for any event and receive it into object 'e' */
-        xQueueReceive(me->queue, &e, portMAX_DELAY); /* BLOCKING! */
+        xQueueReceive(this->queue, &e, portMAX_DELAY); /* BLOCKING! */
 
-        /* dispatch event to the active object 'me' */
-        (*me->dispatch)(me, e); /* NO BLOCKING! */
+        /* dispatch event to the active object 'this' */
+        (*this->dispatch)(this, e); /* NO BLOCKING! */
     }
 }
 
 /*..........................................................................*/
-void Active_start(Active * const me,
+void Active_start(Active * const this,
                   uint8_t prio,       /* priority (1-based) */
                   Event **queueSto,
                   uint32_t queueLen,
@@ -73,35 +73,35 @@ void Active_start(Active * const me,
     uint32_t stk_depth = (stackSize / sizeof(StackType_t));
 
     (void)opt; /* unused parameter */
-    me->queue = xQueueCreateStatic(
+    this->queue = xQueueCreateStatic(
                    queueLen,            /* queue length - provided by user */
                    sizeof(Event *),     /* item size */
                    (uint8_t *)queueSto, /* queue storage - provided by user */
-                   &me->queue_cb);      /* queue control block */
-    configASSERT(me->queue); /* queue must be created */
+                   &this->queue_cb);      /* queue control block */
+    configASSERT(this->queue); /* queue must be created */
 
-    me->thread = xTaskCreateStatic(
+    this->thread = xTaskCreateStatic(
               &Active_eventLoop,        /* the thread function */
               "AO" ,                    /* the name of the task */
               stk_depth,                /* stack depth */
-              me,                       /* the 'pvParameters' parameter */
+              this,                       /* the 'pvParameters' parameter */
               prio + tskIDLE_PRIORITY,  /* FreeRTOS priority */
               stk_sto,                  /* stack storage - provided by user */
-              &me->thread_cb);          /* task control block */
-    configASSERT(me->thread); /* thread must be created */
+              &this->thread_cb);          /* task control block */
+    configASSERT(this->thread); /* thread must be created */
 }
 
 /*..........................................................................*/
-void Active_post(Active * const me, Event const * const e) {
-    BaseType_t status = xQueueSend(me->queue, (void *)&e, (TickType_t)0);
+void Active_post(Active * const this, Event const * const e) {
+    BaseType_t status = xQueueSend(this->queue, (void *)&e, (TickType_t)0);
     configASSERT(status == pdTRUE);
 }
 
 /*..........................................................................*/
-void Active_postFromISR(Active * const me, Event const * const e,
+void Active_postFromISR(Active * const this, Event const * const e,
                         BaseType_t *pxHigherPriorityTaskWoken)
 {
-    BaseType_t status = xQueueSendFromISR(me->queue, (void *)&e,
+    BaseType_t status = xQueueSendFromISR(this->queue, (void *)&e,
                                           pxHigherPriorityTaskWoken);
     configASSERT(status == pdTRUE);
 }
@@ -113,33 +113,37 @@ static TimeEvent *l_tevt[10]; /* all TimeEvents in the application */
 static uint_fast8_t l_tevtNum; /* current number of TimeEvents */
 
 /*..........................................................................*/
-void TimeEvent_ctor(TimeEvent * const me, Signal sig, Active *act) {
+void TimeEvent_ctor(TimeEvent * const this, Signal sig, Active *act) {
     /* no critical section because it is presumed that all TimeEvents
     * are created *before* multitasking has started.
     */
-    me->super.sig = sig;
-    me->act = act;
-    me->timeout = 0U;
-    me->interval = 0U;
+    this->super.sig = sig;
+    this->act = act;
+    this->timeout = 0U;
+    this->interval = 0U;
 
     /* register one more TimeEvent with the application */
     configASSERT(l_tevtNum < sizeof(l_tevt)/sizeof(l_tevt[0]));
-    l_tevt[l_tevtNum] = me;
+    l_tevt[l_tevtNum] = this;
     ++l_tevtNum;
 }
 
 /*..........................................................................*/
-void TimeEvent_arm(TimeEvent * const me, uint32_t timeout, uint32_t interval) {
+
+/*
+Programa un evento de tiempo
+*/
+void TimeEvent_arm(TimeEvent * const this, uint32_t timeout, uint32_t interval) {
     taskENTER_CRITICAL();
-    me->timeout = timeout;
-    me->interval = interval;
+    this->timeout = timeout;
+    this->interval = interval;
     taskEXIT_CRITICAL();
 }
 
 /*..........................................................................*/
-void TimeEvent_disarm(TimeEvent * const me) {
+void TimeEvent_disarm(TimeEvent * const this) {
     taskENTER_CRITICAL();
-    me->timeout = 0U;
+    this->timeout = 0U;
     taskEXIT_CRITICAL();
 }
 

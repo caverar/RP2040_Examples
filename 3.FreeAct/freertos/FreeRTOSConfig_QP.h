@@ -42,8 +42,6 @@
  * See http://www.freertos.org/a00110.html.
  *----------------------------------------------------------*/
 
-#define SystemCoreClock 125000000   // Reajustar a 133 desde el sdk
-
 #define configUSE_PREEMPTION            1
 #define configUSE_IDLE_HOOK             1
 #define configUSE_TICK_HOOK             1
@@ -99,24 +97,14 @@ See http://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html. */
 
 /* Use the Cortex-M3 optimised task selection rather than the generic C code
 version. */
-#define configUSE_PORT_OPTIMISED_TASK_SELECTION 0
+#define configUSE_PORT_OPTIMISED_TASK_SELECTION 1
 
-// #define configASSERT( x )
-// /* Prevent the inclusion of items the assembler will not understand in assembly files. */
-// #ifndef __IAR_SYSTEMS_ASM__
-//     #define configASSERT( x ) if( ( x ) == 0 ) assert_failed( __FILE__, __LINE__ );
+/* Prevent the inclusion of items the assembler will not understand in assembly files. */
+#ifndef __IAR_SYSTEMS_ASM__
+    #define configASSERT( x ) if( ( x ) == 0 ) assert_failed( __FILE__, __LINE__ );
 
-//     void assert_failed(char const * const module, int location);
-//     extern uint32_t SystemCoreClock;
-// #endif
-
-#ifdef USE_FULL_ASSERT
-void assert_failed(uint8_t* file, uint32_t line)
-{
-/* Infinite loop /
-/ Use GDB to find out why we're here */
-while (1);
-}
+    void assert_failed(char const * const module, int location);
+    extern uint32_t SystemCoreClock;
 #endif
 
 // /* Map the FreeRTOS port interrupt handlers to their CMSIS standard names. */
