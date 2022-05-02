@@ -31,10 +31,7 @@
 
 // High level API
 
-// FreeRTOS
-#include <FreeRTOS.h>
-#include "FreeRTOSConfig.h"
-#include "task.h"
+
 
 
 
