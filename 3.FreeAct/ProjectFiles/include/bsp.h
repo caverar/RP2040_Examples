@@ -1,6 +1,21 @@
 #ifndef BSP_H
 #define BSP_H
 
+// Standard C libraries
+#include <stdio.h>
+#include <stdint.h>
+#include <stdbool.h>
+
+// SDK Libraries
+#include "pico/stdlib.h"
+//#include "hardware/uart.h"
+//#include "hardware/gpio.h"
+
+
+#define LED_PIN PICO_DEFAULT_LED_PIN
+#define TEST_PIN 15
+
+
 // void BSP_init(void);
 // void BSP_start(void);
 // void BSP_led0_on(void);
