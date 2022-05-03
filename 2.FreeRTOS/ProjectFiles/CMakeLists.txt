@@ -27,9 +27,9 @@ target_link_libraries(
         freertos
 )
 
-target_include_directories(
-        include/
-)
+# target_include_directories(
+#         include/
+# )
 
 # SDK configurations
 pico_enable_stdio_usb(${PROJECT_NAME} 0)

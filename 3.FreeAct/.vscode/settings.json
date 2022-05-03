@@ -23,7 +23,8 @@
         "freertos.h": "c",
         "freeact.h": "c",
         "bsp.h": "c",
-        "printer_ao.h": "c"
+        "printer_ao.h": "c",
+        "stdio.h": "c"
     },
     "cortex-debug.showRTOS": false,
     "cmake.sourceDirectory": "${workspaceFolder}/.",
