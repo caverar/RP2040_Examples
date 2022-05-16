@@ -53,15 +53,15 @@
 
  
 
-#define DEBOUNCE_LOW_LEVEL 10
-#define DEBOUNCE_HIGH_LEVEL 50
+
+#define DEBOUNCE_HIGH_LEVEL 100
 
 bool sw_debounce(bool current_state, u_int16_t* level){
 
     if(current_state){  // load and discharge of software capacitor 
         *level = (*level >= DEBOUNCE_HIGH_LEVEL) ? DEBOUNCE_HIGH_LEVEL : *level+1;
     }else{
-        *level = (*level <= DEBOUNCE_LOW_LEVEL) ? DEBOUNCE_LOW_LEVEL : *level-1;
+        *level = 0;
     }
     return *level >= DEBOUNCE_HIGH_LEVEL;
 }
@@ -91,11 +91,12 @@ void debounce_all(uint16_t adc_val,
         *buttons_states |= (0x01 && sw_debounce(true, &buttons_levels[4]))<<4;
 
     }else{
-        buttons_states[0] = sw_debounce(false, &buttons_levels[0]);
-        buttons_states[1] = sw_debounce(false, &buttons_levels[1]);
-        buttons_states[2] = sw_debounce(false, &buttons_levels[2]);
-        buttons_states[3] = sw_debounce(false, &buttons_levels[3]);
-        buttons_states[4] = sw_debounce(false, &buttons_levels[4]);
+        *buttons_states = 0x00;
+        *buttons_states |= (0x01 && sw_debounce(false, &buttons_levels[0]))<<0;
+        *buttons_states |= (0x01 && sw_debounce(false, &buttons_levels[1]))<<1;
+        *buttons_states |= (0x01 && sw_debounce(false, &buttons_levels[2]))<<2;
+        *buttons_states |= (0x01 && sw_debounce(false, &buttons_levels[3]))<<3;
+        *buttons_states |= (0x01 && sw_debounce(false, &buttons_levels[4]))<<4;
     }
 }
 
@@ -132,6 +133,7 @@ int main() {
 
         uint8_t buttons_pressed = buttons_states & ~buttons_past_states;
         buttons_past_states = buttons_states;
+
 
         printf("states: %d\n", buttons_pressed);
         
