@@ -11,6 +11,7 @@ include_directories(include)
 # point out the CMake, where to find the executable source file
 add_executable(${PROJECT_NAME}
     src/main.c
+    src/spi_sd.c
 )
 
 # Create map/bin/hex/uf2 files.

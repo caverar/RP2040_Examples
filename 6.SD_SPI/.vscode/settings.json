@@ -24,7 +24,10 @@
         "freeact.h": "c",
         "bsp.h": "c",
         "printer_ao.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "stdint.h": "c",
+        "ff.h": "c",
+        "spi_sd.h": "c"
     },
     "cortex-debug.showRTOS": false,
     "cmake.sourceDirectory": "${workspaceFolder}/.",
