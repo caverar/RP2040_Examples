@@ -20,8 +20,6 @@
 // SDK Libraries
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
-#include "pio_i2c.h"
-
 
 
 void read_register(i2c_inst_t* i2c_instance, 
@@ -30,14 +28,13 @@ void read_register(i2c_inst_t* i2c_instance,
                    uint8_t* read_buffer, 
                    uint8_t size){
 
+    i2c_write_timeout_us(i2c_instance,device_addr,&register_address,1,false,500);
     
-    pio_i2c_write_blocking(pio0, 0, device_address, &register_address, 1);
-    pio_i2c_read_blocking(pio0, 0, device_address, read_buffer, size);
+    i2c_read_timeout_us(i2c_instance,device_address,read_buffer,size,false,500);
 }
 
 uint16_t read_angle(i2c_inst_t* i2c){
-    uint8_t read_data[4];
-    read_register(i2c, device_address, raw_angle_address+1, read_data, 4);
-    //return (read_data[1]);
-    return (read_data[1]<<8) + read_data[2];
+    uint8_t read_data[2];
+    read_register(i2c, device_address, raw_angle_address,read_data, 2);
+    return (read_data[0] << 8) + read_data[1];
 }

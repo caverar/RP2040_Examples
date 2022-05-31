@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdlib.h": "c",
+			"stdio.h": "c",
+			"task.h": "c",
+			"freertos.h": "c",
+			"freertosconfig.h": "c",
+			"portable.h": "c",
+			"portmacro.h": "c",
+			"i2c.h": "c",
+			"stdint.h": "c"
+		},
+		// These settings tweaks to the cmake plugin will ensure
+		// that you debug using cortex-debug instead of trying to launch
+		// a Pico binary on the host
+		"cmake.statusbar.advanced": {
+			"debug": {
+				"visibility": "hidden"
+			},
+			"launch": {
+				"visibility": "hidden"
+			},
+			"build": {
+				"visibility": "default"
+			},
+			"buildTarget": {
+				"visibility": "hidden"
+			}
+		},
+		"cmake.buildBeforeRun": true,
+		"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+		"cortex-debug.variableUseNaturalFormat": false
+		}
+}

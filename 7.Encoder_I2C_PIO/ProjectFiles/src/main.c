@@ -28,7 +28,6 @@
 #include <stdbool.h>
 
 // SDK Libraries
-#include "pio_i2c.h"
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
 //#include "hardware/uart.h"
@@ -58,19 +57,14 @@ int main() {
 
 
 
-    //i2c_init(i2c0, 1000 * 1000);
+    i2c_init(i2c0, 1000 * 1000);
+    gpio_set_function(ENCODER1_SDA_PIN, GPIO_FUNC_I2C);
+    gpio_set_function(ENCODER1_SCL_PIN, GPIO_FUNC_I2C);
+    gpio_pull_up(ENCODER1_SDA_PIN);
+    gpio_pull_up(ENCODER1_SCL_PIN);
 
 
-    u_int32_t offset = pio_add_program(pio0, &i2c_program);
-    i2c_program_init(pio0, 0, offset, ENCODER1_SDA_PIN, ENCODER1_SCL_PIN);
-
-    //gpio_set_function(ENCODER1_SDA_PIN, GPIO_FUNC_I2C);
-    //gpio_set_function(ENCODER1_SCL_PIN, GPIO_FUNC_I2C);
-    //gpio_pull_up(ENCODER1_SDA_PIN);
-    //gpio_pull_up(ENCODER1_SCL_PIN);
-
-
-
+    //dev_hd44780_bargraph(i2c0, 0x27, 0, true, 50);
 
     // Loop forever
     while (true) {
